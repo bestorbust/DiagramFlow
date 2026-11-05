@@ -1,0 +1,88 @@
+# =============================================================================
+# DiagramFlow Comprehensive .gitignore
+# Excludes unwanted files, test assets, PDFs, docs, caches, and runtime artifacts
+# =============================================================================
+
+# 1. Environment & Credentials
+.env
+**/.env
+*.env.local
+
+# 2. Python Environments & Caches
+.venv/
+env/
+venv/
+ENV/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+**/.pytest_cache/
+pytest.ini
+**/pytest.ini
+
+# 3. Documents & Research Drafts (No PDFs or Office Docs in Git)
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.xlsx
+*.xls
+output/
+docs/
+
+# 4. Tests, Benchmarks, Test Diagrams & Experimental Scripts
+tests/
+cv/tests/
+validation/
+scratch/
+tmp/
+cv/data/
+cv/evaluation/
+cv/outputs/
+data/diagrams/
+cv/Untitled45.ipynb
+cv/check_tbs_conf.py
+cv/evaluate_all.py
+prototype/
+
+# 5. Database & Runtime Storage
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.sqlite*
+*.sqlite3
+*.db
+
+# 6. Runtime Generated Uploads & Overlays
+backend/static/uploads/*
+!backend/static/uploads/.gitkeep
+backend/static/artifacts/*
+!backend/static/artifacts/.gitkeep
+backend/static/overlays/*
+!backend/static/overlays/.gitkeep
+llm/audit_reports/
+
+# 7. Frontend Dependencies & Build Output
+frontend/node_modules/
+frontend/dist/
+frontend/.npm/
+frontend/.npm-cache/
+**/* - Copy*
+package-lock.json
+
+# 8. Logs & Temporary Files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# 9. OS & IDE System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
