@@ -86,3 +86,12 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+
+# 10. Local Submission Generators & Artifacts
+submissions/
+submission_ready/
+.codex/
+test.html
+test.pdf
+build_*.py
+generate_figures.py
