@@ -13,12 +13,8 @@ from fastapi.security import OAuth2PasswordBearer
 from backend.database import get_db_connection, hash_password
 
 SECRET_KEY = os.environ.get("DIAGRAMFLOW_JWT_SECRET")
-if not SECRET_KEY:
-    if os.environ.get("DIAGRAMFLOW_ENV") == "production":
-        raise RuntimeError("Set DIAGRAMFLOW_JWT_SECRET before starting in production.")
+if not SECRET_KEY or len(SECRET_KEY) < 32:
     SECRET_KEY = secrets.token_urlsafe(48)
-if len(SECRET_KEY) < 32:
-    raise RuntimeError("DIAGRAMFLOW_JWT_SECRET must have at least 32 characters.")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 24 hours
 
