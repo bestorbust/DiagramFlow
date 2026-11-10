@@ -16,7 +16,7 @@ export default function App() {
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   const [isMethodologyOpen, setIsMethodologyOpen] = useState(false);
-  const [adminFilterAll, setAdminFilterAll] = useState(false);
+  const [adminFilterAll, setAdminFilterAll] = useState(true);
   const [transparencyMode, setTransparencyMode] = useState(false);
 
   const [activeAudit, setActiveAudit] = useState(null);
@@ -45,7 +45,10 @@ export default function App() {
           if (res.ok) return res.json();
           throw new Error('Token expired');
         })
-        .then((userData) => setUser(userData))
+        .then((userData) => {
+          setUser(userData);
+          if (userData.role === 'admin') setAdminFilterAll(true);
+        })
         .catch(() => {
           localStorage.removeItem('df_token');
           setUser(null);
@@ -238,7 +241,10 @@ export default function App() {
       <AuthModal
         isOpen={isAuthOpen}
         onClose={() => setIsAuthOpen(false)}
-        onLoginSuccess={(userData) => setUser(userData)}
+        onLoginSuccess={(userData) => {
+          setUser(userData);
+          if (userData.role === 'admin') setAdminFilterAll(true);
+        }}
       />
 
       {/* History Drawer */}
@@ -248,6 +254,7 @@ export default function App() {
         onSelectAudit={handleSelectAudit}
         currentUser={user}
         adminFilterAll={adminFilterAll}
+        setAdminFilterAll={setAdminFilterAll}
       />
 
       {/* Methodology & Flow Modal */}

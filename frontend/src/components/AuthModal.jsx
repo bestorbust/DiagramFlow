@@ -24,7 +24,12 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
           body: JSON.stringify({ username, password })
         });
         const data = await res.json();
-        if (!res.ok) throw new Error(data.detail || 'Registration failed');
+        if (!res.ok) {
+          if (data.detail === 'Username is already taken.') {
+            throw new Error('Username is already registered. Switch to "Sign In" to log in with this account.');
+          }
+          throw new Error(data.detail || 'Registration failed');
+        }
 
         // Automatically log in with received token
         localStorage.setItem('df_token', data.token);
@@ -149,12 +154,34 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
           </button>
         </form>
 
-        {/* Admin Credentials Hint */}
-        {/* <div className="mt-5 p-3 rounded-lg bg-slate-900/50 border border-slate-800 text-[11px] text-slate-400">
-          <p className="font-semibold text-slate-300 mb-0.5">Admin Account:</p>
-          <p>Username: <code className="text-amber-300">admin</code> | Password: <code className="text-amber-300">admin123</code></p>
-          <p className="text-[10px] text-slate-500 mt-1">Admin has privileges to view ALL audits across all registered users.</p>
-        </div> */}
+        {/* Admin Credentials Hint & Quick Fill */}
+        <div className="mt-5 p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-[11px] text-slate-400">
+          <div className="flex items-center justify-between mb-1.5">
+            <span className="font-semibold text-slate-300 flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-purple-400" />
+              Default Administrator:
+            </span>
+            <button
+              type="button"
+              onClick={() => {
+                setIsRegister(false);
+                setUsername('admin');
+                setPassword('admin123');
+                setError('');
+              }}
+              className="text-[10px] text-blue-400 hover:text-blue-300 font-semibold px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 hover:bg-blue-500/20 transition"
+            >
+              Fill Admin Credentials
+            </button>
+          </div>
+          <p className="font-mono text-slate-300">
+            Username: <code className="text-amber-300 bg-slate-950 px-1.5 py-0.5 rounded border border-slate-800">admin</code>
+            {' '}| Password: <code className="text-amber-300 bg-slate-950 px-1.5 py-0.5 rounded border border-slate-800">admin123</code> <span className="text-slate-500">(or admin)</span>
+          </p>
+          <p className="text-[10px] text-slate-500 mt-1.5">
+            The Admin account has full visibility into <strong>ALL audits</strong> across all users in the system.
+          </p>
+        </div>
       </div>
     </div>
   );

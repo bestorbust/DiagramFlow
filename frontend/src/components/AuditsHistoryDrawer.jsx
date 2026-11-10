@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { X, Clock, Shield, User, ChevronRight, CheckCircle2, AlertTriangle, FileText } from '../icons';
 
-export default function AuditsHistoryDrawer({ isOpen, onClose, onSelectAudit, currentUser, adminFilterAll }) {
+export default function AuditsHistoryDrawer({ isOpen, onClose, onSelectAudit, currentUser, adminFilterAll, setAdminFilterAll }) {
   const [audits, setAudits] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     if (isOpen) fetchAudits();
@@ -15,7 +16,8 @@ export default function AuditsHistoryDrawer({ isOpen, onClose, onSelectAudit, cu
     setError('');
     try {
       const token = localStorage.getItem('df_token');
-      const res = await fetch(`/api/audits?all_users=${currentUser?.role === 'admin' && adminFilterAll ? 'true' : 'false'}`, {
+      const shouldFetchAll = currentUser?.role === 'admin' && adminFilterAll;
+      const res = await fetch(`/api/audits?all_users=${shouldFetchAll ? 'true' : 'false'}`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (!res.ok) throw new Error('Failed to load audits');
@@ -28,6 +30,15 @@ export default function AuditsHistoryDrawer({ isOpen, onClose, onSelectAudit, cu
     }
   };
 
+  const filteredAudits = audits.filter((a) => {
+    if (!searchQuery.trim()) return true;
+    const query = searchQuery.toLowerCase();
+    const diagramName = (a.diagram_name || '').toLowerCase();
+    const username = (a.username || '').toLowerCase();
+    const verdict = (a.executive_verdict || '').toLowerCase();
+    return diagramName.includes(query) || username.includes(query) || verdict.includes(query);
+  });
+
   if (!isOpen) return null;
 
   return (
@@ -35,19 +46,61 @@ export default function AuditsHistoryDrawer({ isOpen, onClose, onSelectAudit, cu
       <div className="absolute inset-y-0 right-0 max-w-full flex pl-10">
         <div className="w-screen max-w-md glass-panel border-l border-slate-700/80 shadow-2xl flex flex-col">
           {/* Header */}
-          <div className="p-5 border-b border-slate-800 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Clock className="w-5 h-5 text-blue-400" />
-              <h2 className="font-bold text-white text-base">
-                {currentUser?.role === 'admin' && adminFilterAll ? 'All User Audits (Admin)' : 'My Audit History'}
-              </h2>
+          <div className="p-5 border-b border-slate-800">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-blue-400" />
+                <h2 className="font-bold text-white text-base">
+                  {currentUser?.role === 'admin' && adminFilterAll ? 'All Architecture Audits' : 'My Audit History'}
+                </h2>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 font-mono">
+                  {filteredAudits.length}
+                </span>
+              </div>
+              <button
+                onClick={onClose}
+                className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition"
+              >
+                <X className="w-5 h-5" />
+              </button>
             </div>
-            <button
-              onClick={onClose}
-              className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition"
-            >
-              <X className="w-5 h-5" />
-            </button>
+
+            {/* Admin Filter Tabs */}
+            {currentUser?.role === 'admin' && setAdminFilterAll && (
+              <div className="flex rounded-lg bg-slate-900/90 p-1 mb-3 border border-slate-800">
+                <button
+                  type="button"
+                  onClick={() => setAdminFilterAll(true)}
+                  className={`flex-1 py-1.5 text-xs font-semibold rounded-md transition ${
+                    adminFilterAll
+                      ? 'bg-purple-600 text-white shadow-sm'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  All Users Audits
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setAdminFilterAll(false)}
+                  className={`flex-1 py-1.5 text-xs font-semibold rounded-md transition ${
+                    !adminFilterAll
+                      ? 'bg-purple-600 text-white shadow-sm'
+                      : 'text-slate-400 hover:text-white'
+                  }`}
+                >
+                  My Audits Only
+                </button>
+              </div>
+            )}
+
+            {/* Search Input */}
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Filter by diagram name or user..."
+              className="w-full px-3 py-1.5 bg-slate-900/90 border border-slate-700/80 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition"
+            />
           </div>
 
           {/* Body */}
@@ -56,10 +109,12 @@ export default function AuditsHistoryDrawer({ isOpen, onClose, onSelectAudit, cu
               <div className="text-center py-12 text-slate-400 text-xs">Loading audit history...</div>
             ) : error ? (
               <div className="p-3 rounded-lg bg-rose-500/10 text-rose-300 text-xs">{error}</div>
-            ) : audits.length === 0 ? (
-              <div className="text-center py-12 text-slate-500 text-xs">No architecture audits recorded yet.</div>
+            ) : filteredAudits.length === 0 ? (
+              <div className="text-center py-12 text-slate-500 text-xs">
+                {searchQuery ? 'No matching audits found.' : 'No architecture audits recorded yet.'}
+              </div>
             ) : (
-              audits.map((a) => (
+              filteredAudits.map((a) => (
                 <div
                   key={a.id}
                   onClick={() => { onSelectAudit(a.id); onClose(); }}

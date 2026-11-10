@@ -10,11 +10,25 @@ from typing import Optional, Dict, Any
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 
+from pathlib import Path
 from backend.database import get_db_connection, hash_password
 
 SECRET_KEY = os.environ.get("DIAGRAMFLOW_JWT_SECRET")
 if not SECRET_KEY or len(SECRET_KEY) < 32:
-    SECRET_KEY = secrets.token_urlsafe(48)
+    # Ensure a stable secret key across reloads/restarts so users aren't logged out
+    _secret_file = Path(__file__).resolve().parent.parent / "data" / ".jwt_secret"
+    try:
+        if _secret_file.exists():
+            SECRET_KEY = _secret_file.read_text(encoding="utf-8").strip()
+    except Exception:
+        pass
+    if not SECRET_KEY or len(SECRET_KEY) < 32:
+        SECRET_KEY = secrets.token_urlsafe(48)
+        try:
+            _secret_file.parent.mkdir(parents=True, exist_ok=True)
+            _secret_file.write_text(SECRET_KEY, encoding="utf-8")
+        except Exception:
+            pass
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 24 hours
 
