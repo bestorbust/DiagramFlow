@@ -1,0 +1,8 @@
+flowchart TD
+    req_0["Photo Portal"]
+    req_1["Resize API"]
+    req_2["Resize Queue"]
+    req_3["Resize Worker"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_2 --> req_3

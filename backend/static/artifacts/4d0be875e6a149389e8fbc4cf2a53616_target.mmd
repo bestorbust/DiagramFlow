@@ -1,0 +1,8 @@
+flowchart TD
+    n0["Customer Portal"]
+    n1["Invoice API"]
+    n2["Render Worker"]
+    n3["Render Queue"]
+    n0 --> n1
+    n1 --> n3
+    n3 --> n2

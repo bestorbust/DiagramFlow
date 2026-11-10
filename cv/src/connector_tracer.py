@@ -8,7 +8,7 @@ import numpy as np
 from scipy.spatial import cKDTree
 
 
-def bridge_collinear_gaps(skeleton, comp_exclusion, text_exclusion=None, text_blocks=None, max_gap=14, max_text_gap=280):
+def bridge_collinear_gaps(skeleton, comp_exclusion, text_exclusion=None, text_blocks=None, max_gap=45, max_text_gap=280):
     """Reconnect short aligned dash gaps and bridge across edge label text boxes."""
     result = skeleton.copy()
     bridges = []
@@ -20,7 +20,7 @@ def bridge_collinear_gaps(skeleton, comp_exclusion, text_exclusion=None, text_bl
         # any unrelated word to justify a long invented connector.
         text_coverage=cv2.dilate(text_exclusion,np.ones((25,25),np.uint8))
 
-    for _ in range(3):
+    for _ in range(4):
         binary = (result > 0).astype(np.uint8)
         count = cv2.filter2D(binary, cv2.CV_16S, np.ones((3, 3), np.int16)) - binary
         ys, xs = np.where((binary == 1) & (count == 1))
@@ -32,23 +32,24 @@ def bridge_collinear_gaps(skeleton, comp_exclusion, text_exclusion=None, text_bl
         support_lengths = {}
         for pt in points:
             x, y = int(pt[0]), int(pt[1])
-            y0, y1, x0, x1 = max(0, y - 8), min(height, y + 9), max(0, x - 8), min(width, x + 9)
-            yy, xx = np.where(binary[y0:y1, x0:x1])
-            local = np.column_stack((xx + x0, yy + y0))
+            # Trace connected pixels along this specific skeleton stroke to compute accurate tangent vector
+            seen = [(x, y)]
+            frontier = [(x, y)]
+            visited = {(x, y)}
+            while frontier and len(seen) < 20:
+                px, py = frontier.pop(0)
+                for ox in (-1, 0, 1):
+                    for oy in (-1, 0, 1):
+                        q = (px + ox, py + oy)
+                        if q not in visited and 0 <= q[0] < width and 0 <= q[1] < height and binary[q[1], q[0]]:
+                            visited.add(q)
+                            frontier.append(q)
+                            seen.append(q)
+            local = np.array(seen, dtype=float)
             vec = np.array([x, y], dtype=float) - local.mean(axis=0)
             norm = np.linalg.norm(vec)
             vectors[(x, y)] = vec / max(1e-6, norm)
-            # A few surviving glyph pixels are not a connector shaft. Require
-            # visible continuation on both sides before bridging a long OCR gap.
-            seen={(x,y)}; frontier=[(x,y)]
-            while frontier and len(seen)<24:
-                px,py=frontier.pop()
-                for ox in (-1,0,1):
-                    for oy in (-1,0,1):
-                        q=(px+ox,py+oy)
-                        if q not in seen and 0<=q[0]<width and 0<=q[1]<height and binary[q[1],q[0]]:
-                            seen.add(q);frontier.append(q)
-            support_lengths[(x,y)]=len(seen)
+            support_lengths[(x, y)] = len(seen)
 
         bridges_added = 0
         used = set()
@@ -86,6 +87,29 @@ def bridge_collinear_gaps(skeleton, comp_exclusion, text_exclusion=None, text_bl
             cv2.line(result, p1, p2, 255, 1)
             bridges.append([list(p1), list(p2)])
             bridges_added += 1
+
+        # Raycast from remaining endpoints along tangent direction towards skeleton pixels
+        for pt in points:
+            p = tuple(pt)
+            if p in used:
+                continue
+            v = vectors.get(p, np.zeros(2))
+            if np.linalg.norm(v) < 0.7:
+                continue
+            for step in range(3, max_gap + 1):
+                qx, qy = int(round(p[0] + v[0] * step)), int(round(p[1] + v[1] * step))
+                if not (0 <= qx < width and 0 <= qy < height):
+                    break
+                if comp_exclusion[qy, qx]:
+                    break
+                if result[qy, qx] > 0:
+                    sample = np.linspace(p, (qx, qy), step + 1).round().astype(int)
+                    if not np.any(comp_exclusion[sample[:, 1], sample[:, 0]]):
+                        cv2.line(result, p, (qx, qy), 255, 1)
+                        bridges.append([list(p), [qx, qy]])
+                        used.add(p)
+                        bridges_added += 1
+                    break
 
         if bridges_added == 0:
             break
@@ -227,10 +251,10 @@ class ConnectorTracer:
         h, w = strokes.shape
         ex, ey = endpoint
         widths = []
-        for dist in range(-5, 25):
+        for dist in range(0, 36):
             pos_offsets = []
             neg_offsets = []
-            for offset in range(-14, 15):
+            for offset in range(-18, 19):
                 x = int(round(ex - dx*dist + nx*offset))
                 y = int(round(ey - dy*dist + ny*offset))
                 if 0 <= x < w and 0 <= y < h and strokes[y, x]:
@@ -245,12 +269,26 @@ class ConnectorTracer:
             n = max(neg_offsets) if neg_offsets else 0
             widths.append((dist, p, n, p + n))
 
-        shaft_widths = [tot for d, p, n, tot in widths if 14 <= d <= 22]
-        baseline = float(np.median(shaft_widths)) if shaft_widths else 0.0
+        # Dynamically locate the thin connector shaft behind the arrowhead
+        shaft_samples = []
+        for d in range(12, len(widths) - 3):
+            window = [widths[k][3] for k in range(d, d + 4)]
+            if max(window) <= 5:
+                shaft_samples = window
+                break
+        if not shaft_samples:
+            deep = [widths[k][3] for k in range(24, len(widths))]
+            if deep and np.median(deep) <= 5:
+                shaft_samples = deep
+            else:
+                mid = [widths[k][3] for k in range(14, min(23, len(widths)))]
+                shaft_samples = mid if mid else [10.0]
+
+        baseline = float(np.median(shaft_samples))
         if baseline > 4.5:
             return False
 
-        flares = [tot for d, p, n, tot in widths if 1 <= d <= 10
+        flares = [tot for d, p, n, tot in widths if 1 <= d <= 24
                   and ((p>=3 and n>=3) or (p>=2 and n>=2 and max(p,n)<=3 and baseline<=2))
                   and tot >= max(4, baseline + 3)]
         return len(flares) >= 2

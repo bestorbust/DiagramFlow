@@ -1,0 +1,8 @@
+flowchart TD
+    req_0["Customer Portal"]
+    req_1["Invoice API"]
+    req_2["Render Queue"]
+    req_3["Render Worker"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_2 --> req_3

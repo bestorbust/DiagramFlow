@@ -1,0 +1,240 @@
+{
+  "diagram_metadata": {
+    "source_file": "b2ac07a3b7804f96bd9c43a17796f002.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T17:19:33.278868+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 3,
+    "total_relationships": 2,
+    "total_groups": 0,
+    "entrypoint_components": [
+      "Customer Portal"
+    ],
+    "storage_components": [],
+    "service_components": [
+      "Invoice API",
+      "Render Worker"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Customer Portal",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.778
+    },
+    {
+      "id": "node_1",
+      "label": "Invoice API",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        315,
+        119
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 315,
+        "height": 119
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ],
+      "confidence": 0.778
+    },
+    {
+      "id": "node_2",
+      "label": "Render Worker",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1603,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1760,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ],
+      "confidence": 0.777
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_1",
+      "source_label": "Invoice API",
+      "target": "node_2",
+      "target_label": "Render Worker",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          739,
+          393
+        ],
+        [
+          739,
+          257
+        ],
+        [
+          742,
+          255
+        ],
+        [
+          1758,
+          255
+        ],
+        [
+          1760,
+          392
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          739,
+          393
+        ],
+        [
+          1760,
+          392
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_0",
+      "source_label": "Customer Portal",
+      "target": "node_1",
+      "target_label": "Invoice API",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}
