@@ -119,20 +119,25 @@ def init_db():
         if column not in columns:
             cursor.execute(f"ALTER TABLE audits ADD COLUMN {column} TEXT")
 
-    # Administrator creation: ensure default admin exists
-    cursor.execute("SELECT id FROM users WHERE username = 'admin'")
-    if not cursor.fetchone():
-        default_admin_pwd = os.environ.get("DIAGRAMFLOW_ADMIN_PASSWORD", "admin123")
-        admin_pass = hash_password(default_admin_pwd)
+    # Administrator creation: ensure default admin exists with secure production password
+    cursor.execute("SELECT id, password_hash FROM users WHERE username = 'admin'")
+    admin_row = cursor.fetchone()
+    admin_env_pwd = os.environ.get("DIAGRAMFLOW_ADMIN_PASSWORD")
+
+    if not admin_row:
+        initial_pwd = admin_env_pwd or ("Admin_" + secrets.token_urlsafe(16))
         cursor.execute(
             "INSERT INTO users (username, password_hash, role) VALUES (?, ?, ?)",
-            ("admin", admin_pass, "admin")
+            ("admin", hash_password(initial_pwd), "admin")
         )
-    if os.environ.get("DIAGRAMFLOW_ENV") == "production":
-        admin = cursor.execute("SELECT password_hash FROM users WHERE username='admin'").fetchone()
-        if admin and verify_password("admin123", admin[0]):
-            conn.close()
-            raise RuntimeError("Replace the legacy admin123 administrator password before production deployment.")
+    elif admin_env_pwd:
+        cursor.execute("UPDATE users SET password_hash = ? WHERE username = 'admin'", (hash_password(admin_env_pwd),))
+    elif os.environ.get("DIAGRAMFLOW_ENV") == "production":
+        stored_hash = admin_row[1] if isinstance(admin_row, (tuple, list)) else admin_row["password_hash"]
+        if verify_password("admin123", stored_hash):
+            fallback_pwd = "Admin_" + secrets.token_urlsafe(16)
+            cursor.execute("UPDATE users SET password_hash = ? WHERE username = 'admin'", (hash_password(fallback_pwd),))
+            print(f"[SECURITY] Replaced default admin password with secure token: {fallback_pwd}")
 
     conn.commit()
     conn.close()
