@@ -205,14 +205,14 @@ const WORKFLOW_STAGES = [
         detail: 'Audits every path and flags violations into 6 formal categories: (1) Missing Required Components, (2) Missing Direct Connectors, (3) Unapproved / Direct Bypass Connections, (4) Missing Async Queues / Buffers, (5) Conflicting Timeouts / SLAs, (6) Security Boundary Violations (e.g. bypassing API Gateway).'
       },
       {
-        heading: 'Mathematical Alignment Score',
-        detail: 'Computes a deterministic, reproducible alignment score (0% to 100%) weighted by component recall, relationship precision, protocol compliance, and security boundary integrity.'
+        heading: 'Verified-Check Ratio Alignment Score',
+        detail: 'Computes a deterministic, defensible alignment score (0.0% to 100.0%) as the exact percentage of explicit structural requirement checks (mandatory components, directional flows, and security zones) confirmed in the extracted diagram graph.'
       }
     ],
     mathSpecs: [
-      { label: 'Node Recall', formula: 'R_node = |V_observed ∩ V_required| / |V_required|' },
-      { label: 'Edge Precision', formula: 'P_edge = |E_observed ∩ E_required| / |E_observed|' },
-      { label: 'Final Score', formula: 'Score = 0.35 * R_node + 0.35 * P_edge + 0.15 * Protocol_Score + 0.15 * SLA_Score' }
+      { label: 'Alignment Score', formula: 'Score (%) = round(100 * N_verified / N_checked, 1)' },
+      { label: 'Checked Domain', formula: 'Checked = Req_Components + Explicit_Flows + Declared_Zones' },
+      { label: 'Verification Criteria', formula: 'Verified = { c ∈ Matched_Nodes } + { f ∈ Matched_Edges } + { z ∈ Confirmed_Boundaries }' }
     ],
     inputs: 'Visual Architecture Graph & Requirements AST',
     outputs: 'Discrepancy Report (categorized discrepancies with visual & clause citations), Alignment Score, Executive Verdict'
@@ -252,7 +252,7 @@ const WORKFLOW_STAGES = [
     id: 'stage-8',
     num: '08',
     title: 'Citations-Grounded RAG Audit Assistant',
-    subtitle: 'Vectorized audit evidence indexing and strictly grounded compliance Q&A',
+    subtitle: 'Local BM25 lexical evidence indexing and strictly grounded compliance Q&A',
     category: 'Grounded Intelligence',
     icon: MessageSquare,
     color: 'from-emerald-500/20 to-teal-500/20 text-emerald-400 border-emerald-500/30',
@@ -264,17 +264,18 @@ const WORKFLOW_STAGES = [
         detail: 'Indexes extracted components, visual connector paths, OCR text blocks, requirement clauses, and discrepancy records into searchable knowledge chunks.'
       },
       {
-        heading: 'Strict Grounding & Citation Synthesis',
-        detail: 'When engineers query the assistant, relevant evidence chunks are retrieved. The assistant cites the exact visual bounding box coordinates [x, y, w, h] and specific requirement clauses supporting each statement.'
+        heading: 'Local BM25 Lexical Indexing & Evidence Matching',
+        detail: 'Tokenizes user queries and evidence chunks with stopword pruning, ranking matches using Okapi BM25 (k1=1.5, b=0.75) with IDF weighting and title matching for fast, reproducible retrieval without vector embedding drift.'
       },
       {
-        heading: 'Explicit Boundary Enforcement',
-        detail: 'If a question asks about details not present in either the visual diagram or the requirements document, the assistant explicitly states the limitation rather than guessing.'
+        heading: 'Explicit Boundary Enforcement & Verbatim Citations',
+        detail: 'When engineers query the assistant, relevant evidence chunks are retrieved. The assistant cites the exact visual bounding box coordinates [x, y, w, h] and verbatim requirement clauses. If information is absent, it explicitly states the limitation rather than guessing.'
       }
     ],
     mathSpecs: [
-      { label: 'Retrieval Function', formula: 'Top_Chunks = CosineSimilarity(Embed(Query), Embed(Audit_Chunks))' },
-      { label: 'Grounding Verification', formula: 'Every finding assertion must link to: Node_ID, Conn_ID, or Clause_ID' }
+      { label: 'Okapi BM25 Ranking', formula: 'Score(D, Q) = Σ IDF(q) · [TF(q, D) · 2.5] / [TF(q, D) + 1.5 · (0.25 + 0.75 · |D| / avgdl)] + 0.5 · Title_Match' },
+      { label: 'IDF Weighting', formula: 'IDF(q) = ln(1 + (N - DF(q) + 0.5) / (DF(q) + 0.5))' },
+      { label: 'Strict Citation Quoting', formula: 'Assertion_Valid ⇔ Quote ∈ Evidence_Chunk_Text (verbatim source match)' }
     ],
     inputs: 'Audit Knowledge Chunks, Discrepancy Findings, User Queries',
     outputs: 'Conversational responses with interactive evidence citations and verification tags'

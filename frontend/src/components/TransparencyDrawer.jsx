@@ -140,21 +140,21 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     stage_number: 6,
     stage_name: 'Grounded Dual-Graph Alignment Diffing',
     why: 'Performs mathematical dual-graph alignment between the visual diagram and requirements to detect every discrepancy.',
-    why_plain_english: 'The system compares the diagram graph with the requirements specification. It detects missing components, undocumented components, missing connections, reversed arrowheads, and security boundary violations, assigning a compliance score from 0% to 100%.',
-    why_technical: 'Deterministic dual-graph alignment compares Visual Graph G_V = (V_V, E_V) with Requirements Graph G_R = (V_R, E_R). Identifies symmetric difference in vertices and directed edges. Categorizes findings into Missing Component, Missing Flow, Reversed Flow, and Protocol Mismatch. Calculates mathematical alignment score S = 1.0 - sum(w_i * sev_i).',
+    why_plain_english: 'The system compares the diagram graph with the requirements specification. It detects missing components, undocumented components, missing connections, reversed arrowheads, and security boundary violations, calculating the verified-check ratio from 0% to 100%.',
+    why_technical: 'Deterministic dual-graph alignment compares Visual Graph G_V = (V_V, E_V) with Requirements Graph G_R = (V_R, E_R). Evaluates symmetric difference in vertices, directed flows, and security zones. Categorizes findings into Missing Component, Missing Flow, Reversed Flow, and Protocol Mismatch. Calculates the alignment score as the verified-check ratio: Score (%) = round(100 * N_verified / N_checked, 1).',
     how_analyzed_diagram: 'Visual nodes and edges provide the actual observed architecture facts.',
     how_analyzed_requirements: 'Requirements AST entities and flows provide the expected architecture specification.',
     step_by_step_breakdown: [
       'Step 1: Perform exact and phonetic/fuzzy label alignment between visual nodes and requirement entities.',
       'Step 2: Identify missing components (v in V_R \\ V_V) and undocumented shadow IT (v in V_V \\ V_R).',
       'Step 3: Verify directed adjacency matrix: identify missing connectors and reversed data flows.',
-      'Step 4: Calculate mathematical alignment score: S = 1.0 - sum(w_i * sev_i) and generate executive verdict.'
+      'Step 4: Calculate verified-check ratio score: Score (%) = round(100 * N_verified / N_checked, 1) and generate executive verdict.'
     ],
     status: 'Recorded',
     key_findings: 'Every discrepancy pinpointed with evidence citations and severity classification.',
     output_summary: {
       diff_engine: 'deterministic_dual_graph_alignment',
-      scoring_model: 'weighted_penalty_subtraction',
+      scoring_model: 'verified_check_ratio_percentage',
       discrepancy_categories: ['missing_node', 'missing_edge', 'reversed_flow', 'protocol_mismatch'],
       status: 'completed'
     }
@@ -188,22 +188,23 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     stage_number: 8,
     stage_name: 'Grounded RAG Multi-Source Evidence Indexing',
     why: 'Indexes visual coordinates, requirement clauses, and discrepancy findings for hallucination-free AI chat.',
-    why_plain_english: 'The system indexes all visual evidence, requirement quotes, and audit findings so you can ask any architectural question in the Copilot Chat and receive exact, cited answers referencing specific paragraphs and image coordinates.',
-    why_technical: 'Chunks three distinct corpora: (1) Visual Evidence Chunks (bounding boxes, OCR confidence, pixel coordinates), (2) Requirements Spec Chunks (clause citations, paragraphs), and (3) Discrepancy Findings (severity, remediation rationale). Indexes into an in-memory inverted index and vector store enabling grounded QA with citations.',
+    why_plain_english: 'The system indexes all visual evidence, requirement quotes, and audit findings into a local BM25 search index so you can ask any architectural question in the Copilot Chat and receive exact, verified answers referencing specific paragraphs and image coordinates.',
+    why_technical: 'Chunks three distinct corpora: (1) Visual Evidence Chunks (bounding boxes, OCR confidence, pixel coordinates), (2) Requirements Spec Chunks (clause citations, paragraphs), and (3) Discrepancy Findings (severity, remediation rationale). Indexes into an in-memory BM25 lexical inverted index with stopword filtering and Okapi BM25 scoring (k1=1.5, b=0.75) for deterministic, reproducible retrieval without vector drift.',
     how_analyzed_diagram: 'Visual nodes, coordinates, and OCR tokens are chunked into searchable fact objects.',
     how_analyzed_requirements: 'Requirements paragraphs and acceptance criteria are indexed with clause identifiers.',
     step_by_step_breakdown: [
       'Step 1: Chunk visual evidence graph into spatially-referenced component and connector fact objects.',
       'Step 2: Chunk requirements document into clause-level paragraphs with markdown headers.',
       'Step 3: Generate metadata tags: source type, entity names, confidence scores, and discrepancy references.',
-      'Step 4: Initialize conversational grounding engine to supply verifiable citations for every copilot answer.'
+      'Step 4: Execute Okapi BM25 ranking (k1=1.5, b=0.75) and verify exact verbatim citations before delivering answers.'
     ],
     status: 'Recorded',
     key_findings: 'Evidence index initialized across visual bounding boxes, text clauses, and findings.',
     output_summary: {
-      indexing_engine: 'grounded_rag_multi_source',
+      indexing_engine: 'local_bm25_lexical_retriever',
+      scoring_function: 'okapi_bm25_k1_1.5_b_0.75',
       source_corpora: ['visual_evidence', 'requirements_spec', 'audit_discrepancies'],
-      citation_verification: 'zero_hallucination_grounding',
+      citation_verification: 'zero_hallucination_verbatim_grounding',
       status: 'completed'
     }
   }
