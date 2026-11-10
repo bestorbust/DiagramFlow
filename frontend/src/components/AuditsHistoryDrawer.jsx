@@ -9,7 +9,7 @@ export default function AuditsHistoryDrawer({ isOpen, onClose, onSelectAudit, cu
 
   useEffect(() => {
     if (isOpen) fetchAudits();
-  }, [isOpen, adminFilterAll]);
+  }, [isOpen, adminFilterAll, currentUser]);
 
   const fetchAudits = async () => {
     setLoading(true);
@@ -139,7 +139,7 @@ export default function AuditsHistoryDrawer({ isOpen, onClose, onSelectAudit, cu
                       <span className="text-slate-300">{a.username}</span>
                     </div>
                     <span className="text-[11px] text-slate-500 font-mono">
-                      Score: <strong className="text-slate-300">{a.alignment_score}%</strong>
+                      Score: <strong className="text-slate-300">{typeof a.alignment_score === 'number' ? Math.round(a.alignment_score) : a.alignment_score}%</strong>
                     </span>
                   </div>
 

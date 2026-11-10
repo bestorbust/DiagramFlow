@@ -41,7 +41,7 @@ export default function Navbar({
           {/* Methodology & Flow Guide */}
           <button
             onClick={onOpenMethodology}
-            className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600/15 hover:bg-indigo-600/25 text-indigo-300 border border-indigo-500/30 transition shadow-sm"
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600/15 hover:bg-indigo-600/25 text-indigo-300 border border-indigo-500/30 transition shadow-sm"
             title="Complete 8-Stage Architecture Flow & Mathematical Rationale"
           >
             <BookOpen className="w-3.5 h-3.5 text-indigo-400" />
