@@ -9,7 +9,7 @@ import MermaidViewer from './components/MermaidViewer';
 import TransparencyDrawer from './components/TransparencyDrawer';
 import RAGChatbot from './components/RAGChatbot';
 import MethodologyModal from './components/MethodologyModal';
-import { Layers, ShieldAlert, Sparkles, MessageSquare, BookOpen, CheckCircle } from './icons';
+import { Layers, ShieldAlert, Sparkles, MessageSquare, BookOpen, CheckCircle, Eye } from './icons';
 
 export default function App() {
   const [user, setUser] = useState(null);
