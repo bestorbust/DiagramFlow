@@ -144,13 +144,29 @@ export default function App() {
               </p>
             </div>
           </div>
-          <button
-            onClick={() => setIsMethodologyOpen(true)}
-            className="px-3.5 py-1.5 rounded-xl bg-indigo-600/20 hover:bg-indigo-600/30 border border-indigo-500/30 text-indigo-300 font-semibold text-xs transition flex items-center gap-1.5 self-start sm:self-auto flex-shrink-0 shadow-sm"
-          >
-            <span>Explore Methodology</span>
-            <span className="text-indigo-400 font-mono">→</span>
-          </button>
+          <div className="flex items-center gap-2 self-start sm:self-auto flex-shrink-0">
+            <button
+              onClick={() => setIsMethodologyOpen(true)}
+              className="px-3.5 py-1.5 rounded-xl bg-indigo-600/20 hover:bg-indigo-600/30 border border-indigo-500/40 text-indigo-300 font-semibold text-xs transition flex items-center gap-1.5 shadow-sm"
+              title="Open full interactive 8-stage architecture deep-dive"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-indigo-400" />
+              <span>Workflow Explorer</span>
+              <span className="text-indigo-400 font-mono">→</span>
+            </button>
+            <button
+              onClick={() => setTransparencyMode(prev => !prev)}
+              className={`px-3 py-1.5 rounded-xl border text-xs font-semibold transition flex items-center gap-1.5 shadow-sm ${
+                transparencyMode
+                  ? 'bg-amber-500 text-slate-950 border-amber-400 font-bold'
+                  : 'bg-slate-900 hover:bg-slate-800 text-slate-300 border-slate-700'
+              }`}
+              title="Toggle transparency drawer detailing each step"
+            >
+              <Eye className="w-3.5 h-3.5" />
+              <span>{transparencyMode ? 'Hide Pipeline Traces' : 'View Pipeline Traces'}</span>
+            </button>
+          </div>
         </div>
 
         {errorBanner && (
