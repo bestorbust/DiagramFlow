@@ -25,7 +25,7 @@ const WORKFLOW_STAGES = [
     id: 'stage-1',
     num: '01',
     title: 'Preprocessing & Contrast Normalization',
-    subtitle: 'Canvas polarity detection, adaptive thresholding, and solid fill isolation',
+    subtitle: 'Border luminance sampling, CLAHE enhancement, and solid fill isolation',
     category: 'Classical Computer Vision',
     icon: Eye,
     color: 'from-blue-500/20 to-cyan-500/20 text-cyan-400 border-cyan-500/30',
@@ -33,31 +33,31 @@ const WORKFLOW_STAGES = [
     summary: 'Normalizes arbitrary software diagrams (dark/light themes, JPEG artifacts, screenshot scaling) into a high-contrast binary stroke map.',
     deepDive: [
       {
-        heading: 'Polarity & Luminance Inversion',
-        detail: 'Computes median intensity of perimeter border pixels to classify dark vs. light canvas. Dark backgrounds (mean < 128) undergo strict inversion (255 - I) so all downstream structural operations process standardized dark-ink-on-light geometry.'
+        heading: 'Border Luminance Sampling & Polarity Inversion',
+        detail: 'Samples pixel intensities along the 2% outer perimeter margin to measure the true canvas background. If border median luminance < 110, the canvas is classified as dark mode and bitwise inverted (255 - I) to standardize on dark-ink-on-light geometry.'
       },
       {
-        heading: 'Adaptive Stroke Binarization',
-        detail: 'Applies calibrated thresholding (stroke_bin_threshold = 210) to distinguish genuine vector strokes from faint gridlines, compression noise, and light pastel container fills.'
+        heading: 'Contrast Enhancement via CLAHE',
+        detail: 'Applies Contrast Limited Adaptive Histogram Equalization (clipLimit = 2.0, tileGridSize = 8×8) to pop faint strokes out from colored fills and gradient backgrounds without amplifying high-frequency noise.'
       },
       {
-        heading: 'Solid 2D Fill Removal',
+        heading: 'Solid 2D Fill Removal & Shaft Isolation',
         detail: 'Performs morphological opening with a 17×17 rectangular kernel to isolate solid filled container interiors or solid background blocks. Subtracting these blobs isolates thin 1–5px communication connector shafts without degrading solid triangular arrowheads.'
       }
     ],
     mathSpecs: [
-      { label: 'Polarity Metric', formula: 'Canvas = Dark if Median(Border_Pixels) < 128 else Light' },
-      { label: 'Solid Kernel', formula: 'K_solid = Rect(17, 17); Blobs = Opening(I, K_solid)' },
-      { label: 'Shaft Preservation', formula: 'Strokes = Binarize(I) - Blobs' }
+      { label: 'Polarity Metric', formula: 'is_dark_background = Median(Border_Pixels_2pct) < 110' },
+      { label: 'CLAHE Equalization', formula: 'Enhanced_Gray = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8)).apply(Gray)' },
+      { label: 'Solid Kernel & Shaft', formula: 'Blobs = MorphOpen(Binary, Rect(17,17)); Strokes = Binary - Blobs' }
     ],
-    inputs: 'Raw uploaded diagram image (PNG, JPG, WebP, SVG rasterization)',
+    inputs: 'Raw uploaded diagram image (PNG, JPG, WebP)',
     outputs: 'Contrast-normalized binary stroke canvas & polarity metadata'
   },
   {
     id: 'stage-2',
     num: '02',
     title: 'Shape & Group Boundary Detection',
-    subtitle: 'Geometric contour hierarchy, VPC/enclosing boundary segregation & component classification',
+    subtitle: 'Multi-cue contour detection, perimeter ink support verification & container segregation',
     category: 'Classical Computer Vision',
     icon: Box,
     color: 'from-indigo-500/20 to-purple-500/20 text-purple-400 border-purple-500/30',
@@ -65,54 +65,54 @@ const WORKFLOW_STAGES = [
     summary: 'Discovers functional architecture components (services, databases, queues) and separates them from enclosing grouping zones (VPCs, subnets, trust domains).',
     deepDive: [
       {
-        heading: 'Hierarchical Contour Extraction',
-        detail: 'Extracts 2-level contour trees via Suzuki-Abe topological border following (cv2.RETR_CCOMP). Polygons are classified into candidate bounding boxes [x, y, w, h] with spatial area and aspect ratio filtering.'
+        heading: 'Multi-Cue Contour Extraction',
+        detail: 'Extracts closed shape candidates across 5 complementary cues: (1) Canny edges (30, 150) with 3×3 morph close, (2) Threshold binary (245, 255), (3) HSV color saturation mask ([0,30,40] to [180,255,250]), (4) Soft Canny edges (10, 40) with 5×5 close for low-contrast borderless cards, and (5) Adaptive Gaussian thresholding (31×31 window, C=12).'
       },
       {
-        heading: 'Grouping vs. Component Segregation',
-        detail: 'Calculates enclosing spatial containment. Boxes encompassing two or more smaller disjoint components or occupying >25% of the total canvas area are tagged as Containers / System Perimeters (e.g. AWS VPC, Kubernetes Cluster) rather than functional nodes.'
+        heading: 'Perimeter Ink Support & Geometric Filtering',
+        detail: 'Requires candidates to satisfy minimum area (A ≥ 1200px²), minimum dimension (24px), aspect ratio (1/25 ≤ w/h ≤ 25), and non-frame boundary (< 98% canvas). Verifies that ≥ 85% of the contour perimeter intersects real ink pixels (gray < 205) or exhibits an internal color step, rejecting background grid cells.'
       },
       {
-        heading: 'Shape Role Classification',
-        detail: 'Contour vertex complexity and aspect ratio determine physical shape: Rectangular Services (4 vertices), Cylindrical Storage / Databases (detected via dual horizontal arc caps), and Microservice Compute nodes.'
+        heading: 'Container vs. Component Segregation',
+        detail: 'Calculates spatial containment hierarchy. Boxes encompassing one or more smaller disjoint components or occupying > 15% of the total canvas area are categorized as Container Groups (e.g. VPC, Subnet, Cluster) rather than functional compute nodes.'
       }
     ],
     mathSpecs: [
-      { label: 'Contour Approximation', formula: 'Approx = DouglasPeucker(Contour, ε = 0.02 * Perimeter)' },
-      { label: 'Container Rule', formula: 'Is_Container = True if Area(B) > 0.25 * W * H or Contains(B, Comps) >= 2' },
-      { label: 'Component Masking', formula: 'Comp_Exclusion = Dilate(Union(Bboxes), Pad = 2px)' }
+      { label: 'Polygon Approx', formula: 'Approx = cv2.approxPolyDP(Contour, ε = 0.03 * Perimeter, True)' },
+      { label: 'Ink Support Ratio', formula: 'Support = Mean(Ink_Mask[Perimeter_Mask > 0]) ≥ 0.85' },
+      { label: 'Container Rule', formula: 'Is_Container = True if Area(B) > 0.15 * W * H or Contains(B, Comps) ≥ 1' }
     ],
-    inputs: 'Normalized binary stroke canvas',
+    inputs: 'Normalized binary stroke canvas & multi-cue representations',
     outputs: 'List of Components (id, bbox, center, shape) and Container Groups (id, bbox, child_nodes)'
   },
   {
     id: 'stage-3',
     num: '03',
     title: 'Multi-Pass OCR & Spatial Label Binding',
-    subtitle: 'Dual-resolution Tesseract engine with exterior Voronoi label association',
+    subtitle: 'Combined PSM 11/3 global text harvest, margin-inset ROI OCR, and polyline distance binding',
     category: 'Classical Computer Vision',
     icon: FileText,
     color: 'from-emerald-500/20 to-teal-500/20 text-teal-400 border-teal-500/30',
-    badge: 'Dual-Pass OCR',
+    badge: 'Multi-Pass OCR',
     summary: 'Extracts all textual tokens without hallucination, binding service names, database labels, and protocol badges to their exact physical components.',
     deepDive: [
       {
-        heading: 'Pass 1: Global Full-Canvas OCR',
-        detail: 'Runs global Tesseract page-segmentation mode (PSM 11 / sparse text) across the full canvas to harvest all text tokens, confidence scores, and baseline coordinate bounding boxes.'
+        heading: 'Global Multi-Pass OCR & Token IoU Deduplication',
+        detail: 'Runs Tesseract PSM 11 (sparse text) and PSM 3 (fully automatic segmentation) across the canvas, harvesting all word bounding boxes and confidences. Overlapping duplicate tokens from multiple passes are deduplicated with an IoU threshold of 0.45.'
       },
       {
-        heading: 'Pass 2: Targeted High-Res ROI OCR',
-        detail: 'Crops individual component bounding boxes with multi-threaded localized OCR (PSM 6 / uniform block) at 2× bicubic interpolation to read low-contrast or fine-print service names accurately.'
+        heading: 'Targeted ROI OCR with Cylinder Inset & CLAHE',
+        detail: 'Crops component bounding boxes with a 2–4px margin inset to strip outer borders. For database cylinders, insets top by ~18% and bottom by ~8% to avoid OCR reading ellipses as "2" or "ee". Upscales small ROIs up to 3× with bicubic interpolation and evaluates across PSM 7, PSM 6, and PSM 11.'
       },
       {
-        heading: 'Spatial Label Proximity & Icon Clustering',
-        detail: 'For unbordered architecture diagrams or exterior text labels situated beneath cloud icons, Voronoi/Euclidean nearest-neighbor clustering binds labels to their corresponding functional symbol.'
+        heading: 'Lexicon Normalization & Polyline Attachment',
+        detail: 'Cleans OCR output with regex artifact stripping, camelCase separation, and lexicon normalization (PostgreSQL, Kafka, Redis, RabbitMQ, MongoDB, Kubernetes, Nginx, API Gateway). Binds floating labels to nearest connector polylines using point-to-polyline minimum Euclidean projection distance.'
       }
     ],
     mathSpecs: [
-      { label: 'Confidence Filter', formula: 'Token_Valid = True if OCR_Confidence >= 48%' },
-      { label: 'Label Attachment', formula: 'Argmin_comp Dist(Center(Text_Box), Center(Comp_Box))' },
-      { label: 'OCR Text Masking', formula: 'Text_Exclusion = Dilate(Union(Text_Bboxes), Pad = 1px)' }
+      { label: 'Token Deduplication', formula: 'Drop Token if IoU(B1, B2) > 0.45 and Conf1 < Conf2' },
+      { label: 'Polyline Distance', formula: 'Dist(p, Path) = min_{i} PointToSegmentDist(p, w_i, w_{i+1})' },
+      { label: 'Cylinder Inset', formula: 'ROI_cyl = ROI[0.18*H : H - 0.08*H, :]' }
     ],
     inputs: 'Component bounding boxes & normalized image canvas',
     outputs: 'Resolved textual labels per component, unattached edge annotations, and text occlusion masks'
@@ -121,7 +121,7 @@ const WORKFLOW_STAGES = [
     id: 'stage-4',
     num: '04',
     title: 'Centerline Skeletonization & Connector Tracing',
-    subtitle: 'Zhang-Suen thinning, dashed gap bridging, and bilateral flare arrowhead resolution',
+    subtitle: 'Zhang-Suen thinning, collinear stroke BFS gap bridging, and bilateral flare arrowhead resolution',
     category: 'Classical Computer Vision',
     icon: GitBranch,
     color: 'from-amber-500/20 to-orange-500/20 text-orange-400 border-orange-500/30',
@@ -130,25 +130,25 @@ const WORKFLOW_STAGES = [
     deepDive: [
       {
         heading: 'Zhang-Suen Centerline Thinning',
-        detail: 'Preserves 8-connectivity while iteratively eroding stroke boundaries into a 1-pixel wide morphological skeleton. Unlike simple erosion, this guarantees that topological junctions and orthogonal corners never break.'
+        detail: 'Preserves 8-connectivity while iteratively eroding stroke boundaries into a 1-pixel wide morphological skeleton using a vectorized 2-phase sub-iteration until convergence, guaranteeing that topological junctions and orthogonal corners never break.'
       },
       {
         heading: 'Dashed & Broken Line Collinear Bridging',
-        detail: 'Detects collinear stroke segments with gaps up to 45px. Endpoints calculate tangent vectors using BFS connected-component traversal along the active stroke (preventing bounding-box skew). Aligned endpoints (cos(θ) > 0.85) are bridged with continuous lines.'
+        detail: 'Executes 4 bridging passes. Identifies degree-1 endpoints and traces stroke pixels with BFS (up to 20px) to compute true tangent vectors. Uses cKDTree to pair endpoints within 280px; connects them if collinear (cos θ1 > 0.85 and cos θ2 > 0.85) for dashed lines (gap ≤ 45px) or text occlusions (coverage ≥ 60%).'
       },
       {
         heading: 'Vertical Downward & Horizontal Arrowhead Verification',
-        detail: 'Casts normal sweep lines (nx = -dy, ny = dx) at distance d=0..36 behind endpoints. Dynamically detects bilateral flare expansion (p ≥ 3, n ≥ 3, tot ≥ 6) and verifies the thin connector shaft (tot ≤ 5) behind the arrowhead base. This robustly resolves both standard horizontal chevrons and tall orthogonal vertical drop arrows (| v).'
+        detail: 'Probes normal sweep lines (nx = -dy, ny = dx) at distance d=0..36px behind endpoints. Dynamically locates the thin connector shaft (baseline width ≤ 4.5px) and verifies bilateral flare expansion (p ≥ 3, n ≥ 3, tot ≥ baseline + 3) over ≥ 2 distance slices, reliably resolving both horizontal arrows (→, ←) and vertical downward drop arrows (| v).'
       },
       {
-        heading: 'Douglas-Peucker Waypoint Approximation',
-        detail: 'Compresses traced pixel chains into polygonal waypoints using epsilon = 2.0px, producing clean vector paths ready for architecture graph representation.'
+        heading: 'Topological Pixel Graph Compression',
+        detail: 'Compresses ordered pixel chains into junctions and terminal waypoints, snapping connector endpoints to nearest component boundaries within a 30px snap radius.'
       }
     ],
     mathSpecs: [
       { label: 'Collinear Cosine', formula: 'cos(θ1) = dot(v1, d12) > 0.85 and cos(θ2) = dot(v2, -d12) > 0.85' },
-      { label: 'Normal Sweep', formula: 'Ray(dist, offset) = Endpoint - dir * dist + normal * offset' },
-      { label: 'Shaft Verification', formula: 'Baseline = Median(Widths[d >= 14]) <= 4.5px; Flare = Widths[1..24] >= Baseline + 3' }
+      { label: 'Normal Sweep Ray', formula: 'Ray(dist, offset) = Endpoint - dir * dist + normal * offset' },
+      { label: 'Dynamic Shaft Test', formula: 'Baseline = Median(Widths[d ≥ 12]) ≤ 4.5px; Flare = Widths[1..24] ≥ Baseline + 3' }
     ],
     inputs: 'Binary skeleton, component exclusion masks, OCR text masks',
     outputs: 'Traced relationships (source, target, direction: forward/bidirectional/undirected, waypoints, confidence)'
@@ -157,33 +157,33 @@ const WORKFLOW_STAGES = [
     id: 'stage-5',
     num: '05',
     title: 'Universal Requirements Parsing & AST Specification',
-    subtitle: 'Multi-format document ingestion (PDF, DOCX, YAML, JSON, TXT) and formal rule compilation',
+    subtitle: 'Multi-format document ingestion (pypdf, docx, YAML, JSON, TXT) and verbatim quote validation',
     category: 'Requirements Engineering',
     icon: FileText,
     color: 'from-pink-500/20 to-rose-500/20 text-rose-400 border-rose-500/30',
     badge: 'AST Compiler',
-    summary: 'Parses engineering requirement specifications into a normalized Abstract Syntax Tree of expected components, allowed connectors, protocol rules, and SLA constraints.',
+    summary: 'Parses engineering requirement specifications into a normalized Abstract Syntax Tree of expected components, allowed connectors, protocol rules, and security zones.',
     deepDive: [
       {
         heading: 'Universal Document Ingestion',
-        detail: 'Ingests specifications from PDF (PyMuPDF / pdfplumber), Word (.docx XML parser), structured YAML/JSON, or raw text. Tables, clause numbers, and structural hierarchies are preserved.'
+        detail: 'Extracts clean text and architectural structure from PDF (via pypdf PdfReader), Word (.docx via python-docx), structured YAML/JSON, CSV/TSV, and Markdown specifications, preserving section structure.'
       },
       {
-        heading: 'Architecture Semantic Extraction',
-        detail: 'Extracts functional entities, required protocols (REST, gRPC, AMQP, Kafka, WebSocket), async messaging queues, database persistence guarantees, and authentication gateways.'
+        heading: 'Strict Pydantic Schema Compilation',
+        detail: 'Compiles requirements into typed Pydantic models: Entity (id, label, aliases, role, zone, description, source_quote), Flow (source, target, direction, protocol, purpose, source_quote), and Zone (id, name, contains_components, source_quote).'
       },
       {
-        heading: 'SLA & Timeout Constraint Modeling',
-        detail: 'Compiles specific latency, circuit breaker, timeout (e.g. 100ms vs 5000ms), and buffering constraints into machine-verifiable rule clauses with exact sentence citations.'
+        heading: 'Zero-Hallucination Verbatim Source Quote Invariant',
+        detail: 'Enforces strict grounding: every single source_quote in components, flows, and zones must be an exact verbatim substring within the raw input requirements document (quote in source_normal), rejecting ungrounded LLM extractions.'
       }
     ],
     mathSpecs: [
-      { label: 'AST Nodes', formula: 'V_req = { (name, type, zone, required_protocols) }' },
-      { label: 'AST Edges', formula: 'E_req = { (src, tgt, type: sync|async, max_timeout_ms, queue_buffer) }' },
-      { label: 'Clause Indexing', formula: 'Clause_Map = { rule_id: (clause_text, document_offset) }' }
+      { label: 'Entity Schema', formula: 'Entity = { id: str, label: str, aliases: list[str], role: str, source_quote: str }' },
+      { label: 'Flow Schema', formula: 'Flow = { source: str, target: str, direction: str, protocol: str, source_quote: str }' },
+      { label: 'Grounding Invariant', formula: 'Valid_AST ⇔ ∀ item ∈ AST, item.source_quote ∈ Source_Text' }
     ],
     inputs: 'Requirements file (PDF, DOCX, TXT, YAML, JSON, MD)',
-    outputs: 'Parsed Requirements AST (expected components, expected relationships, protocols, timeouts, security boundaries)'
+    outputs: 'Parsed Requirements AST (expected components, expected relationships, protocols, security boundaries)'
   },
   {
     id: 'stage-6',
@@ -197,12 +197,12 @@ const WORKFLOW_STAGES = [
     summary: 'Compares the Visual Architecture Graph against the Requirements AST, mathematically identifying every architectural flaw, missing queue, and unapproved path.',
     deepDive: [
       {
-        heading: 'Dual-Graph Alignment Matching',
-        detail: 'Matches extracted visual nodes to requirement specification entities using fuzzy Levenshtein distance, token set ratios, and synonym role dictionaries (e.g. Orders DB = Order Storage = PostgreSQL).'
+        heading: 'Deterministic Entity Alignment',
+        detail: 'Matches extracted visual components to requirements entities using normalized alphanumeric character compacting with declared aliases and optional "service" suffix equivalence, flagging ambiguous multi-matches for engineer review.'
       },
       {
-        heading: '6-Category Architectural Discrepancy Taxonomy',
-        detail: 'Audits every path and flags violations into 6 formal categories: (1) Missing Required Components, (2) Missing Direct Connectors, (3) Unapproved / Direct Bypass Connections, (4) Missing Async Queues / Buffers, (5) Conflicting Timeouts / SLAs, (6) Security Boundary Violations (e.g. bypassing API Gateway).'
+        heading: 'Formal Discrepancy Taxonomy',
+        detail: 'Audits every path and flags violations into formal categories: Missing Components (HIGH), Undocumented Shadow Components (LOW), Missing / Unresolved Flows (HIGH), Reversed Flow Directions (HIGH), Explicitly Forbidden Flows (CRITICAL), and Unconfirmed Security Zones (MEDIUM).'
       },
       {
         heading: 'Verified-Check Ratio Alignment Score',
@@ -221,7 +221,7 @@ const WORKFLOW_STAGES = [
     id: 'stage-7',
     num: '07',
     title: 'Target Architecture Synthesis & Remediation',
-    subtitle: 'Automated compliant graph compilation, Mermaid diagram rendering, and visual diffing',
+    subtitle: 'Automated compliant graph compilation, Mermaid flowchart TD rendering, and visual diffing',
     category: 'Architecture Synthesis',
     icon: Sparkles,
     color: 'from-violet-500/20 to-indigo-500/20 text-indigo-400 border-indigo-500/30',
@@ -229,21 +229,21 @@ const WORKFLOW_STAGES = [
     summary: 'Synthesizes the remediated target architecture that satisfies all specification constraints while preserving genuine visual components from the diagram.',
     deepDive: [
       {
-        heading: 'Graph Remediation Assembly',
-        detail: 'Merges observed visual components with required remediations: inserts missing message queues, introduces authentication gateways between public clients and private services, and routes async events through verified brokers.'
+        heading: 'Provenance-Preserving Graph Assembly',
+        detail: 'Retains verified visual components (status: Unchanged, provenance: visual_observation), injects missing required entities (status: Added_From_Requirements), removes forbidden bypass paths, and corrects reversed or missing directional edges.'
       },
       {
-        heading: 'Production-Grade Mermaid Code Synthesis',
-        detail: 'Generates clean, styled Mermaid flowchart code (graph TD / flowchart LR) with subgraphs for VPC/Security boundaries, customized node styles for databases/queues, and labeled edge protocols.'
+        heading: 'Sanitized Mermaid Flowchart TD Generation',
+        detail: 'Compiles clean Mermaid flowchart TD syntax with subgraphs for confirmed security boundaries. Labels are strictly sanitized with entity escaping (&, ", <, >, |) to prevent syntax breakage and script injection.'
       },
       {
-        heading: 'Exportable Vector Artifacts',
-        detail: 'Renders interactive Mermaid diagrams directly in the browser with high-resolution SVG and PNG export capabilities for engineering design reviews and compliance documentation.'
+        heading: 'Browser-Native Vector Rendering & Export',
+        detail: 'Renders interactive Mermaid diagrams directly in the browser via Mermaid.js runtime with instant SVG and PNG vector download capabilities.'
       }
     ],
     mathSpecs: [
-      { label: 'Target Graph', formula: 'G_target = (V_observed ∪ V_missing) \\ V_unapproved, (E_observed ∪ E_missing) \\ E_unapproved' },
-      { label: 'Mermaid Generation', formula: 'Target_Code = CompileMermaid(G_target, Styling_Rules)' }
+      { label: 'Target Graph', formula: 'G_target = (V_observed ∪ V_missing) \\ V_forbidden, (E_observed ∪ E_missing) \\ E_forbidden' },
+      { label: 'Label Sanitization', formula: 'Text = Escape_Entities(Label, {&, ", <, >, |})' }
     ],
     inputs: 'Discrepancy Report, Visual Architecture Graph, Requirements AST',
     outputs: 'Synthesized Architecture Graph, Executable Mermaid Diagram Code, SVG/PNG renders'

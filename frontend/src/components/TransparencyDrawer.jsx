@@ -20,22 +20,22 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     stage_number: 1,
     stage_name: 'Image Preprocessing & Contrast Normalization',
     why: 'Normalizes canvas polarity and lighting so dark mode and light mode diagrams are analyzed identically without stroke loss.',
-    why_plain_english: 'Before looking for boxes or text, the system checks whether the image has a dark or light background. It inverts dark themes to a standard white canvas and removes background texture or noise so diagram lines stand out clearly.',
-    why_technical: 'Computes luminance distribution across W×H canvas. If background luminance < 128, a bitwise NOT operation standardizes polarity. Otsu global binarization separates foreground strokes from the canvas background, followed by bilateral filtering (sigma_s=3, sigma_r=0.1) to preserve hard stroke edges.',
-    how_analyzed_diagram: 'Luminance histogram analysis measures canvas background polarity. Otsu adaptive binarization isolates dark stroke contours from light background pixels without degrading thin connector lines.',
+    why_plain_english: 'Before looking for boxes or text, the system checks whether the image has a dark or light background by sampling the perimeter border. It inverts dark themes to a standard light canvas, enhances contrast with CLAHE, and removes solid background fills so thin connector lines stand out clearly.',
+    why_technical: 'Samples pixel intensities along 2% perimeter borders. If border median luminance < 110, bitwise inverts canvas (255 - I) to standardize on dark-ink-on-light geometry. Applies CLAHE (clipLimit = 2.0, tileGridSize = 8×8) for gradient-robust contrast, and subtracts 17×17 morphological opening solid blobs to isolate 1–5px connector shafts.',
+    how_analyzed_diagram: 'Border pixel median sampling detects dark vs. light canvas. CLAHE enhances local contrast, and morphological opening isolates thin connector shafts from solid background fills.',
     how_analyzed_requirements: 'Requirements text is held in raw memory buffer; preprocessing operates strictly on diagram pixels without prior requirement bias.',
     step_by_step_breakdown: [
-      'Step 1: Compute channel mean and luminance distribution across W×H canvas.',
-      'Step 2: Evaluate background polarity threshold; trigger bitwise NOT inversion if dark theme.',
-      'Step 3: Execute Otsu thresholding to separate foreground stroke contours from background.',
-      'Step 4: Apply bilateral spatial filter to preserve hard component edges while attenuating background noise.'
+      'Step 1: Compute median luminance across 2% border margins of W×H canvas.',
+      'Step 2: Trigger bitwise inversion (255 - I) if border median < 110 to standardize light canvas.',
+      'Step 3: Apply CLAHE (clipLimit = 2.0, tileGridSize = 8×8) for gradient-robust contrast.',
+      'Step 4: Subtract 17×17 morphological opening solid blobs to isolate 1–5px connector shafts.'
     ],
     status: 'Recorded',
-    key_findings: 'Polarity standardized to light background; stroke contours isolated with high SNR.',
+    key_findings: 'Polarity standardized to light background; connector stroke contours isolated with high SNR.',
     output_summary: {
-      polarity: 'standardized_light',
-      binarization_method: 'otsu_adaptive',
-      stroke_preservation: 'bilateral_filtered',
+      border_median_threshold: 110,
+      contrast_enhancement: 'clahe_clip_2.0_tile_8x8',
+      solid_blob_kernel: 'rect_17x17',
       status: 'completed'
     }
   },
@@ -44,46 +44,46 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     stage_number: 2,
     stage_name: 'Classical Geometric Component Detection',
     why: 'Finds component boxes, databases, and subsystem boundary groups using deterministic computer vision algorithms.',
-    why_plain_english: 'The system traces all visible closed shapes (boxes, cylinders, circles) across the diagram image and measures their coordinates, dimensions, and nesting relationships.',
-    why_technical: 'Suzuki-Abe border following algorithm (cv2.findContours) builds a 2-level contour tree. Douglas-Peucker polygon approximation (epsilon=0.02*perimeter) verifies rectangular and cylindrical hulls. Geometric heuristics filter out small noise artifacts (area >= 900px) and compute physical bboxes [x, y, w, h] and centroids.',
-    how_analyzed_diagram: 'Hierarchical border following extracts contour geometry. Bounding boxes are classified into component nodes or subsystem group containers based on area and containment ratios.',
+    why_plain_english: 'The system detects closed component shapes across edge, threshold, and color cues. It verifies real ink on perimeters (filtering out gridlines) and separates functional services from enclosing container groups (like VPCs and subnets).',
+    why_technical: 'Multi-cue contour detection runs across 5 visual paths: Canny edges (30, 150), threshold binary (245), HSV saturation, soft Canny (10, 40), and adaptive Gaussian. Verifies minimum area ≥ 1200px², min dimension ≥ 24px, and perimeter ink support ≥ 85%. Containers are segregated if area > 15% of canvas or enclosing child components.',
+    how_analyzed_diagram: 'Extracts closed contours across edge, threshold, saturation, and adaptive passes. Filters by ink support and classifies into components or container groups.',
     how_analyzed_requirements: 'Requirements do not determine what shapes exist in the image; shape detection is completely independent of the text document.',
     step_by_step_breakdown: [
-      'Step 1: Suzuki border following hierarchy traversal to segment closed contours.',
-      'Step 2: Douglas-Peucker polygonal approximation to verify rectangular and cylindrical hulls.',
-      'Step 3: Compute centroid coordinates (cx, cy) and bounding rectangle [x, y, w, h].',
-      'Step 4: Filter containment hierarchy to distinguish nested subsystem clusters from top-level nodes.'
+      'Step 1: Extract multi-cue contours via Canny, threshold, HSV saturation, and adaptive passes.',
+      'Step 2: Verify candidate bounding boxes meet min area (1200px²) and ink support (≥ 85%).',
+      'Step 3: Classify shape geometry (rectangle, circle, cylinder) using perimeter circularity and approxPolyDP.',
+      'Step 4: Segregate container groups if area > 15% of canvas or enclosing child components.'
     ],
     status: 'Recorded',
     key_findings: 'All visible component boundaries and boundary groups mapped to spatial coordinates.',
     output_summary: {
-      contour_algorithm: 'suzuki_abe_tree',
-      polygon_simplification: 'douglas_peucker',
-      min_area_threshold_px: 900,
+      min_node_area_px: 1200,
+      min_ink_support: 0.85,
+      container_area_threshold: 0.15,
       status: 'completed'
     }
   },
   {
     stage_id: 'STAGE_3_OCR',
     stage_number: 3,
-    stage_name: 'Dual-Pass Tesseract OCR & Spatial Binding',
+    stage_name: 'Multi-Pass Tesseract OCR & Spatial Binding',
     why: 'Reads service labels and associates text with nearby component boxes without hallucinating names.',
-    why_plain_english: 'The system reads the text inside every box and on every arrow using Optical Character Recognition (OCR). It binds each recognized name to its corresponding shape so the diagram becomes a readable graph.',
-    why_technical: 'A morphological border mask suppresses box perimeter strokes to prevent border segments entering OCR. Pass 1 runs Tesseract PSM 11 (Sparse text) across open canvas areas for floating connector labels. Pass 2 runs PSM 6 (Uniform block text) inside each component crop. Spatial containment binds tokens to component IDs.',
-    how_analyzed_diagram: 'Per-component image crops and canvas text masks are processed with dual PSM OCR passes. Word tokens and line blocks receive confidence scores and spatial coordinates.',
+    why_plain_english: 'The system reads text using dual global OCR passes and targeted component ROI crops. It trims outer box borders and cylinder caps to avoid reading shape strokes as letters, normalizes architectural terms, and binds labels via geometric proximity.',
+    why_technical: 'Global OCR combines Tesseract PSM 11 (sparse text) and PSM 3 (automatic segmentation) with token IoU deduplication (> 0.45). Component ROIs apply a 2–4px border margin inset, cylinder cap insets (top 18%, bottom 8%), and bicubic upscaling (up to 3×) evaluated across PSM 7, 6, and 11. Binds edge labels to connectors via minimum point-to-polyline Euclidean distance.',
+    how_analyzed_diagram: 'Global multi-pass OCR harvests canvas words. Targeted ROI OCR reads component labels with border and cylinder insets, followed by architectural lexicon normalization.',
     how_analyzed_requirements: 'Requirements text is parsed independently; OCR text labels are never invented or corrected by requirements to maintain audit objectivity.',
     step_by_step_breakdown: [
-      'Step 1: Mask geometric borders with morphological kernel to prevent border strokes entering OCR.',
-      'Step 2: Pass 1 (PSM 11 Sparse) reads floating channel, bus, and protocol connector labels.',
-      'Step 3: Pass 2 (PSM 6 Uniform) reads multi-line service titles within each component boundary.',
-      'Step 4: Spatial intersection binding: tokens within [x, y, w, h] bound to node ID with confidence.'
+      'Step 1: Global dual-pass OCR (PSM 11 + PSM 3) harvests words and confidence scores.',
+      'Step 2: Deduplicate overlapping tokens from multiple passes using IoU threshold 0.45.',
+      'Step 3: Targeted ROI OCR on components with 2–4px border inset and cylinder cap masking.',
+      'Step 4: Normalize architectural terms (PostgreSQL, Kafka, Redis) and bind labels via polyline distance.'
     ],
     status: 'Recorded',
     key_findings: 'Component labels and floating protocol annotations mapped to detected shape nodes.',
     output_summary: {
-      ocr_engine: 'tesseract_dual_pass',
-      psm_modes: ['PSM_11_sparse', 'PSM_6_uniform_block'],
-      label_binding: 'spatial_containment_intersection',
+      global_ocr_psm: ['PSM_11_sparse', 'PSM_3_auto'],
+      roi_ocr_psm: ['PSM_7_line', 'PSM_6_block', 'PSM_11_sparse'],
+      token_iou_dedup_threshold: 0.45,
       status: 'completed'
     }
   },
@@ -92,22 +92,22 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     stage_number: 4,
     stage_name: 'Topological Connector Tracing & Arrowhead Detection',
     why: 'Traces data flow lines and discovers arrow directions for both horizontal and vertical downward arrows.',
-    why_plain_english: 'The system traces all arrows connecting boxes. It connects dashed and broken lines, tracks elbow turns, and samples arrowheads at line endpoints (including horizontal arrows and vertical downward arrows | v).',
-    why_technical: 'Component regions are dilated by 8px and masked. Zhang-Suen skeleton thinning reduces connector strokes to 1-pixel centerlines. Collinear stroke gap bridging (BFS traversal up to 45px) merges dashed segments. Bilateral flare arrowhead detection probes normal sweep rays behind terminal endpoints to classify arrowheads in all orientations (->, <-, | v).',
-    how_analyzed_diagram: 'Skeleton pixel pathways are vectorized into waypoints. Directionality is established by bilateral arrowhead flare sampling at terminal contact points.',
+    why_plain_english: 'The system traces all arrows connecting boxes. It connects dashed and broken lines using stroke tangent vectors, and verifies arrowheads at endpoints using bilateral flare sampling for both horizontal arrows and vertical downward drop arrows (| v).',
+    why_technical: 'Component boxes (+2px pad) and text blocks are masked. Vectorized Zhang-Suen 2-phase skeleton thinning preserves 8-connectivity. bridge_collinear_gaps() runs 4 BFS passes to compute tangent vectors, connecting dashed lines (≤ 45px) or text occlusions (coverage ≥ 60%) where cos(θ) > 0.85. detect_arrowhead_at_endpoint() evaluates normal sweep rays up to 36px, verifying shaft baseline ≤ 4.5px and bilateral flare width for horizontal and vertical downward arrows.',
+    how_analyzed_diagram: 'Zhang-Suen thinning reduces strokes to 1px skeletons. Collinear gaps are bridged via BFS stroke tangents, and bilateral flare sweep lines detect arrowheads in any orientation.',
     how_analyzed_requirements: 'Connector direction is extracted strictly from visual pixels; uncertain or missing arrows are flagged as visual evidence uncertainties.',
     step_by_step_breakdown: [
-      'Step 1: Mask out detected component regions to isolate free connector stroke pixels.',
-      'Step 2: Apply Zhang-Suen thinning to generate single-pixel skeleton topological paths.',
-      'Step 3: Bridge collinear dashed and broken line gaps using 8-neighborhood BFS path traversal.',
-      'Step 4: Bilateral flare arrowhead probe samples perpendicular line width behind terminals to resolve arrowheads in all orientations (->, | v).'
+      'Step 1: Mask component bounding boxes (+2px pad) and OCR text to isolate free connector ink.',
+      'Step 2: Apply 2-phase vectorized Zhang-Suen thinning to generate 1-pixel skeleton paths.',
+      'Step 3: Bridge collinear dashed lines (≤ 45px) and text occlusions using BFS stroke tangent vectors.',
+      'Step 4: Probe perpendicular sweep lines (0..36px) to detect baseline shaft and bilateral flare arrowheads (→, | v).'
     ],
     status: 'Recorded',
     key_findings: 'Solid, dashed, and right-angle connectors traced with endpoint arrowhead orientation.',
     output_summary: {
-      thinning_algorithm: 'zhang_suen_skeleton',
-      gap_bridging: 'bfs_collinear_traversal_45px',
-      arrowhead_probing: 'bilateral_flare_width_sweep',
+      thinning_algorithm: 'zhang_suen_2phase_vectorized',
+      collinear_gap_max_px: 45,
+      arrowhead_probe_max_dist_px: 36,
       status: 'completed'
     }
   },
@@ -116,22 +116,22 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     stage_number: 5,
     stage_name: 'Requirements Structural AST Compilation',
     why: 'Converts unstructured requirements documents into an unambiguous, typed Architectural Specification AST.',
-    why_plain_english: 'The system reads the requirements document (Word, PDF, Markdown, or text) and extracts all mandatory components, allowed communication flows, security boundaries, and protocol requirements into a structured blueprint.',
-    why_technical: 'Tokenizes requirement clauses and applies schema-constrained AST extraction adhering to typed Pydantic models: ComponentNode (id, label, tier, type, is_storage), DirectedFlow (source, target, protocol, sync/async), and SecurityBoundary. Rejects ungrounded LLM completions via JSON schema validation.',
+    why_plain_english: 'The system reads the requirements document (PDF via pypdf, Word via python-docx, Markdown, or text) and extracts all mandatory components, allowed communication flows, security boundaries, and protocol rules with verbatim source quotations.',
+    why_technical: 'Parses documents into strictly typed Pydantic models: Entity, Flow, and Zone. Enforces the zero-hallucination source quote containment invariant: every item source_quote must strictly exist as a verbatim substring in the raw source text (quote in source_normal), otherwise the extraction is rejected.',
     how_analyzed_diagram: 'Visual evidence graph is frozen and preserved as an immutable ground-truth benchmark.',
-    how_analyzed_requirements: 'Text clauses are parsed into typed AST entities and relations, identifying required services, communication directions, and protocols.',
+    how_analyzed_requirements: 'Ingests documents into structural AST entities, validating that all components, flows, and zones contain verifiable verbatim source quotes from the original specification.',
     step_by_step_breakdown: [
-      'Step 1: Tokenize natural language and markdown specifications into structural clauses.',
-      'Step 2: Extract typed components: Ingress, Microservice Compute, Data Store, Message Broker.',
-      'Step 3: Parse directional data flows with protocols (HTTPS, gRPC, Kafka, AMQP) and cardinality.',
-      'Step 4: Validate AST schema compliance and generate formal requirements Mermaid specification.'
+      'Step 1: Extract clean text from uploaded document (pypdf, python-docx, YAML, Markdown, TXT).',
+      'Step 2: Compile requirements AST conforming to typed Pydantic models (Entity, Flow, Zone).',
+      'Step 3: Validate verbatim substring containment invariant (quote in source_normal).',
+      'Step 4: Verify referential integrity across flow endpoints and zone memberships.'
     ],
     status: 'Recorded',
     key_findings: 'Natural language requirements converted into strongly-typed AST specification.',
     output_summary: {
-      parser: 'structured_ast_pydantic',
-      schema_validation: 'strict_json_type_enforcement',
-      flow_cardinality: 'directional_protocols_extracted',
+      document_parser: 'pypdf_docx_yaml_json_markdown',
+      schema_engine: 'pydantic_v2',
+      grounding_invariant: 'verbatim_substring_containment',
       status: 'completed'
     }
   },
@@ -145,7 +145,7 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     how_analyzed_diagram: 'Visual nodes and edges provide the actual observed architecture facts.',
     how_analyzed_requirements: 'Requirements AST entities and flows provide the expected architecture specification.',
     step_by_step_breakdown: [
-      'Step 1: Perform exact and phonetic/fuzzy label alignment between visual nodes and requirement entities.',
+      'Step 1: Perform exact and compact alphanumeric label matching between visual nodes and requirement entities.',
       'Step 2: Identify missing components (v in V_R \\ V_V) and undocumented shadow IT (v in V_V \\ V_R).',
       'Step 3: Verify directed adjacency matrix: identify missing connectors and reversed data flows.',
       'Step 4: Calculate verified-check ratio score: Score (%) = round(100 * N_verified / N_checked, 1) and generate executive verdict.'
@@ -153,9 +153,9 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     status: 'Recorded',
     key_findings: 'Every discrepancy pinpointed with evidence citations and severity classification.',
     output_summary: {
-      diff_engine: 'deterministic_dual_graph_alignment',
+      entity_matching: 'compact_alphanumeric_alias_intersection',
       scoring_model: 'verified_check_ratio_percentage',
-      discrepancy_categories: ['missing_node', 'missing_edge', 'reversed_flow', 'protocol_mismatch'],
+      discrepancy_categories: ['missing_node', 'missing_edge', 'reversed_flow', 'forbidden_flow', 'zone_unconfirmed'],
       status: 'completed'
     }
   },
@@ -164,21 +164,22 @@ const DEFAULT_EDUCATIONAL_STAGES = [
     stage_number: 7,
     stage_name: 'Remediated Target Architecture Synthesis',
     why: 'Synthesizes an executable Mermaid architecture diagram showing the compliant, remediated design.',
-    why_plain_english: 'The system generates a corrected architecture diagram in Mermaid code. It preserves what was correctly drawn, adds missing components, fixes reversed arrows, and highlights changes with distinct colors.',
-    why_technical: 'Merges verified observed components with missing required elements into a compliant Target Graph G_T. Applies topological sorting to minimize edge crossings. Compiles executable Mermaid flowchart code with standard subgraph groupings and color-coded status styling. Renders high-res SVG and PNG blueprints.',
+    why_plain_english: 'The system generates a corrected architecture diagram in Mermaid flowchart TD code. It preserves what was correctly drawn (status: Unchanged), adds missing components (status: Added_From_Requirements), fixes reversed arrows, and escapes special characters to prevent syntax errors.',
+    why_technical: 'Merges verified observed components (status: Unchanged) with missing requirements entities (status: Added_From_Requirements). Corrects reversed flows and removes forbidden bypass paths. Compiles sanitized Mermaid flowchart TD with subgraph groupings and entity escaping (&, ", <, >, |) to prevent syntax injection.',
     how_analyzed_diagram: 'Retains valid visual component positions and labels to maintain developer recognition.',
     how_analyzed_requirements: 'Injects mandatory missing services and correct directional data flows from the requirements AST.',
     step_by_step_breakdown: [
-      'Step 1: Construct unified Target Graph incorporating all mandatory compliant architecture components.',
-      'Step 2: Route required connectors using topological sorting to minimize layout edge crossings.',
-      'Step 3: Compile syntax-checked Mermaid flowchart code with clear subgraphs and boundary groupings.',
-      'Step 4: Export interactive Mermaid visualization, SVG vector paths, and PNG reference blueprints.'
+      'Step 1: Retain verified visual components with status Unchanged and provenance visual_observation.',
+      'Step 2: Inject missing required services with status Added_From_Requirements.',
+      'Step 3: Correct flow directions, add required protocol connectors, and remove forbidden bypasses.',
+      'Step 4: Compile sanitized Mermaid flowchart TD code with subgraphs and escape entities (&, ", <, >, |).'
     ],
     status: 'Recorded',
-    key_findings: 'Executable Mermaid code synthesized with interactive rendering and vector export.',
+    key_findings: 'Executable Mermaid flowchart TD code synthesized with interactive rendering and vector export.',
     output_summary: {
-      synthesis_mode: 'topological_target_merge',
-      output_format: 'mermaid_flowchart_v11',
+      target_flowchart_mode: 'flowchart_td',
+      provenance_tracking: 'visual_observation_vs_requirement',
+      syntax_sanitization: 'mermaid_text_entity_escaping',
       vector_export: 'svg_png_high_res_render',
       status: 'completed'
     }
