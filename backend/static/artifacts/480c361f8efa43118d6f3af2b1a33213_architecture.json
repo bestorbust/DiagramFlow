@@ -1,0 +1,309 @@
+{
+  "diagram_metadata": {
+    "source_file": "4ccc64441415495aa069ddfa52069742.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:27:58.872349+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 4,
+    "total_relationships": 3,
+    "total_groups": 0,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Claim Store"
+    ],
+    "service_components": [
+      "Intake API"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Claims Portal",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ],
+      "confidence": 0.771
+    },
+    {
+      "id": "node_1",
+      "label": "Intake API",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        315,
+        119
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 315,
+        "height": 119
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ],
+      "confidence": 0.777
+    },
+    {
+      "id": "node_2",
+      "label": "Claim Store",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ],
+      "confidence": 0.765
+    },
+    {
+      "id": "node_3",
+      "label": "Ad Partner",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        721,
+        315,
+        119
+      ],
+      "logical_bbox": [
+        583,
+        721,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 721,
+        "width": 315,
+        "height": 119
+      },
+      "center": [
+        740,
+        780
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.776
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_3",
+      "source_label": "Ad Partner",
+      "target": "node_1",
+      "target_label": "Intake API",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          740,
+          712
+        ],
+        [
+          740,
+          528
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          740,
+          712
+        ],
+        [
+          740,
+          528
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_0",
+      "source_label": "Claims Portal",
+      "target": "node_1",
+      "target_label": "Intake API",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_1",
+      "source_label": "Intake API",
+      "target": "node_2",
+      "target_label": "Claim Store",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          906,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          906,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

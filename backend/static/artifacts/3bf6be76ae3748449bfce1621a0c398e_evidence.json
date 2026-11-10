@@ -1,0 +1,475 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "94e49d67cb1344c7b5e9f8c88bbab8d0.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T12:34:59.959622+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          1583,
+          511,
+          315,
+          119
+        ],
+        "center": [
+          1740,
+          570
+        ],
+        "area": 37485,
+        "classified_shape": "rectangle",
+        "confidence": 0.778,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          843,
+          781,
+          314,
+          118
+        ],
+        "center": [
+          1000,
+          840
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.778,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          103,
+          411,
+          314,
+          118
+        ],
+        "center": [
+          260,
+          470
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.772,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          843,
+          101,
+          314,
+          118
+        ],
+        "center": [
+          1000,
+          160
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.765,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Operator",
+        "bbox": [
+          165,
+          455,
+          126,
+          29
+        ],
+        "center": [
+          228,
+          469
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "App",
+        "bbox": [
+          300,
+          455,
+          56,
+          29
+        ],
+        "center": [
+          328,
+          469
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Status",
+        "bbox": [
+          1667,
+          558,
+          88,
+          23
+        ],
+        "center": [
+          1711,
+          569
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Telemetry",
+        "bbox": [
+          886,
+          825,
+          143,
+          29
+        ],
+        "center": [
+          957,
+          839
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Store",
+        "bbox": [
+          1040,
+          825,
+          74,
+          23
+        ],
+        "center": [
+          1077,
+          836
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Sensor",
+        "bbox": [
+          917,
+          148,
+          100,
+          23
+        ],
+        "center": [
+          967,
+          159
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Hub",
+        "bbox": [
+          1029,
+          148,
+          55,
+          23
+        ],
+        "center": [
+          1056,
+          159
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "API",
+        "bbox": [
+          1764,
+          558,
+          48,
+          23
+        ],
+        "center": [
+          1788,
+          569
+        ],
+        "confidence": 0.94,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            425,
+            470
+          ],
+          [
+            1561,
+            570
+          ]
+        ],
+        "waypoints": [
+          [
+            425,
+            470
+          ],
+          [
+            758,
+            470
+          ],
+          [
+            761,
+            570
+          ],
+          [
+            1561,
+            570
+          ]
+        ],
+        "pixel_length": 1236,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_3",
+        "target": "node_0",
+        "endpoints": [
+          [
+            1000,
+            772
+          ],
+          [
+            1000,
+            227
+          ]
+        ],
+        "waypoints": [
+          [
+            1000,
+            772
+          ],
+          [
+            1000,
+            227
+          ]
+        ],
+        "pixel_length": 547,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          843,
+          781,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.778,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          103,
+          411,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.772,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          843,
+          101,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.765,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1583,
+          511,
+          315,
+          119
+        ],
+        "shape": "rectangle",
+        "confidence": 0.778,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_1",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        843,
+        101,
+        314,
+        118
+      ],
+      "label": "Sensor Hub",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        843,
+        101,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Sensor Hub",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        103,
+        411,
+        314,
+        118
+      ],
+      "label": "Operator App",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        103,
+        411,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Operator App",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1583,
+        511,
+        315,
+        119
+      ],
+      "label": "Status API",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1583,
+        511,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Status API",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_7"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        843,
+        781,
+        314,
+        118
+      ],
+      "label": "Telemetry Store",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        843,
+        781,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Telemetry Store",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

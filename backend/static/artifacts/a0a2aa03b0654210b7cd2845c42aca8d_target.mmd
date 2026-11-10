@@ -1,0 +1,10 @@
+flowchart TD
+    subgraph g0["Group_group_0"]
+        n0["Sensor Hub"]
+        n1["Telemetry API"]
+        n2["Metrics Database"]
+    end
+    n3["Monitor Service"]
+    n0 --> n1
+    n1 --> n2
+    n3 --> n1

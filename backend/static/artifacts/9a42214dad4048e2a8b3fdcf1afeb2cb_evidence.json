@@ -1,0 +1,452 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "a844adb078da43149ea0de23c7f67da9.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T12:31:47.315198+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          232,
+          462,
+          1527,
+          203
+        ],
+        "center": [
+          995,
+          563
+        ],
+        "area": 309981,
+        "classified_shape": "rectangle",
+        "confidence": 0.757,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          315,
+          119
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37485,
+        "classified_shape": "rectangle",
+        "confidence": 0.776,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.786,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.782,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Saver",
+        "bbox": [
+          157,
+          445,
+          82,
+          23
+        ],
+        "center": [
+          198,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "App",
+        "bbox": [
+          248,
+          445,
+          56,
+          29
+        ],
+        "center": [
+          276,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Account",
+        "bbox": [
+          614,
+          445,
+          116,
+          23
+        ],
+        "center": [
+          672,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Gateway",
+        "bbox": [
+          741,
+          445,
+          125,
+          29
+        ],
+        "center": [
+          803,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Account",
+        "bbox": [
+          1134,
+          448,
+          116,
+          23
+        ],
+        "center": [
+          1192,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Service",
+        "bbox": [
+          1261,
+          448,
+          104,
+          23
+        ],
+        "center": [
+          1313,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Account",
+        "bbox": [
+          1628,
+          448,
+          116,
+          23
+        ],
+        "center": [
+          1686,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Database",
+        "bbox": [
+          1755,
+          448,
+          135,
+          23
+        ],
+        "center": [
+          1822,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.786,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.782,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          315,
+          119
+        ],
+        "shape": "rectangle",
+        "confidence": 0.776,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          232,
+          462,
+          1527,
+          203
+        ],
+        "shape": "rectangle",
+        "confidence": 0.757,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "node_4",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_4",
+      "type": "low_confidence_node",
+      "detail": "Node 'Component_node_4' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        315,
+        119
+      ],
+      "label": "Saver App",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Saver App",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label": "Account Gateway",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Account Gateway",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Account Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Account Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Account Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Account Database",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ]
+    },
+    {
+      "id": "node_4",
+      "bbox": [
+        232,
+        462,
+        1527,
+        203
+      ],
+      "label": "Component_node_4",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        232,
+        462,
+        1527,
+        203
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "",
+        "confidence": 0.0
+      },
+      "matched_text_ids": []
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

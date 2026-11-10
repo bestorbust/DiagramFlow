@@ -1,0 +1,513 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "57aa4dc84205417d9e3464dee3b5b965.webp",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T12:28:41.256427+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.783,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.782,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.774,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.772,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Billing",
+        "bbox": [
+          144,
+          445,
+          81,
+          29
+        ],
+        "center": [
+          184,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Client",
+        "bbox": [
+          238,
+          445,
+          80,
+          23
+        ],
+        "center": [
+          278,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Billing",
+        "bbox": [
+          632,
+          445,
+          81,
+          29
+        ],
+        "center": [
+          672,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Gateway",
+        "bbox": [
+          726,
+          445,
+          125,
+          29
+        ],
+        "center": [
+          788,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Invoice",
+        "bbox": [
+          1144,
+          448,
+          98,
+          23
+        ],
+        "center": [
+          1193,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Service",
+        "bbox": [
+          1254,
+          448,
+          104,
+          23
+        ],
+        "center": [
+          1306,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Invoice",
+        "bbox": [
+          1639,
+          448,
+          98,
+          23
+        ],
+        "center": [
+          1688,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Database",
+        "bbox": [
+          1749,
+          448,
+          135,
+          23
+        ],
+        "center": [
+          1816,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "HTTP/REST",
+        "bbox": [
+          928,
+          426,
+          137,
+          18
+        ],
+        "center": [
+          996,
+          435
+        ],
+        "confidence": 0.9,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_2",
+        "target": "node_3",
+        "endpoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            905,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            905,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "HTTP/REST",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.783,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.782,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.774,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.772,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label": "Billing Client",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Billing Client",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label": "Billing Gateway",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Billing Gateway",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Invoice Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Invoice Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Invoice Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Invoice Database",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

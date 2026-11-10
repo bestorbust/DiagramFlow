@@ -1,0 +1,518 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "a283b6ad09b24168a7bdfa35f6e03b5c.webp",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T12:35:13.773694+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          741,
+          462,
+          509,
+          202
+        ],
+        "center": [
+          995,
+          563
+        ],
+        "area": 102818,
+        "classified_shape": "rectangle",
+        "confidence": 0.763,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.789,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.779,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.779,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Event",
+        "bbox": [
+          119,
+          448,
+          80,
+          23
+        ],
+        "center": [
+          159,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Publisher",
+        "bbox": [
+          210,
+          448,
+          132,
+          23
+        ],
+        "center": [
+          276,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Delivery",
+        "bbox": [
+          631,
+          445,
+          114,
+          29
+        ],
+        "center": [
+          688,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Queue",
+        "bbox": [
+          755,
+          445,
+          95,
+          24
+        ],
+        "center": [
+          802,
+          457
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Delivery",
+        "bbox": [
+          1137,
+          445,
+          114,
+          29
+        ],
+        "center": [
+          1194,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Worker",
+        "bbox": [
+          1260,
+          445,
+          104,
+          23
+        ],
+        "center": [
+          1312,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Endpoint",
+        "bbox": [
+          1771,
+          445,
+          125,
+          29
+        ],
+        "center": [
+          1833,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Webhook",
+        "bbox": [
+          1624,
+          445,
+          136,
+          23
+        ],
+        "center": [
+          1692,
+          456
+        ],
+        "confidence": 0.91,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_2",
+        "target": "node_3",
+        "endpoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.789,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.779,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.779,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          741,
+          462,
+          509,
+          202
+        ],
+        "shape": "rectangle",
+        "confidence": 0.763,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "node_4",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label": "Event Publisher",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Event Publisher",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label": "Delivery Queue",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Delivery Queue",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Delivery Worker",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Delivery Worker",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Webhook Endpoint",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Webhook Endpoint",
+        "confidence": 0.935
+      },
+      "matched_text_ids": [
+        "word_7",
+        "word_6"
+      ]
+    },
+    {
+      "id": "node_4",
+      "bbox": [
+        741,
+        462,
+        509,
+        202
+      ],
+      "label": "retry",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        741,
+        462,
+        509,
+        202
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "retry",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "d5e276504e014e4e8455124276fd6df3.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T08:21:03.126870+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.786,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.782,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.78,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.771,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Employee",
+        "bbox": [
+          114,
+          445,
+          140,
+          29
+        ],
+        "center": [
+          184,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Portal",
+        "bbox": [
+          266,
+          445,
+          80,
+          23
+        ],
+        "center": [
+          306,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Expense",
+        "bbox": [
+          612,
+          445,
+          122,
+          29
+        ],
+        "center": [
+          673,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Gateway",
+        "bbox": [
+          746,
+          445,
+          125,
+          29
+        ],
+        "center": [
+          808,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Claim",
+        "bbox": [
+          1153,
+          448,
+          78,
+          23
+        ],
+        "center": [
+          1192,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Service",
+        "bbox": [
+          1244,
+          448,
+          104,
+          23
+        ],
+        "center": [
+          1296,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Claim",
+        "bbox": [
+          1648,
+          448,
+          78,
+          23
+        ],
+        "center": [
+          1687,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Database",
+        "bbox": [
+          1739,
+          448,
+          135,
+          23
+        ],
+        "center": [
+          1806,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_2",
+        "target": "node_3",
+        "endpoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            905,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            905,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.786,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.782,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.78,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.771,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label": "Employee Portal",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Employee Portal",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label": "Expense Gateway",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Expense Gateway",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Claim Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Claim Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Claim Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Claim Database",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

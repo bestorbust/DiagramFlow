@@ -1,0 +1,14 @@
+flowchart TD
+    subgraph g0["Presentation tier"]
+        n1["Web UI"]
+    end
+    subgraph g1["Application tier"]
+        n2["Business Logic"]
+    end
+    subgraph g2["Data tier"]
+        n3["Data Store"]
+    end
+    n0["Browser"]
+    n0 -->|"HTTPS"| n1
+    n1 --> n2
+    n2 --> n3

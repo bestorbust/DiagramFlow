@@ -1,0 +1,1108 @@
+{
+  "diagram_metadata": {
+    "source_file": "4973a53782f84497b9e4e0da4d9bac7d.png",
+    "dimensions": {
+      "width": 1376,
+      "height": 768
+    },
+    "extracted_at": "2026-11-05T18:24:36.462242+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 12,
+    "total_relationships": 10,
+    "total_groups": 2,
+    "entrypoint_components": [
+      "loadgen",
+      "Frontend"
+    ],
+    "storage_components": [
+      "accounts db",
+      "ledger db"
+    ],
+    "service_components": []
+  },
+  "components": [
+    {
+      "id": "node_1",
+      "label": "loadgen",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        613,
+        63,
+        150,
+        83
+      ],
+      "logical_bbox": [
+        613,
+        63,
+        150,
+        83
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 613,
+        "y": 63,
+        "width": 150,
+        "height": 83
+      },
+      "center": [
+        688,
+        104
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.81,
+      "matched_text_ids": [],
+      "confidence": 0.749
+    },
+    {
+      "id": "node_7",
+      "label": "Frontend",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        613,
+        246,
+        150,
+        84
+      ],
+      "logical_bbox": [
+        613,
+        246,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 613,
+        "y": 246,
+        "width": 150,
+        "height": 84
+      },
+      "center": [
+        688,
+        288
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.75
+    },
+    {
+      "id": "node_11",
+      "label": "zg",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        815,
+        321,
+        148,
+        64
+      ],
+      "logical_bbox": [
+        815,
+        321,
+        148,
+        64
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 815,
+        "y": 321,
+        "width": 148,
+        "height": 64
+      },
+      "center": [
+        889,
+        353
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.37,
+      "matched_text_ids": [],
+      "confidence": 0.49
+    },
+    {
+      "id": "node_23",
+      "label": "C",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "icon",
+      "physical_bbox": [
+        1032,
+        396,
+        81,
+        52
+      ],
+      "logical_bbox": [
+        1032,
+        396,
+        81,
+        81
+      ],
+      "label_bbox": [
+        1095,
+        469,
+        8,
+        8
+      ],
+      "detection_method": "classical_symbol",
+      "bounding_box": {
+        "x": 1032,
+        "y": 396,
+        "width": 81,
+        "height": 52
+      },
+      "center": [
+        1072,
+        422
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.7,
+      "matched_text_ids": [
+        "word_2"
+      ],
+      "confidence": 0.747
+    },
+    {
+      "id": "node_24",
+      "label": "userservice",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        162,
+        440,
+        150,
+        84
+      ],
+      "logical_bbox": [
+        162,
+        440,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 162,
+        "y": 440,
+        "width": 150,
+        "height": 84
+      },
+      "center": [
+        237,
+        482
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.92,
+      "matched_text_ids": [],
+      "confidence": 0.757
+    },
+    {
+      "id": "node_25",
+      "label": "contacts",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        387,
+        440,
+        150,
+        84
+      ],
+      "logical_bbox": [
+        387,
+        440,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 387,
+        "y": 440,
+        "width": 150,
+        "height": 84
+      },
+      "center": [
+        462,
+        482
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.745
+    },
+    {
+      "id": "node_26",
+      "label": "ledger writer",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        613,
+        440,
+        150,
+        84
+      ],
+      "logical_bbox": [
+        613,
+        440,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 613,
+        "y": 440,
+        "width": 150,
+        "height": 84
+      },
+      "center": [
+        688,
+        482
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_1",
+        "word_0"
+      ],
+      "confidence": 0.768
+    },
+    {
+      "id": "node_27",
+      "label": "balance reader",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        839,
+        440,
+        150,
+        84
+      ],
+      "logical_bbox": [
+        839,
+        440,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 839,
+        "y": 440,
+        "width": 150,
+        "height": 84
+      },
+      "center": [
+        914,
+        482
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.771
+    },
+    {
+      "id": "node_29",
+      "label": "transaction history",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1063,
+        440,
+        151,
+        84
+      ],
+      "logical_bbox": [
+        1063,
+        440,
+        151,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1063,
+        "y": 440,
+        "width": 151,
+        "height": 84
+      },
+      "center": [
+        1138,
+        482
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.783
+    },
+    {
+      "id": "node_37",
+      "label": "Bow",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rounded_rectangle",
+      "physical_bbox": [
+        1032,
+        511,
+        106,
+        66
+      ],
+      "logical_bbox": [
+        1032,
+        511,
+        106,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1032,
+        "y": 511,
+        "width": 106,
+        "height": 66
+      },
+      "center": [
+        1085,
+        544
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.48,
+      "matched_text_ids": [],
+      "confidence": 0.49
+    },
+    {
+      "id": "node_44",
+      "label": "accounts db",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        266,
+        636,
+        152,
+        84
+      ],
+      "logical_bbox": [
+        266,
+        636,
+        152,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 266,
+        "y": 636,
+        "width": 152,
+        "height": 84
+      },
+      "center": [
+        342,
+        678
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_3"
+      ],
+      "confidence": 0.763
+    },
+    {
+      "id": "node_45",
+      "label": "ledger db",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        840,
+        636,
+        151,
+        84
+      ],
+      "logical_bbox": [
+        840,
+        636,
+        151,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 840,
+        "y": 636,
+        "width": 151,
+        "height": 84
+      },
+      "center": [
+        915,
+        678
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_4"
+      ],
+      "confidence": 0.759
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Group_group_0",
+      "bounding_box": {
+        "x": 561,
+        "y": 158,
+        "width": 126,
+        "height": 99
+      },
+      "enclosed_components": [],
+      "parent_group_id": null,
+      "child_groups": []
+    },
+    {
+      "id": "group_1",
+      "label": "Group_group_1",
+      "bounding_box": {
+        "x": 917,
+        "y": 581,
+        "width": 197,
+        "height": 60
+      },
+      "enclosed_components": [],
+      "parent_group_id": null,
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_26",
+      "source_label": "ledger writer",
+      "target": "group_1",
+      "target_label": "Group_group_1",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          687,
+          532
+        ],
+        [
+          688,
+          566
+        ],
+        [
+          691,
+          573
+        ],
+        [
+          698,
+          577
+        ],
+        [
+          852,
+          582
+        ],
+        [
+          884,
+          590
+        ],
+        [
+          900,
+          599
+        ],
+        [
+          912,
+          611
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "group",
+      "endpoints": [
+        [
+          687,
+          532
+        ],
+        [
+          912,
+          611
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_11",
+      "source_label": "zg",
+      "target": "node_24",
+      "target_label": "userservice",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          807,
+          371
+        ],
+        [
+          729,
+          357
+        ],
+        [
+          714,
+          351
+        ],
+        [
+          706,
+          351
+        ],
+        [
+          687,
+          340
+        ],
+        [
+          667,
+          352
+        ],
+        [
+          593,
+          368
+        ],
+        [
+          403,
+          386
+        ],
+        [
+          312,
+          398
+        ],
+        [
+          256,
+          413
+        ],
+        [
+          246,
+          420
+        ],
+        [
+          245,
+          425
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          807,
+          371
+        ],
+        [
+          245,
+          425
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_11",
+      "source_label": "zg",
+      "target": "node_27",
+      "target_label": "balance reader",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          837,
+          391
+        ],
+        [
+          850,
+          392
+        ],
+        [
+          882,
+          402
+        ],
+        [
+          900,
+          412
+        ],
+        [
+          906,
+          418
+        ],
+        [
+          907,
+          425
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          837,
+          391
+        ],
+        [
+          907,
+          425
+        ]
+      ]
+    },
+    {
+      "id": "conn_3",
+      "source": "node_11",
+      "source_label": "zg",
+      "target": "node_25",
+      "target_label": "contacts",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          807,
+          371
+        ],
+        [
+          729,
+          357
+        ],
+        [
+          714,
+          351
+        ],
+        [
+          706,
+          351
+        ],
+        [
+          687,
+          340
+        ],
+        [
+          665,
+          352
+        ],
+        [
+          664,
+          357
+        ],
+        [
+          631,
+          370
+        ],
+        [
+          501,
+          399
+        ],
+        [
+          475,
+          412
+        ],
+        [
+          467,
+          425
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          807,
+          371
+        ],
+        [
+          467,
+          425
+        ]
+      ]
+    },
+    {
+      "id": "conn_4",
+      "source": "node_11",
+      "source_label": "zg",
+      "target": "node_23",
+      "target_label": "C",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          970,
+          386
+        ],
+        [
+          1025,
+          392
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          970,
+          386
+        ],
+        [
+          1025,
+          392
+        ]
+      ]
+    },
+    {
+      "id": "conn_5",
+      "source": "node_23",
+      "source_label": "C",
+      "target": "node_29",
+      "target_label": "transaction history",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1119,
+          414
+        ],
+        [
+          1126,
+          417
+        ],
+        [
+          1130,
+          425
+        ],
+        [
+          1135,
+          426
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1119,
+          414
+        ],
+        [
+          1135,
+          426
+        ]
+      ]
+    },
+    {
+      "id": "conn_6",
+      "source": "group_1",
+      "source_label": "Group_group_1",
+      "target": "node_27",
+      "target_label": "balance reader",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          914,
+          580
+        ],
+        [
+          913,
+          532
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "group",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          914,
+          580
+        ],
+        [
+          913,
+          532
+        ]
+      ]
+    },
+    {
+      "id": "conn_7",
+      "source": "node_11",
+      "source_label": "zg",
+      "target": "node_26",
+      "target_label": "ledger writer",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          807,
+          371
+        ],
+        [
+          729,
+          357
+        ],
+        [
+          714,
+          351
+        ],
+        [
+          706,
+          351
+        ],
+        [
+          687,
+          340
+        ],
+        [
+          687,
+          424
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          807,
+          371
+        ],
+        [
+          687,
+          424
+        ]
+      ]
+    },
+    {
+      "id": "conn_8",
+      "source": "node_24",
+      "source_label": "userservice",
+      "target": "node_44",
+      "target_label": "accounts db",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          238,
+          531
+        ],
+        [
+          241,
+          543
+        ],
+        [
+          254,
+          557
+        ],
+        [
+          326,
+          594
+        ],
+        [
+          343,
+          617
+        ],
+        [
+          342,
+          627
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          238,
+          531
+        ],
+        [
+          342,
+          627
+        ]
+      ]
+    },
+    {
+      "id": "conn_9",
+      "source": "node_25",
+      "source_label": "contacts",
+      "target": "node_44",
+      "target_label": "accounts db",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          461,
+          530
+        ],
+        [
+          455,
+          546
+        ],
+        [
+          439,
+          560
+        ],
+        [
+          375,
+          586
+        ],
+        [
+          360,
+          595
+        ],
+        [
+          348,
+          608
+        ],
+        [
+          342,
+          620
+        ],
+        [
+          342,
+          627
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          461,
+          530
+        ],
+        [
+          342,
+          627
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_4",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_6",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_8",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_9",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "group_0",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_45",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_7",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_11",
+      "type": "low_confidence_node",
+      "detail": "Node 'zg' has detection confidence 0.49"
+    },
+    {
+      "item_id": "node_37",
+      "type": "low_confidence_node",
+      "detail": "Node 'Bow' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

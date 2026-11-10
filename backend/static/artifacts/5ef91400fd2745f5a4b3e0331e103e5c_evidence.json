@@ -1,0 +1,649 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "b4105b6cb3334378bed0fa4b50fa3c61.png",
+    "dimensions": {
+      "width": 1780,
+      "height": 504
+    },
+    "timestamp": "2026-11-05T18:32:47.420166+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          775,
+          61,
+          250,
+          102
+        ],
+        "center": [
+          900,
+          112
+        ],
+        "area": 25500,
+        "classified_shape": "rectangle",
+        "confidence": 0.762,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1481,
+          341,
+          238,
+          102
+        ],
+        "center": [
+          1600,
+          392
+        ],
+        "area": 24276,
+        "classified_shape": "rectangle",
+        "confidence": 0.748,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          441,
+          341,
+          238,
+          102
+        ],
+        "center": [
+          560,
+          392
+        ],
+        "area": 24276,
+        "classified_shape": "rectangle",
+        "confidence": 0.741,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          61,
+          61,
+          238,
+          102
+        ],
+        "center": [
+          180,
+          112
+        ],
+        "area": 24276,
+        "classified_shape": "rectangle",
+        "confidence": 0.74,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "user",
+        "bbox": [
+          474,
+          76,
+          54,
+          14
+        ],
+        "center": [
+          501,
+          83
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "input",
+        "bbox": [
+          535,
+          71,
+          65,
+          24
+        ],
+        "center": [
+          567,
+          83
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "User",
+        "bbox": [
+          147,
+          100,
+          66,
+          22
+        ],
+        "center": [
+          180,
+          111
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Controller",
+        "bbox": [
+          827,
+          99,
+          146,
+          23
+        ],
+        "center": [
+          900,
+          110
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "selects",
+        "bbox": [
+          654,
+          239,
+          86,
+          19
+        ],
+        "center": [
+          697,
+          248
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "view",
+        "bbox": [
+          750,
+          239,
+          56,
+          19
+        ],
+        "center": [
+          778,
+          248
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "renders",
+        "bbox": [
+          277,
+          239,
+          94,
+          19
+        ],
+        "center": [
+          324,
+          248
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "output",
+        "bbox": [
+          380,
+          240,
+          83,
+          23
+        ],
+        "center": [
+          421,
+          251
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "updates",
+        "bbox": [
+          1203,
+          240,
+          100,
+          24
+        ],
+        "center": [
+          1253,
+          252
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "notifies",
+        "bbox": [
+          1035,
+          351,
+          91,
+          19
+        ],
+        "center": [
+          1080,
+          360
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_10",
+        "text": "View",
+        "bbox": [
+          524,
+          379,
+          71,
+          23
+        ],
+        "center": [
+          559,
+          390
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_2",
+        "target": "node_0",
+        "endpoints": [
+          [
+            484,
+            335
+          ],
+          [
+            263,
+            174
+          ]
+        ],
+        "waypoints": [
+          [
+            484,
+            335
+          ],
+          [
+            345,
+            231
+          ],
+          [
+            263,
+            174
+          ]
+        ],
+        "pixel_length": 222,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "renders output",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            830,
+            169
+          ],
+          [
+            636,
+            327
+          ]
+        ],
+        "waypoints": [
+          [
+            830,
+            169
+          ],
+          [
+            754,
+            229
+          ],
+          [
+            705,
+            274
+          ],
+          [
+            636,
+            327
+          ]
+        ],
+        "pixel_length": 198,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "selects view",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_3",
+        "target": "node_2",
+        "endpoints": [
+          [
+            1473,
+            391
+          ],
+          [
+            697,
+            391
+          ]
+        ],
+        "waypoints": [
+          [
+            1473,
+            391
+          ],
+          [
+            697,
+            391
+          ]
+        ],
+        "pixel_length": 777,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "notifies",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_3",
+        "source": "node_1",
+        "target": "node_3",
+        "endpoints": [
+          [
+            1032,
+            165
+          ],
+          [
+            1462,
+            338
+          ]
+        ],
+        "waypoints": [
+          [
+            1032,
+            165
+          ],
+          [
+            1192,
+            229
+          ],
+          [
+            1201,
+            230
+          ],
+          [
+            1303,
+            275
+          ],
+          [
+            1317,
+            278
+          ],
+          [
+            1459,
+            334
+          ],
+          [
+            1462,
+            338
+          ]
+        ],
+        "pixel_length": 478,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "updates",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_4",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            307,
+            111
+          ],
+          [
+            756,
+            111
+          ]
+        ],
+        "waypoints": [
+          [
+            307,
+            111
+          ],
+          [
+            756,
+            111
+          ]
+        ],
+        "pixel_length": 450,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "user input",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1481,
+          341,
+          238,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.748,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          441,
+          341,
+          238,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.741,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          61,
+          61,
+          238,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.74,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          775,
+          61,
+          250,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.762,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 3,
+      "detail": "Reconnected 3 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        61,
+        61,
+        238,
+        102
+      ],
+      "label": "User",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        61,
+        61,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "User",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_2"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        775,
+        61,
+        250,
+        102
+      ],
+      "label": "Controller",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        775,
+        61,
+        250,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Controller",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        441,
+        341,
+        238,
+        102
+      ],
+      "label": "View",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        441,
+        341,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "View",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_10"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1481,
+        341,
+        238,
+        102
+      ],
+      "label": "Model",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1481,
+        341,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Model",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

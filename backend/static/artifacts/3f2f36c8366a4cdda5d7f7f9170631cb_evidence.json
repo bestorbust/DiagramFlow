@@ -1,0 +1,496 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "0c6cd2b082c548aba683fbe87df3be00.webp",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T12:33:05.571966+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.78,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.779,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.773,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Volunteer",
+        "bbox": [
+          128,
+          445,
+          138,
+          23
+        ],
+        "center": [
+          197,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "App",
+        "bbox": [
+          275,
+          445,
+          56,
+          29
+        ],
+        "center": [
+          303,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Shift",
+        "bbox": [
+          642,
+          445,
+          62,
+          23
+        ],
+        "center": [
+          673,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Gateway",
+        "bbox": [
+          715,
+          445,
+          125,
+          29
+        ],
+        "center": [
+          777,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Scheduling",
+        "bbox": [
+          1143,
+          445,
+          155,
+          29
+        ],
+        "center": [
+          1220,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Shift",
+        "bbox": [
+          1657,
+          448,
+          62,
+          23
+        ],
+        "center": [
+          1688,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Database",
+        "bbox": [
+          1730,
+          448,
+          135,
+          23
+        ],
+        "center": [
+          1797,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "API",
+        "bbox": [
+          1308,
+          445,
+          48,
+          23
+        ],
+        "center": [
+          1332,
+          456
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_2",
+        "target": "node_3",
+        "endpoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            905,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            905,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.78,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.779,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.773,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label": "Volunteer App",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Volunteer App",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label": "Shift Gateway",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Shift Gateway",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Scheduling API",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Scheduling API",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4",
+        "word_7"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Shift Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Shift Database",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

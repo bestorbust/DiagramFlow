@@ -1,0 +1,245 @@
+{
+  "diagram_metadata": {
+    "source_file": "e6960f1f7b674358b1b78ad4daac8b91.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T13:25:36.749290+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 3,
+    "total_relationships": 2,
+    "total_groups": 1,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Rental Database"
+    ],
+    "service_components": [
+      "Rental Service"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Hire Portal",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        315,
+        119
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 315,
+        "height": 119
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.776
+    },
+    {
+      "id": "node_1",
+      "label": "Rental Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ],
+      "confidence": 0.775
+    },
+    {
+      "id": "node_2",
+      "label": "Rental Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ],
+      "confidence": 0.784
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Group_group_0",
+      "bounding_box": {
+        "x": 70,
+        "y": 398,
+        "width": 1341,
+        "height": 125
+      },
+      "enclosed_components": [
+        "node_0",
+        "node_1",
+        "node_2"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_1",
+      "source_label": "Rental Service",
+      "target": "node_2",
+      "target_label": "Rental Database",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          905,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          905,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_0",
+      "source_label": "Hire Portal",
+      "target": "node_1",
+      "target_label": "Rental Service",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          396,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          396,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

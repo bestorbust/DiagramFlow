@@ -1,0 +1,9 @@
+flowchart TD
+    n0["Requester App"]
+    n1["Request Gateway"]
+    n2["Approval Service"]
+    n3["Fulfillment Service"]
+    n1 --- n3
+    n0 --> n1
+    n1 --> n2
+    n2 --> n3

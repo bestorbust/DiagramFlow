@@ -1,0 +1,2022 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "b7728754247d4f80b6777a8e801e6530.png",
+    "dimensions": {
+      "width": 1376,
+      "height": 768
+    },
+    "timestamp": "2026-11-05T18:21:24.252340+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          917,
+          507,
+          91,
+          133
+        ],
+        "center": [
+          962,
+          573
+        ],
+        "area": 12103,
+        "classified_shape": "rectangle",
+        "confidence": 0.744,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          213,
+          387,
+          173,
+          67
+        ],
+        "center": [
+          299,
+          420
+        ],
+        "area": 11591,
+        "classified_shape": "rectangle",
+        "confidence": 0.783,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          688,
+          483,
+          143,
+          76
+        ],
+        "center": [
+          759,
+          521
+        ],
+        "area": 10868,
+        "classified_shape": "rectangle",
+        "confidence": 0.758,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          342,
+          552,
+          155,
+          67
+        ],
+        "center": [
+          419,
+          585
+        ],
+        "area": 10385,
+        "classified_shape": "rectangle",
+        "confidence": 0.787,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          622,
+          669,
+          133,
+          78
+        ],
+        "center": [
+          688,
+          708
+        ],
+        "area": 10374,
+        "classified_shape": "cylinder",
+        "confidence": 0.794,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          50,
+          387,
+          132,
+          67
+        ],
+        "center": [
+          116,
+          420
+        ],
+        "area": 8844,
+        "classified_shape": "rectangle",
+        "confidence": 0.724,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          806,
+          560,
+          132,
+          66
+        ],
+        "center": [
+          872,
+          593
+        ],
+        "area": 8712,
+        "classified_shape": "rectangle",
+        "confidence": 0.77,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          622,
+          560,
+          132,
+          66
+        ],
+        "center": [
+          688,
+          593
+        ],
+        "area": 8712,
+        "classified_shape": "rectangle",
+        "confidence": 0.731,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          623,
+          232,
+          130,
+          67
+        ],
+        "center": [
+          688,
+          265
+        ],
+        "area": 8710,
+        "classified_shape": "rectangle",
+        "confidence": 0.766,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1195,
+          305,
+          131,
+          66
+        ],
+        "center": [
+          1260,
+          338
+        ],
+        "area": 8646,
+        "classified_shape": "rectangle",
+        "confidence": 0.768,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1195,
+          433,
+          131,
+          66
+        ],
+        "center": [
+          1260,
+          466
+        ],
+        "area": 8646,
+        "classified_shape": "rectangle",
+        "confidence": 0.744,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1025,
+          359,
+          129,
+          67
+        ],
+        "center": [
+          1089,
+          392
+        ],
+        "area": 8643,
+        "classified_shape": "rectangle",
+        "confidence": 0.769,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          984,
+          560,
+          129,
+          66
+        ],
+        "center": [
+          1048,
+          593
+        ],
+        "area": 8514,
+        "classified_shape": "rectangle",
+        "confidence": 0.763,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          615,
+          96,
+          146,
+          38
+        ],
+        "center": [
+          688,
+          115
+        ],
+        "area": 5548,
+        "classified_shape": "rectangle",
+        "confidence": 0.8,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          310,
+          46,
+          76
+        ],
+        "center": [
+          712,
+          348
+        ],
+        "area": 3496,
+        "classified_shape": "cylinder",
+        "confidence": 0.762,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          895,
+          481,
+          68,
+          43
+        ],
+        "center": [
+          929,
+          502
+        ],
+        "area": 2924,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.756,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          499,
+          45,
+          59
+        ],
+        "center": [
+          711,
+          528
+        ],
+        "area": 2655,
+        "classified_shape": "rectangle",
+        "confidence": 0.772,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          734,
+          317,
+          47,
+          47
+        ],
+        "center": [
+          757,
+          340
+        ],
+        "area": 2209,
+        "classified_shape": "cylinder",
+        "confidence": 0.76,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          815,
+          472,
+          56,
+          39
+        ],
+        "center": [
+          843,
+          491
+        ],
+        "area": 2184,
+        "classified_shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          642,
+          318,
+          45,
+          46
+        ],
+        "center": [
+          664,
+          341
+        ],
+        "area": 2070,
+        "classified_shape": "cylinder",
+        "confidence": 0.748,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          741,
+          272,
+          39,
+          47
+        ],
+        "center": [
+          760,
+          295
+        ],
+        "area": 1833,
+        "classified_shape": "rectangle",
+        "confidence": 0.752,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          780,
+          484,
+          42,
+          41
+        ],
+        "center": [
+          801,
+          504
+        ],
+        "area": 1722,
+        "classified_shape": "rectangle",
+        "confidence": 0.761,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          972,
+          483,
+          36,
+          44
+        ],
+        "center": [
+          990,
+          505
+        ],
+        "area": 1584,
+        "classified_shape": "cylinder",
+        "confidence": 0.765,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1147,
+          341,
+          42,
+          37
+        ],
+        "center": [
+          1168,
+          359
+        ],
+        "area": 1554,
+        "classified_shape": "cylinder",
+        "confidence": 0.774,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          620,
+          509,
+          67,
+          52
+        ],
+        "center": [
+          653,
+          535
+        ],
+        "area": 3484,
+        "classified_shape": "icon",
+        "confidence": 0.755,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "il",
+        "bbox": [
+          1276,
+          456,
+          11,
+          18
+        ],
+        "center": [
+          1281,
+          465
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "fl",
+        "bbox": [
+          220,
+          420,
+          3,
+          7
+        ],
+        "center": [
+          221,
+          423
+        ],
+        "confidence": 0.9,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "if",
+        "bbox": [
+          701,
+          590,
+          6,
+          9
+        ],
+        "center": [
+          704,
+          594
+        ],
+        "confidence": 0.81,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "16",
+        "bbox": [
+          476,
+          584,
+          12,
+          6
+        ],
+        "center": [
+          482,
+          587
+        ],
+        "confidence": 0.79,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "d",
+        "bbox": [
+          716,
+          255,
+          14,
+          18
+        ],
+        "center": [
+          723,
+          264
+        ],
+        "confidence": 0.76,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Q",
+        "bbox": [
+          658,
+          718,
+          4,
+          6
+        ],
+        "center": [
+          660,
+          721
+        ],
+        "confidence": 0.75,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Jt",
+        "bbox": [
+          354,
+          585,
+          9,
+          5
+        ],
+        "center": [
+          358,
+          587
+        ],
+        "confidence": 0.73,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "a",
+        "bbox": [
+          1072,
+          389,
+          5,
+          2
+        ],
+        "center": [
+          1074,
+          390
+        ],
+        "confidence": 0.66,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "e",
+        "bbox": [
+          1233,
+          461,
+          14,
+          12
+        ],
+        "center": [
+          1240,
+          467
+        ],
+        "confidence": 0.59,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "Ir",
+        "bbox": [
+          1024,
+          588,
+          10,
+          14
+        ],
+        "center": [
+          1029,
+          595
+        ],
+        "confidence": 0.59,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_10",
+        "text": "fi",
+        "bbox": [
+          1290,
+          335,
+          8,
+          10
+        ],
+        "center": [
+          1294,
+          340
+        ],
+        "confidence": 0.53,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_11",
+        "text": "IT",
+        "bbox": [
+          1123,
+          387,
+          11,
+          12
+        ],
+        "center": [
+          1128,
+          393
+        ],
+        "confidence": 0.52,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_16",
+        "target": "node_18",
+        "endpoints": [
+          [
+            612,
+            522
+          ],
+          [
+            502,
+            544
+          ]
+        ],
+        "waypoints": [
+          [
+            612,
+            522
+          ],
+          [
+            502,
+            544
+          ]
+        ],
+        "pixel_length": 112,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_19",
+        "target": "node_23",
+        "endpoints": [
+          [
+            688,
+            633
+          ],
+          [
+            688,
+            653
+          ]
+        ],
+        "waypoints": [
+          [
+            688,
+            633
+          ],
+          [
+            688,
+            653
+          ]
+        ],
+        "pixel_length": 21,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "group_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            688,
+            479
+          ],
+          [
+            688,
+            306
+          ]
+        ],
+        "waypoints": [
+          [
+            688,
+            479
+          ],
+          [
+            688,
+            306
+          ]
+        ],
+        "pixel_length": 174,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "group",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_3",
+        "source": "node_1",
+        "target": "node_10",
+        "endpoints": [
+          [
+            688,
+            306
+          ],
+          [
+            302,
+            374
+          ]
+        ],
+        "waypoints": [
+          [
+            688,
+            306
+          ],
+          [
+            680,
+            306
+          ],
+          [
+            651,
+            321
+          ],
+          [
+            603,
+            331
+          ],
+          [
+            532,
+            338
+          ],
+          [
+            417,
+            344
+          ],
+          [
+            353,
+            352
+          ],
+          [
+            319,
+            361
+          ],
+          [
+            311,
+            365
+          ],
+          [
+            307,
+            373
+          ],
+          [
+            302,
+            374
+          ]
+        ],
+        "pixel_length": 403,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_4",
+        "source": "node_1",
+        "target": "node_8",
+        "endpoints": [
+          [
+            699,
+            308
+          ],
+          [
+            1053,
+            435
+          ]
+        ],
+        "waypoints": [
+          [
+            699,
+            308
+          ],
+          [
+            896,
+            451
+          ],
+          [
+            905,
+            461
+          ],
+          [
+            914,
+            462
+          ],
+          [
+            1016,
+            440
+          ],
+          [
+            1053,
+            435
+          ]
+        ],
+        "pixel_length": 486,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_5",
+        "source": "node_1",
+        "target": "node_22",
+        "endpoints": [
+          [
+            699,
+            308
+          ],
+          [
+            1027,
+            550
+          ]
+        ],
+        "waypoints": [
+          [
+            699,
+            308
+          ],
+          [
+            896,
+            451
+          ],
+          [
+            905,
+            461
+          ],
+          [
+            914,
+            462
+          ],
+          [
+            915,
+            466
+          ],
+          [
+            929,
+            478
+          ],
+          [
+            936,
+            478
+          ],
+          [
+            939,
+            484
+          ],
+          [
+            1027,
+            550
+          ]
+        ],
+        "pixel_length": 522,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_6",
+        "source": "node_1",
+        "target": "node_8",
+        "endpoints": [
+          [
+            699,
+            308
+          ],
+          [
+            1010,
+            380
+          ]
+        ],
+        "waypoints": [
+          [
+            699,
+            308
+          ],
+          [
+            708,
+            305
+          ],
+          [
+            1010,
+            380
+          ]
+        ],
+        "pixel_length": 314,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_7",
+        "source": "group_0",
+        "target": "node_20",
+        "endpoints": [
+          [
+            835,
+            517
+          ],
+          [
+            856,
+            546
+          ]
+        ],
+        "waypoints": [
+          [
+            835,
+            517
+          ],
+          [
+            856,
+            546
+          ]
+        ],
+        "pixel_length": 43,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "group",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_8",
+        "source": "group_0",
+        "target": "node_8",
+        "endpoints": [
+          [
+            835,
+            511
+          ],
+          [
+            1053,
+            435
+          ]
+        ],
+        "waypoints": [
+          [
+            835,
+            511
+          ],
+          [
+            1052,
+            439
+          ],
+          [
+            1053,
+            435
+          ]
+        ],
+        "pixel_length": 219,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "group",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_9",
+        "source": "group_0",
+        "target": "node_22",
+        "endpoints": [
+          [
+            822,
+            479
+          ],
+          [
+            1027,
+            550
+          ]
+        ],
+        "waypoints": [
+          [
+            822,
+            479
+          ],
+          [
+            912,
+            461
+          ],
+          [
+            929,
+            478
+          ],
+          [
+            936,
+            478
+          ],
+          [
+            939,
+            484
+          ],
+          [
+            1027,
+            550
+          ]
+        ],
+        "pixel_length": 272,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "group",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_10",
+        "source": "node_8",
+        "target": "node_20",
+        "endpoints": [
+          [
+            1070,
+            435
+          ],
+          [
+            895,
+            550
+          ]
+        ],
+        "waypoints": [
+          [
+            1070,
+            435
+          ],
+          [
+            1059,
+            446
+          ],
+          [
+            895,
+            550
+          ]
+        ],
+        "pixel_length": 254,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_11",
+        "source": "node_8",
+        "target": "node_22",
+        "endpoints": [
+          [
+            1070,
+            435
+          ],
+          [
+            1052,
+            546
+          ]
+        ],
+        "waypoints": [
+          [
+            1070,
+            435
+          ],
+          [
+            1087,
+            433
+          ],
+          [
+            1052,
+            546
+          ]
+        ],
+        "pixel_length": 132,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_12",
+        "source": "node_1",
+        "target": "node_18",
+        "endpoints": [
+          [
+            688,
+            306
+          ],
+          [
+            437,
+            540
+          ]
+        ],
+        "waypoints": [
+          [
+            688,
+            306
+          ],
+          [
+            683,
+            305
+          ],
+          [
+            669,
+            312
+          ],
+          [
+            666,
+            322
+          ],
+          [
+            437,
+            540
+          ]
+        ],
+        "pixel_length": 467,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_13",
+        "source": "node_1",
+        "target": "node_9",
+        "endpoints": [
+          [
+            688,
+            306
+          ],
+          [
+            123,
+            374
+          ]
+        ],
+        "waypoints": [
+          [
+            688,
+            306
+          ],
+          [
+            680,
+            306
+          ],
+          [
+            668,
+            313
+          ],
+          [
+            659,
+            311
+          ],
+          [
+            623,
+            319
+          ],
+          [
+            570,
+            325
+          ],
+          [
+            336,
+            337
+          ],
+          [
+            217,
+            347
+          ],
+          [
+            148,
+            359
+          ],
+          [
+            129,
+            366
+          ],
+          [
+            123,
+            374
+          ]
+        ],
+        "pixel_length": 576,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_14",
+        "source": "node_8",
+        "target": "node_11",
+        "endpoints": [
+          [
+            1160,
+            397
+          ],
+          [
+            1185,
+            439
+          ]
+        ],
+        "waypoints": [
+          [
+            1160,
+            397
+          ],
+          [
+            1185,
+            439
+          ]
+        ],
+        "pixel_length": 55,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_15",
+        "source": "node_10",
+        "target": "node_18",
+        "endpoints": [
+          [
+            305,
+            460
+          ],
+          [
+            403,
+            540
+          ]
+        ],
+        "waypoints": [
+          [
+            305,
+            460
+          ],
+          [
+            403,
+            540
+          ]
+        ],
+        "pixel_length": 165,
+        "detected_direction": "bidirectional",
+        "arrowhead_evidence": {
+          "source": true,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_16",
+        "source": "node_8",
+        "target": "node_7",
+        "endpoints": [
+          [
+            1160,
+            384
+          ],
+          [
+            1183,
+            353
+          ]
+        ],
+        "waypoints": [
+          [
+            1160,
+            384
+          ],
+          [
+            1183,
+            353
+          ]
+        ],
+        "pixel_length": 47,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1147,
+          341,
+          42,
+          37
+        ],
+        "shape": "cylinder",
+        "confidence": 0.774,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          972,
+          483,
+          36,
+          44
+        ],
+        "shape": "cylinder",
+        "confidence": 0.765,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          780,
+          484,
+          42,
+          41
+        ],
+        "shape": "rectangle",
+        "confidence": 0.761,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          741,
+          272,
+          39,
+          47
+        ],
+        "shape": "rectangle",
+        "confidence": 0.752,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          642,
+          318,
+          45,
+          46
+        ],
+        "shape": "cylinder",
+        "confidence": 0.748,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          815,
+          472,
+          56,
+          39
+        ],
+        "shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          734,
+          317,
+          47,
+          47
+        ],
+        "shape": "cylinder",
+        "confidence": 0.76,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          499,
+          45,
+          59
+        ],
+        "shape": "rectangle",
+        "confidence": 0.772,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          895,
+          481,
+          68,
+          43
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.756,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          620,
+          509,
+          67,
+          52
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.755,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          310,
+          46,
+          76
+        ],
+        "shape": "cylinder",
+        "confidence": 0.762,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          615,
+          96,
+          146,
+          38
+        ],
+        "shape": "rectangle",
+        "confidence": 0.8,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          622,
+          669,
+          133,
+          78
+        ],
+        "shape": "cylinder",
+        "confidence": 0.794,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          984,
+          560,
+          129,
+          66
+        ],
+        "shape": "rectangle",
+        "confidence": 0.763,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1025,
+          359,
+          129,
+          67
+        ],
+        "shape": "rectangle",
+        "confidence": 0.769,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1195,
+          305,
+          131,
+          66
+        ],
+        "shape": "rectangle",
+        "confidence": 0.768,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1195,
+          433,
+          131,
+          66
+        ],
+        "shape": "rectangle",
+        "confidence": 0.744,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          623,
+          232,
+          130,
+          67
+        ],
+        "shape": "rectangle",
+        "confidence": 0.766,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          806,
+          560,
+          132,
+          66
+        ],
+        "shape": "rectangle",
+        "confidence": 0.77,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          622,
+          560,
+          132,
+          66
+        ],
+        "shape": "rectangle",
+        "confidence": 0.731,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          50,
+          387,
+          132,
+          67
+        ],
+        "shape": "rectangle",
+        "confidence": 0.724,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          342,
+          552,
+          155,
+          67
+        ],
+        "shape": "rectangle",
+        "confidence": 0.787,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          688,
+          483,
+          143,
+          76
+        ],
+        "shape": "rectangle",
+        "confidence": 0.758,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          213,
+          387,
+          173,
+          67
+        ],
+        "shape": "rectangle",
+        "confidence": 0.783,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          917,
+          507,
+          91,
+          133
+        ],
+        "shape": "rectangle",
+        "confidence": 0.744,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_4",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_8",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_1",
+      "bbox": [
+        623,
+        232,
+        130,
+        67
+      ],
+      "label": "Frontend",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        623,
+        232,
+        130,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Frontend",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4"
+      ]
+    },
+    {
+      "id": "node_7",
+      "bbox": [
+        1195,
+        305,
+        131,
+        66
+      ],
+      "label": "payment",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1195,
+        305,
+        131,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "payment",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_10"
+      ]
+    },
+    {
+      "id": "node_8",
+      "bbox": [
+        1025,
+        359,
+        129,
+        67
+      ],
+      "label": "checkout",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1025,
+        359,
+        129,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "checkout",
+        "confidence": 0.95
+      },
+      "matched_text_ids": [
+        "word_7",
+        "word_11"
+      ]
+    },
+    {
+      "id": "node_9",
+      "bbox": [
+        50,
+        387,
+        132,
+        67
+      ],
+      "label": "ad",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        50,
+        387,
+        132,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "ad",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_10",
+      "bbox": [
+        213,
+        387,
+        173,
+        67
+      ],
+      "label": "recommendation",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        213,
+        387,
+        173,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "recommendation",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_11",
+      "bbox": [
+        1195,
+        433,
+        131,
+        66
+      ],
+      "label": "email",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1195,
+        433,
+        131,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "email",
+        "confidence": 0.94
+      },
+      "matched_text_ids": [
+        "word_8",
+        "word_0"
+      ]
+    },
+    {
+      "id": "node_16",
+      "bbox": [
+        620,
+        509,
+        67,
+        52
+      ],
+      "label": "if",
+      "symbol_bbox": [
+        620,
+        509,
+        67,
+        52
+      ],
+      "logical_bbox": [
+        620,
+        509,
+        87,
+        90
+      ],
+      "label_bbox": [
+        701,
+        590,
+        6,
+        9
+      ],
+      "detection_method": "classical_symbol",
+      "ocr": {
+        "text": "if",
+        "confidence": 0.81,
+        "source": "exterior_label_words"
+      },
+      "matched_text_ids": [
+        "word_2"
+      ]
+    },
+    {
+      "id": "node_18",
+      "bbox": [
+        342,
+        552,
+        155,
+        67
+      ],
+      "label": "productcatalog",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        342,
+        552,
+        155,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "productcatalog",
+        "confidence": 0.92
+      },
+      "matched_text_ids": [
+        "word_6",
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_19",
+      "bbox": [
+        622,
+        560,
+        132,
+        66
+      ],
+      "label": "cart",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        622,
+        560,
+        132,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "cart",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_20",
+      "bbox": [
+        806,
+        560,
+        132,
+        66
+      ],
+      "label": "shipping",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        806,
+        560,
+        132,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "shipping",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_22",
+      "bbox": [
+        984,
+        560,
+        129,
+        66
+      ],
+      "label": "currency",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        984,
+        560,
+        129,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "currency",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_9"
+      ]
+    },
+    {
+      "id": "node_23",
+      "bbox": [
+        622,
+        669,
+        133,
+        78
+      ],
+      "label": "Redis cache",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        622,
+        669,
+        133,
+        78
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Redis cache",
+        "confidence": 0.94
+      },
+      "matched_text_ids": [
+        "word_5"
+      ]
+    }
+  ],
+  "group_evidence": [
+    {
+      "id": "group_0",
+      "bbox": [
+        688,
+        483,
+        143,
+        76
+      ],
+      "label": "Group_group_0",
+      "parent_group_id": null,
+      "enclosed_components": []
+    }
+  ],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

@@ -1,0 +1,21 @@
+flowchart TD
+    req_0["loadgen"]
+    req_1["frontend"]
+    req_2["userservice"]
+    req_3["contacts"]
+    req_4["ledger writer"]
+    req_5["balance reader"]
+    req_6["transaction history"]
+    req_7["accounts db"]
+    req_8["ledger db"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_1 --> req_3
+    req_1 --> req_4
+    req_1 --> req_5
+    req_1 --> req_6
+    req_2 --> req_7
+    req_3 --> req_7
+    req_4 --> req_8
+    req_5 --> req_8
+    req_6 --> req_8

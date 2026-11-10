@@ -1,0 +1,8 @@
+flowchart TD
+    req_0["Desktop Client"]
+    req_1["File Service"]
+    req_2["Object Store"]
+    req_3["Metadata Database"]
+    req_0 -->|"HTTPS"| req_1
+    req_1 --> req_2
+    req_1 --> req_3

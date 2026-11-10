@@ -1,0 +1,282 @@
+{
+  "diagram_metadata": {
+    "source_file": "94e49d67cb1344c7b5e9f8c88bbab8d0.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:34:59.959622+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 4,
+    "total_relationships": 2,
+    "total_groups": 0,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Telemetry Store"
+    ],
+    "service_components": [
+      "Operator App",
+      "Status API"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Sensor Hub",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        843,
+        101,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        843,
+        101,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 843,
+        "y": 101,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1000,
+        160
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ],
+      "confidence": 0.765
+    },
+    {
+      "id": "node_1",
+      "label": "Operator App",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        103,
+        411,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        103,
+        411,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 103,
+        "y": 411,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        260,
+        470
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.772
+    },
+    {
+      "id": "node_2",
+      "label": "Status API",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1583,
+        511,
+        315,
+        119
+      ],
+      "logical_bbox": [
+        1583,
+        511,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1583,
+        "y": 511,
+        "width": 315,
+        "height": 119
+      },
+      "center": [
+        1740,
+        570
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_2",
+        "word_7"
+      ],
+      "confidence": 0.778
+    },
+    {
+      "id": "node_3",
+      "label": "Telemetry Store",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        843,
+        781,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        843,
+        781,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 843,
+        "y": 781,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1000,
+        840
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ],
+      "confidence": 0.778
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_1",
+      "source_label": "Operator App",
+      "target": "node_2",
+      "target_label": "Status API",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          425,
+          470
+        ],
+        [
+          758,
+          470
+        ],
+        [
+          761,
+          570
+        ],
+        [
+          1561,
+          570
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          425,
+          470
+        ],
+        [
+          1561,
+          570
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_3",
+      "source_label": "Telemetry Store",
+      "target": "node_0",
+      "target_label": "Sensor Hub",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          1000,
+          772
+        ],
+        [
+          1000,
+          227
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1000,
+          772
+        ],
+        [
+          1000,
+          227
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_1",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

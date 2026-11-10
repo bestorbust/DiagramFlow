@@ -1,0 +1,12 @@
+flowchart TD
+    n0["Visitor App"]
+    n1["Booking API A"]
+    n2["Booking Database"]
+    n3["Booking API B"]
+    n4["Load Balancer"]
+    n0 --- n1
+    n0 --> n4
+    n4 --> n1
+    n4 --> n3
+    n1 --> n2
+    n3 --> n2

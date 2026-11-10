@@ -1,0 +1,8 @@
+flowchart TD
+    n0["Desktop Client"]
+    n1["File Service"]
+    n2["Object Store"]
+    n3["Metadata Database"]
+    n0 -->|"HTTPS"| n1
+    n1 --> n2
+    n1 --> n3

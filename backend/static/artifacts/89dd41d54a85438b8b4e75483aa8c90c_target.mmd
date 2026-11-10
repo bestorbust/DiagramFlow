@@ -1,0 +1,10 @@
+flowchart TD
+    n0["Banking App"]
+    n1["Bank Gateway"]
+    n2["Transfer Service"]
+    n3["Ledger Database"]
+    n4["Audit Store"]
+    n0 -->|"HTTPS"| n1
+    n1 --> n2
+    n2 --> n3
+    n2 --> n4

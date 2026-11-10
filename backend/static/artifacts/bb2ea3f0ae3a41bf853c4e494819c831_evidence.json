@@ -1,0 +1,519 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "d6628dd6a6964b50b29c499421e56905.jpg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T08:20:43.159709+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          583,
+          401,
+          315,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37170,
+        "classified_shape": "rectangle",
+        "confidence": 0.769,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          721,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          780
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.794,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.776,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.769,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Desktop",
+        "bbox": [
+          128,
+          445,
+          115,
+          29
+        ],
+        "center": [
+          185,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Client",
+        "bbox": [
+          255,
+          445,
+          80,
+          23
+        ],
+        "center": [
+          295,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Metadata",
+        "bbox": [
+          601,
+          768,
+          131,
+          23
+        ],
+        "center": [
+          666,
+          779
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Database",
+        "bbox": [
+          745,
+          768,
+          135,
+          23
+        ],
+        "center": [
+          812,
+          779
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "File",
+        "bbox": [
+          659,
+          448,
+          48,
+          23
+        ],
+        "center": [
+          683,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Service",
+        "bbox": [
+          719,
+          448,
+          104,
+          23
+        ],
+        "center": [
+          771,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Object",
+        "bbox": [
+          1163,
+          445,
+          91,
+          29
+        ],
+        "center": [
+          1208,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Store",
+        "bbox": [
+          1265,
+          445,
+          74,
+          23
+        ],
+        "center": [
+          1302,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "HTTPS",
+        "bbox": [
+          446,
+          426,
+          78,
+          18
+        ],
+        "center": [
+          485,
+          435
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_3",
+        "target": "node_1",
+        "endpoints": [
+          [
+            740,
+            712
+          ],
+          [
+            740,
+            527
+          ]
+        ],
+        "waypoints": [
+          [
+            740,
+            712
+          ],
+          [
+            740,
+            527
+          ]
+        ],
+        "pixel_length": 186,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_1",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "HTTPS",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            906,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            906,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "pixel_length": 166,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          583,
+          721,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.794,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.776,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.769,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          315,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.769,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label": "Desktop Client",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Desktop Client",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "label": "File Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "File Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Object Store",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Object Store",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        583,
+        721,
+        314,
+        118
+      ],
+      "label": "Metadata Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        721,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Metadata Database",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

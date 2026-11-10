@@ -1,0 +1,2726 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "783267848ade48ef8d91b08dc2631226.png",
+    "dimensions": {
+      "width": 1600,
+      "height": 1200
+    },
+    "timestamp": "2026-11-05T18:16:17.542521+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          33,
+          523,
+          1534,
+          496
+        ],
+        "center": [
+          800,
+          771
+        ],
+        "area": 760864,
+        "classified_shape": "rectangle",
+        "confidence": 0.797,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          61,
+          856,
+          1477,
+          161
+        ],
+        "center": [
+          799,
+          936
+        ],
+        "area": 237797,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1077,
+          540,
+          461,
+          477
+        ],
+        "center": [
+          1307,
+          778
+        ],
+        "area": 219897,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          61,
+          541,
+          461,
+          476
+        ],
+        "center": [
+          291,
+          779
+        ],
+        "area": 219436,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1142,
+          607,
+          359,
+          332
+        ],
+        "center": [
+          1321,
+          773
+        ],
+        "area": 119188,
+        "classified_shape": "rectangle",
+        "confidence": 0.794,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          616,
+          607,
+          359,
+          332
+        ],
+        "center": [
+          795,
+          773
+        ],
+        "area": 119188,
+        "classified_shape": "rectangle",
+        "confidence": 0.794,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          99,
+          607,
+          359,
+          332
+        ],
+        "center": [
+          278,
+          773
+        ],
+        "area": 119188,
+        "classified_shape": "rectangle",
+        "confidence": 0.794,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1077,
+          455,
+          244,
+          401
+        ],
+        "center": [
+          1199,
+          655
+        ],
+        "area": 97844,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          278,
+          456,
+          244,
+          400
+        ],
+        "center": [
+          400,
+          656
+        ],
+        "area": 97600,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          98,
+          773,
+          360,
+          84
+        ],
+        "center": [
+          278,
+          815
+        ],
+        "area": 30240,
+        "classified_shape": "rectangle",
+        "confidence": 0.802,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          615,
+          773,
+          360,
+          84
+        ],
+        "center": [
+          795,
+          815
+        ],
+        "area": 30240,
+        "classified_shape": "rectangle",
+        "confidence": 0.802,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          773,
+          360,
+          84
+        ],
+        "center": [
+          1322,
+          815
+        ],
+        "area": 30240,
+        "classified_shape": "rectangle",
+        "confidence": 0.801,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          857,
+          360,
+          83
+        ],
+        "center": [
+          1322,
+          898
+        ],
+        "area": 29880,
+        "classified_shape": "rectangle",
+        "confidence": 0.776,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          615,
+          857,
+          360,
+          83
+        ],
+        "center": [
+          795,
+          898
+        ],
+        "area": 29880,
+        "classified_shape": "rectangle",
+        "confidence": 0.776,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          98,
+          857,
+          360,
+          83
+        ],
+        "center": [
+          278,
+          898
+        ],
+        "area": 29880,
+        "classified_shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          99,
+          606,
+          359,
+          83
+        ],
+        "center": [
+          278,
+          647
+        ],
+        "area": 29797,
+        "classified_shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          606,
+          359,
+          83
+        ],
+        "center": [
+          1321,
+          647
+        ],
+        "area": 29797,
+        "classified_shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          616,
+          606,
+          359,
+          83
+        ],
+        "center": [
+          795,
+          647
+        ],
+        "area": 29797,
+        "classified_shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          99,
+          690,
+          359,
+          82
+        ],
+        "center": [
+          278,
+          731
+        ],
+        "area": 29438,
+        "classified_shape": "rectangle",
+        "confidence": 0.811,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          616,
+          690,
+          359,
+          82
+        ],
+        "center": [
+          795,
+          731
+        ],
+        "area": 29438,
+        "classified_shape": "rectangle",
+        "confidence": 0.811,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          690,
+          359,
+          82
+        ],
+        "center": [
+          1321,
+          731
+        ],
+        "area": 29438,
+        "classified_shape": "rectangle",
+        "confidence": 0.81,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          640,
+          414,
+          310,
+          82
+        ],
+        "center": [
+          795,
+          455
+        ],
+        "area": 25420,
+        "classified_shape": "rectangle",
+        "confidence": 0.803,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1235,
+          129,
+          251,
+          91
+        ],
+        "center": [
+          1360,
+          174
+        ],
+        "area": 22841,
+        "classified_shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          953,
+          129,
+          251,
+          91
+        ],
+        "center": [
+          1078,
+          174
+        ],
+        "area": 22841,
+        "classified_shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          671,
+          129,
+          251,
+          91
+        ],
+        "center": [
+          796,
+          174
+        ],
+        "area": 22841,
+        "classified_shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          387,
+          129,
+          251,
+          91
+        ],
+        "center": [
+          512,
+          174
+        ],
+        "area": 22841,
+        "classified_shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          105,
+          129,
+          251,
+          91
+        ],
+        "center": [
+          230,
+          174
+        ],
+        "area": 22841,
+        "classified_shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1502,
+          648,
+          36,
+          250
+        ],
+        "center": [
+          1520,
+          773
+        ],
+        "area": 9000,
+        "classified_shape": "rectangle",
+        "confidence": 0.803,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1172,
+          876,
+          39,
+          44
+        ],
+        "center": [
+          1191,
+          898
+        ],
+        "area": 1716,
+        "classified_shape": "circle",
+        "confidence": 0.877,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          643,
+          876,
+          39,
+          44
+        ],
+        "center": [
+          662,
+          898
+        ],
+        "area": 1716,
+        "classified_shape": "circle",
+        "confidence": 0.877,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          129,
+          876,
+          39,
+          44
+        ],
+        "center": [
+          148,
+          898
+        ],
+        "area": 1716,
+        "classified_shape": "circle",
+        "confidence": 0.871,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "HA",
+        "bbox": [
+          203,
+          27,
+          49,
+          27
+        ],
+        "center": [
+          227,
+          40
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "worker",
+        "bbox": [
+          128,
+          162,
+          112,
+          27
+        ],
+        "center": [
+          184,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "node",
+        "bbox": [
+          252,
+          162,
+          79,
+          27
+        ],
+        "center": [
+          291,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "worker",
+        "bbox": [
+          410,
+          162,
+          112,
+          27
+        ],
+        "center": [
+          466,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "node",
+        "bbox": [
+          534,
+          162,
+          79,
+          27
+        ],
+        "center": [
+          573,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "worker",
+        "bbox": [
+          694,
+          162,
+          112,
+          27
+        ],
+        "center": [
+          750,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "node",
+        "bbox": [
+          818,
+          162,
+          79,
+          27
+        ],
+        "center": [
+          857,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "worker",
+        "bbox": [
+          976,
+          162,
+          112,
+          27
+        ],
+        "center": [
+          1032,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "node",
+        "bbox": [
+          1100,
+          162,
+          79,
+          27
+        ],
+        "center": [
+          1139,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "worker",
+        "bbox": [
+          1258,
+          162,
+          112,
+          27
+        ],
+        "center": [
+          1314,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_10",
+        "text": "node",
+        "bbox": [
+          1382,
+          162,
+          79,
+          27
+        ],
+        "center": [
+          1421,
+          175
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_11",
+        "text": "control",
+        "bbox": [
+          1087,
+          563,
+          77,
+          19
+        ],
+        "center": [
+          1125,
+          572
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_12",
+        "text": "plane",
+        "bbox": [
+          1175,
+          563,
+          63,
+          25
+        ],
+        "center": [
+          1206,
+          575
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_13",
+        "text": "node",
+        "bbox": [
+          1248,
+          563,
+          56,
+          19
+        ],
+        "center": [
+          1276,
+          572
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_14",
+        "text": "control",
+        "bbox": [
+          43,
+          563,
+          77,
+          19
+        ],
+        "center": [
+          81,
+          572
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_15",
+        "text": "plane",
+        "bbox": [
+          131,
+          563,
+          63,
+          25
+        ],
+        "center": [
+          162,
+          575
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_16",
+        "text": "node",
+        "bbox": [
+          204,
+          563,
+          56,
+          19
+        ],
+        "center": [
+          232,
+          572
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_17",
+        "text": "plane",
+        "bbox": [
+          652,
+          563,
+          63,
+          25
+        ],
+        "center": [
+          683,
+          575
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_18",
+        "text": "node",
+        "bbox": [
+          725,
+          563,
+          56,
+          19
+        ],
+        "center": [
+          753,
+          572
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_19",
+        "text": "scheduler",
+        "bbox": [
+          199,
+          802,
+          161,
+          27
+        ],
+        "center": [
+          279,
+          815
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_20",
+        "text": "scheduler",
+        "bbox": [
+          716,
+          802,
+          161,
+          27
+        ],
+        "center": [
+          796,
+          815
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_21",
+        "text": "scheduler",
+        "bbox": [
+          1242,
+          802,
+          161,
+          27
+        ],
+        "center": [
+          1322,
+          815
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_22",
+        "text": "cluster",
+        "bbox": [
+          835,
+          968,
+          78,
+          19
+        ],
+        "center": [
+          874,
+          977
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_23",
+        "text": "load",
+        "bbox": [
+          685,
+          440,
+          66,
+          28
+        ],
+        "center": [
+          718,
+          454
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_24",
+        "text": "balancer",
+        "bbox": [
+          766,
+          440,
+          142,
+          28
+        ],
+        "center": [
+          837,
+          454
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_25",
+        "text": "topology",
+        "bbox": [
+          263,
+          27,
+          140,
+          35
+        ],
+        "center": [
+          333,
+          44
+        ],
+        "confidence": 0.93,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_26",
+        "text": "stacked",
+        "bbox": [
+          438,
+          27,
+          125,
+          27
+        ],
+        "center": [
+          500,
+          40
+        ],
+        "confidence": 0.93,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_27",
+        "text": "etcd",
+        "bbox": [
+          577,
+          27,
+          67,
+          27
+        ],
+        "center": [
+          610,
+          40
+        ],
+        "confidence": 0.93,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_28",
+        "text": "stacked",
+        "bbox": [
+          678,
+          968,
+          90,
+          19
+        ],
+        "center": [
+          723,
+          977
+        ],
+        "confidence": 0.93,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_29",
+        "text": "apiserver",
+        "bbox": [
+          203,
+          635,
+          153,
+          34
+        ],
+        "center": [
+          279,
+          652
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_30",
+        "text": "apiserver",
+        "bbox": [
+          720,
+          635,
+          153,
+          34
+        ],
+        "center": [
+          796,
+          652
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_31",
+        "text": "apiserver",
+        "bbox": [
+          1246,
+          635,
+          153,
+          34
+        ],
+        "center": [
+          1322,
+          652
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_32",
+        "text": "controller-manager",
+        "bbox": [
+          123,
+          718,
+          312,
+          35
+        ],
+        "center": [
+          279,
+          735
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_33",
+        "text": "etcd",
+        "bbox": [
+          244,
+          885,
+          67,
+          28
+        ],
+        "center": [
+          277,
+          899
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_34",
+        "text": "etcd",
+        "bbox": [
+          761,
+          885,
+          67,
+          28
+        ],
+        "center": [
+          794,
+          899
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_35",
+        "text": "etcd",
+        "bbox": [
+          778,
+          968,
+          47,
+          19
+        ],
+        "center": [
+          801,
+          977
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_36",
+        "text": "controller-manager",
+        "bbox": [
+          640,
+          718,
+          312,
+          35
+        ],
+        "center": [
+          796,
+          735
+        ],
+        "confidence": 0.91,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_37",
+        "text": "controller-manager",
+        "bbox": [
+          1167,
+          718,
+          312,
+          35
+        ],
+        "center": [
+          1323,
+          735
+        ],
+        "confidence": 0.91,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_38",
+        "text": "etcd",
+        "bbox": [
+          1288,
+          885,
+          67,
+          28
+        ],
+        "center": [
+          1321,
+          899
+        ],
+        "confidence": 0.91,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_39",
+        "text": "kubeadm",
+        "bbox": [
+          39,
+          27,
+          149,
+          27
+        ],
+        "center": [
+          113,
+          40
+        ],
+        "confidence": 0.9,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_40",
+        "text": "T",
+        "bbox": [
+          795,
+          222,
+          2,
+          8
+        ],
+        "center": [
+          796,
+          226
+        ],
+        "confidence": 0.9,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_41",
+        "text": "ontrol",
+        "bbox": [
+          577,
+          564,
+          59,
+          18
+        ],
+        "center": [
+          606,
+          573
+        ],
+        "confidence": 0.74,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_42",
+        "text": "1",
+        "bbox": [
+          794,
+          360,
+          3,
+          10
+        ],
+        "center": [
+          795,
+          365
+        ],
+        "confidence": 0.71,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_43",
+        "text": "1",
+        "bbox": [
+          794,
+          374,
+          2,
+          10
+        ],
+        "center": [
+          795,
+          379
+        ],
+        "confidence": 0.67,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_44",
+        "text": "1",
+        "bbox": [
+          794,
+          388,
+          2,
+          10
+        ],
+        "center": [
+          795,
+          393
+        ],
+        "confidence": 0.6,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_45",
+        "text": "0",
+        "bbox": [
+          643,
+          876,
+          39,
+          44
+        ],
+        "center": [
+          662,
+          898
+        ],
+        "confidence": 0.59,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_46",
+        "text": "I",
+        "bbox": [
+          795,
+          332,
+          2,
+          10
+        ],
+        "center": [
+          796,
+          337
+        ],
+        "confidence": 0.59,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_47",
+        "text": "N",
+        "bbox": [
+          619,
+          298,
+          13,
+          28
+        ],
+        "center": [
+          625,
+          312
+        ],
+        "confidence": 0.57,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_48",
+        "text": "I",
+        "bbox": [
+          795,
+          318,
+          2,
+          10
+        ],
+        "center": [
+          796,
+          323
+        ],
+        "confidence": 0.55,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_49",
+        "text": "I",
+        "bbox": [
+          795,
+          346,
+          2,
+          10
+        ],
+        "center": [
+          796,
+          351
+        ],
+        "confidence": 0.55,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_7",
+        "target": "node_5",
+        "endpoints": [
+          [
+            533,
+            454
+          ],
+          [
+            625,
+            454
+          ]
+        ],
+        "waypoints": [
+          [
+            533,
+            454
+          ],
+          [
+            625,
+            454
+          ]
+        ],
+        "pixel_length": 93,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_1",
+        "source": "node_5",
+        "target": "node_9",
+        "endpoints": [
+          [
+            957,
+            454
+          ],
+          [
+            1070,
+            454
+          ]
+        ],
+        "waypoints": [
+          [
+            957,
+            454
+          ],
+          [
+            1070,
+            454
+          ]
+        ],
+        "pixel_length": 114,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1172,
+          876,
+          39,
+          44
+        ],
+        "shape": "circle",
+        "confidence": 0.877,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          643,
+          876,
+          39,
+          44
+        ],
+        "shape": "circle",
+        "confidence": 0.877,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          129,
+          876,
+          39,
+          44
+        ],
+        "shape": "circle",
+        "confidence": 0.871,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1502,
+          648,
+          36,
+          250
+        ],
+        "shape": "rectangle",
+        "confidence": 0.803,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1235,
+          129,
+          251,
+          91
+        ],
+        "shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          953,
+          129,
+          251,
+          91
+        ],
+        "shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          671,
+          129,
+          251,
+          91
+        ],
+        "shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          387,
+          129,
+          251,
+          91
+        ],
+        "shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          105,
+          129,
+          251,
+          91
+        ],
+        "shape": "rectangle",
+        "confidence": 0.814,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          640,
+          414,
+          310,
+          82
+        ],
+        "shape": "rectangle",
+        "confidence": 0.803,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          99,
+          690,
+          359,
+          82
+        ],
+        "shape": "rectangle",
+        "confidence": 0.811,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          616,
+          690,
+          359,
+          82
+        ],
+        "shape": "rectangle",
+        "confidence": 0.811,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          690,
+          359,
+          82
+        ],
+        "shape": "rectangle",
+        "confidence": 0.81,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          99,
+          606,
+          359,
+          83
+        ],
+        "shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          606,
+          359,
+          83
+        ],
+        "shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          616,
+          606,
+          359,
+          83
+        ],
+        "shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          857,
+          360,
+          83
+        ],
+        "shape": "rectangle",
+        "confidence": 0.776,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          615,
+          857,
+          360,
+          83
+        ],
+        "shape": "rectangle",
+        "confidence": 0.776,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          98,
+          857,
+          360,
+          83
+        ],
+        "shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          98,
+          773,
+          360,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.802,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          615,
+          773,
+          360,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.802,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          773,
+          360,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.801,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          278,
+          456,
+          244,
+          400
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1077,
+          455,
+          244,
+          401
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1142,
+          607,
+          359,
+          332
+        ],
+        "shape": "rectangle",
+        "confidence": 0.794,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          616,
+          607,
+          359,
+          332
+        ],
+        "shape": "rectangle",
+        "confidence": 0.794,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          99,
+          607,
+          359,
+          332
+        ],
+        "shape": "rectangle",
+        "confidence": 0.794,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          61,
+          541,
+          461,
+          476
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1077,
+          540,
+          461,
+          477
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          61,
+          856,
+          1477,
+          161
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          33,
+          523,
+          1534,
+          496
+        ],
+        "shape": "rectangle",
+        "confidence": 0.797,
+        "is_container": true
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 201,
+      "detail": "Reconnected 201 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    },
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_1",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "group_1",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_0",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_1",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_15",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_16",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_17",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_2",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_3",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_4",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    }
+  ],
+  "annotations": [
+    {
+      "text": "HA",
+      "bbox": [
+        203,
+        27,
+        49,
+        27
+      ],
+      "center": [
+        227,
+        40
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_0"
+    },
+    {
+      "text": "cluster",
+      "bbox": [
+        835,
+        968,
+        78,
+        19
+      ],
+      "center": [
+        874,
+        977
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_22"
+    },
+    {
+      "text": "topology",
+      "bbox": [
+        263,
+        27,
+        140,
+        35
+      ],
+      "center": [
+        333,
+        44
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.93,
+      "id": "word_25"
+    },
+    {
+      "text": "stacked",
+      "bbox": [
+        438,
+        27,
+        125,
+        27
+      ],
+      "center": [
+        500,
+        40
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.93,
+      "id": "word_26"
+    },
+    {
+      "text": "etcd",
+      "bbox": [
+        577,
+        27,
+        67,
+        27
+      ],
+      "center": [
+        610,
+        40
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.93,
+      "id": "word_27"
+    },
+    {
+      "text": "stacked",
+      "bbox": [
+        678,
+        968,
+        90,
+        19
+      ],
+      "center": [
+        723,
+        977
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.93,
+      "id": "word_28"
+    },
+    {
+      "text": "etcd",
+      "bbox": [
+        761,
+        885,
+        67,
+        28
+      ],
+      "center": [
+        794,
+        899
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.92,
+      "id": "word_34"
+    },
+    {
+      "text": "etcd",
+      "bbox": [
+        778,
+        968,
+        47,
+        19
+      ],
+      "center": [
+        801,
+        977
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.92,
+      "id": "word_35"
+    },
+    {
+      "text": "etcd",
+      "bbox": [
+        1288,
+        885,
+        67,
+        28
+      ],
+      "center": [
+        1321,
+        899
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.91,
+      "id": "word_38"
+    },
+    {
+      "text": "kubeadm",
+      "bbox": [
+        39,
+        27,
+        149,
+        27
+      ],
+      "center": [
+        113,
+        40
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.9,
+      "id": "word_39"
+    },
+    {
+      "text": "1",
+      "bbox": [
+        794,
+        360,
+        3,
+        10
+      ],
+      "center": [
+        795,
+        365
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.71,
+      "id": "word_42"
+    },
+    {
+      "text": "1",
+      "bbox": [
+        794,
+        374,
+        2,
+        10
+      ],
+      "center": [
+        795,
+        379
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.67,
+      "id": "word_43"
+    },
+    {
+      "text": "1",
+      "bbox": [
+        794,
+        388,
+        2,
+        10
+      ],
+      "center": [
+        795,
+        393
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.6,
+      "id": "word_44"
+    },
+    {
+      "text": "I",
+      "bbox": [
+        795,
+        332,
+        2,
+        10
+      ],
+      "center": [
+        796,
+        337
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.59,
+      "id": "word_46"
+    },
+    {
+      "text": "N",
+      "bbox": [
+        619,
+        298,
+        13,
+        28
+      ],
+      "center": [
+        625,
+        312
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.57,
+      "id": "word_47"
+    },
+    {
+      "text": "I",
+      "bbox": [
+        795,
+        318,
+        2,
+        10
+      ],
+      "center": [
+        796,
+        323
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.55,
+      "id": "word_48"
+    },
+    {
+      "text": "I",
+      "bbox": [
+        795,
+        346,
+        2,
+        10
+      ],
+      "center": [
+        796,
+        351
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.55,
+      "id": "word_49"
+    }
+  ],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        105,
+        129,
+        251,
+        91
+      ],
+      "label": "worker node",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        105,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "worker node",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_1",
+        "word_2"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        387,
+        129,
+        251,
+        91
+      ],
+      "label": "worker node",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        387,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "worker node",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        671,
+        129,
+        251,
+        91
+      ],
+      "label": "worker node",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        671,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "worker node",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_5",
+        "word_6",
+        "word_40"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        953,
+        129,
+        251,
+        91
+      ],
+      "label": "worker node",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        953,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "worker node",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ]
+    },
+    {
+      "id": "node_4",
+      "bbox": [
+        1235,
+        129,
+        251,
+        91
+      ],
+      "label": "worker node",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1235,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "worker node",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_9",
+        "word_10"
+      ]
+    },
+    {
+      "id": "node_5",
+      "bbox": [
+        640,
+        414,
+        310,
+        82
+      ],
+      "label": "load balancer",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        640,
+        414,
+        310,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "load balancer",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_23",
+        "word_24"
+      ]
+    },
+    {
+      "id": "node_6",
+      "bbox": [
+        99,
+        606,
+        359,
+        83
+      ],
+      "label": "apiserver",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        99,
+        606,
+        359,
+        83
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "apiserver",
+        "confidence": 0.93
+      },
+      "matched_text_ids": [
+        "word_29"
+      ]
+    },
+    {
+      "id": "node_7",
+      "bbox": [
+        278,
+        456,
+        244,
+        400
+      ],
+      "label": "rver manager duler",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        278,
+        456,
+        244,
+        400
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "rver manager duler",
+        "confidence": 0.787
+      },
+      "matched_text_ids": [
+        "word_32",
+        "word_19"
+      ]
+    },
+    {
+      "id": "node_8",
+      "bbox": [
+        616,
+        606,
+        359,
+        83
+      ],
+      "label": "apiserver",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        616,
+        606,
+        359,
+        83
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "apiserver",
+        "confidence": 0.93
+      },
+      "matched_text_ids": [
+        "word_30"
+      ]
+    },
+    {
+      "id": "node_9",
+      "bbox": [
+        1077,
+        455,
+        244,
+        401
+      ],
+      "label": "apis controller sche",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1077,
+        455,
+        244,
+        401
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "apis controller sche",
+        "confidence": 0.957
+      },
+      "matched_text_ids": [
+        "word_11",
+        "word_12",
+        "word_13",
+        "word_31",
+        "word_37",
+        "word_21"
+      ]
+    },
+    {
+      "id": "node_10",
+      "bbox": [
+        1142,
+        606,
+        359,
+        83
+      ],
+      "label": "apiserver",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1142,
+        606,
+        359,
+        83
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "apiserver",
+        "confidence": 0.91
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_11",
+      "bbox": [
+        99,
+        690,
+        359,
+        82
+      ],
+      "label": "controller-manager",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        99,
+        690,
+        359,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "controller-manager",
+        "confidence": 0.9
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_12",
+      "bbox": [
+        616,
+        690,
+        359,
+        82
+      ],
+      "label": "controller-manager",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        616,
+        690,
+        359,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "controller-manager",
+        "confidence": 0.91
+      },
+      "matched_text_ids": [
+        "word_36"
+      ]
+    },
+    {
+      "id": "node_13",
+      "bbox": [
+        1142,
+        690,
+        359,
+        82
+      ],
+      "label": "controller-manager",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1142,
+        690,
+        359,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "controller-manager",
+        "confidence": 0.91
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_15",
+      "bbox": [
+        98,
+        773,
+        360,
+        84
+      ],
+      "label": "scheduler",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        98,
+        773,
+        360,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "scheduler",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_16",
+      "bbox": [
+        615,
+        773,
+        360,
+        84
+      ],
+      "label": "scheduler",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        615,
+        773,
+        360,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "scheduler",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_20"
+      ]
+    },
+    {
+      "id": "node_17",
+      "bbox": [
+        1142,
+        773,
+        360,
+        84
+      ],
+      "label": "scheduler",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1142,
+        773,
+        360,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "scheduler",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    }
+  ],
+  "group_evidence": [
+    {
+      "id": "group_0",
+      "bbox": [
+        33,
+        523,
+        1534,
+        496
+      ],
+      "label": "ontrol plane node",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_6",
+        "node_8",
+        "node_10",
+        "node_11",
+        "node_12",
+        "node_13",
+        "node_15",
+        "node_16",
+        "node_17"
+      ]
+    },
+    {
+      "id": "group_1",
+      "bbox": [
+        61,
+        856,
+        1477,
+        161
+      ],
+      "label": "etcd",
+      "parent_group_id": "group_0",
+      "enclosed_components": []
+    },
+    {
+      "id": "group_2",
+      "bbox": [
+        1077,
+        540,
+        461,
+        477
+      ],
+      "label": "Group_group_2",
+      "parent_group_id": "group_0",
+      "enclosed_components": [
+        "node_10",
+        "node_13",
+        "node_17"
+      ]
+    },
+    {
+      "id": "group_3",
+      "bbox": [
+        61,
+        541,
+        461,
+        476
+      ],
+      "label": "control plane node",
+      "parent_group_id": "group_0",
+      "enclosed_components": [
+        "node_6",
+        "node_11",
+        "node_15"
+      ]
+    },
+    {
+      "id": "group_4",
+      "bbox": [
+        1142,
+        607,
+        359,
+        332
+      ],
+      "label": "Group_group_4",
+      "parent_group_id": "group_2",
+      "enclosed_components": [
+        "node_10",
+        "node_13",
+        "node_17"
+      ]
+    },
+    {
+      "id": "group_5",
+      "bbox": [
+        616,
+        607,
+        359,
+        332
+      ],
+      "label": "Group_group_5",
+      "parent_group_id": "group_0",
+      "enclosed_components": [
+        "node_8",
+        "node_12",
+        "node_16"
+      ]
+    },
+    {
+      "id": "group_6",
+      "bbox": [
+        99,
+        607,
+        359,
+        332
+      ],
+      "label": "Group_group_6",
+      "parent_group_id": "group_3",
+      "enclosed_components": [
+        "node_6",
+        "node_11",
+        "node_15"
+      ]
+    },
+    {
+      "id": "group_7",
+      "bbox": [
+        1142,
+        857,
+        360,
+        83
+      ],
+      "label": "Group_group_7",
+      "parent_group_id": "group_4",
+      "enclosed_components": []
+    },
+    {
+      "id": "group_8",
+      "bbox": [
+        615,
+        857,
+        360,
+        83
+      ],
+      "label": "Group_group_8",
+      "parent_group_id": "group_5",
+      "enclosed_components": []
+    },
+    {
+      "id": "group_9",
+      "bbox": [
+        98,
+        857,
+        360,
+        83
+      ],
+      "label": "Group_group_9",
+      "parent_group_id": "group_6",
+      "enclosed_components": []
+    }
+  ],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

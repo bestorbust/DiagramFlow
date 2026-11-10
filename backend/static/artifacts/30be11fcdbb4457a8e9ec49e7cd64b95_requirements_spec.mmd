@@ -1,0 +1,8 @@
+flowchart TD
+    req_0["Creator Portal"]
+    req_1["Upload API"]
+    req_2["Job Queue"]
+    req_3["Transcode Worker"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_2 --> req_3

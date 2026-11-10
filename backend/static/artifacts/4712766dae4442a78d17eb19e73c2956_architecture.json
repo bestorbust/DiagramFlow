@@ -1,0 +1,224 @@
+{
+  "diagram_metadata": {
+    "source_file": "b78c24eed5334b0484ef4d61b010ea15.png",
+    "dimensions": {
+      "width": 1520,
+      "height": 250
+    },
+    "extracted_at": "2026-11-01T17:50:36.178131+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 3,
+    "total_relationships": 2,
+    "total_groups": 0,
+    "entrypoint_components": [
+      "Client"
+    ],
+    "storage_components": [
+      "Database"
+    ],
+    "service_components": [
+      "Server"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Client",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        62,
+        74,
+        237,
+        102
+      ],
+      "logical_bbox": [
+        62,
+        74,
+        237,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 62,
+        "y": 74,
+        "width": 237,
+        "height": 102
+      },
+      "center": [
+        180,
+        125
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_4"
+      ],
+      "confidence": 0.748
+    },
+    {
+      "id": "node_1",
+      "label": "Server",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        641,
+        74,
+        238,
+        102
+      ],
+      "logical_bbox": [
+        641,
+        74,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 641,
+        "y": 74,
+        "width": 238,
+        "height": 102
+      },
+      "center": [
+        760,
+        125
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.751
+    },
+    {
+      "id": "node_2",
+      "label": "Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "cylinder",
+      "physical_bbox": [
+        1221,
+        61,
+        237,
+        128
+      ],
+      "logical_bbox": [
+        1221,
+        61,
+        237,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1221,
+        "y": 61,
+        "width": 237,
+        "height": 128
+      },
+      "center": [
+        1339,
+        125
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_3"
+      ],
+      "confidence": 0.773
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_1",
+      "source_label": "Server",
+      "target": "node_0",
+      "target_label": "Client",
+      "direction": "bidirectional",
+      "label": "HTTP request response",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          622,
+          124
+        ],
+        [
+          318,
+          124
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": true,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          622,
+          124
+        ],
+        [
+          318,
+          124
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_1",
+      "source_label": "Server",
+      "target": "node_2",
+      "target_label": "Database",
+      "direction": "forward",
+      "label": "SQL queries",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          887,
+          124
+        ],
+        [
+          1201,
+          124
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          887,
+          124
+        ],
+        [
+          1201,
+          124
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

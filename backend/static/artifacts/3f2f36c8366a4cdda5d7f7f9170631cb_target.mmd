@@ -1,0 +1,10 @@
+flowchart TD
+    n0["Volunteer App"]
+    n1["Shift Gateway"]
+    n2["Scheduling API"]
+    n3["Shift Database"]
+    n4["Auth Service"]
+    n0 --> n1
+    n1 --> n4
+    n1 --> n2
+    n2 --> n3

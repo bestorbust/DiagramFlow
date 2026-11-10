@@ -1,0 +1,12 @@
+flowchart TD
+    req_0["Mobile Client"]
+    req_1["API Gateway"]
+    req_2["Order Service"]
+    req_3["Order Database"]
+    req_4["Dispatch Queue"]
+    req_5["Dispatch Service"]
+    req_0 -->|"HTTPS"| req_1
+    req_1 --> req_2
+    req_2 --> req_3
+    req_2 --> req_4
+    req_4 --> req_5

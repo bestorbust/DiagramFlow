@@ -1,0 +1,8 @@
+flowchart TD
+    req_0["Dealer App"]
+    req_1["Dealer Gateway"]
+    req_2["Order API"]
+    req_3["Wholesale Store"]
+    req_0 --> req_1
+    req_1 -->|"gRPC over mTLS"| req_2
+    req_2 --> req_3

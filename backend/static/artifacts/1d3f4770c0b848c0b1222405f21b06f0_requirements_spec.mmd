@@ -1,0 +1,10 @@
+flowchart TD
+    req_0["Employee Portal"]
+    req_1["Expense Gateway"]
+    req_2["Claim Service"]
+    req_3["Claim Database"]
+    req_4["Auth Service"]
+    req_0 --> req_1
+    req_1 --> req_4
+    req_1 --> req_2
+    req_2 --> req_3

@@ -1,0 +1,660 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "b0616b320fd446a7b6a3ec077f768ef3.webp",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T12:34:09.733303+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          70,
+          320,
+          1911,
+          291
+        ],
+        "center": [
+          1025,
+          465
+        ],
+        "area": 556101,
+        "classified_shape": "rectangle",
+        "confidence": 0.779,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1012,
+          462,
+          477,
+          147
+        ],
+        "center": [
+          1250,
+          535
+        ],
+        "area": 70119,
+        "classified_shape": "rectangle",
+        "confidence": 0.764,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.786,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.783,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.78,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.77,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Private",
+        "bbox": [
+          1030,
+          339,
+          88,
+          20
+        ],
+        "center": [
+          1074,
+          349
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Clinical",
+        "bbox": [
+          1128,
+          339,
+          96,
+          20
+        ],
+        "center": [
+          1176,
+          349
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Zone",
+        "bbox": [
+          1234,
+          339,
+          65,
+          20
+        ],
+        "center": [
+          1266,
+          349
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Gateway",
+        "bbox": [
+          741,
+          445,
+          125,
+          29
+        ],
+        "center": [
+          803,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Imaging",
+        "bbox": [
+          1138,
+          445,
+          110,
+          29
+        ],
+        "center": [
+          1193,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Service",
+        "bbox": [
+          1260,
+          445,
+          105,
+          23
+        ],
+        "center": [
+          1312,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Image",
+        "bbox": [
+          1645,
+          445,
+          86,
+          29
+        ],
+        "center": [
+          1688,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Database",
+        "bbox": [
+          1743,
+          445,
+          135,
+          23
+        ],
+        "center": [
+          1810,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "Clinician",
+        "bbox": [
+          138,
+          445,
+          118,
+          23
+        ],
+        "center": [
+          197,
+          456
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "App",
+        "bbox": [
+          266,
+          445,
+          56,
+          29
+        ],
+        "center": [
+          294,
+          459
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_10",
+        "text": "Imaging",
+        "bbox": [
+          618,
+          445,
+          110,
+          29
+        ],
+        "center": [
+          673,
+          459
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_4",
+        "target": "node_3",
+        "endpoints": [
+          [
+            1497,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1497,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "pixel_length": 86,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_4",
+        "target": "node_1",
+        "endpoints": [
+          [
+            1004,
+            460
+          ],
+          [
+            905,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1004,
+            460
+          ],
+          [
+            905,
+            460
+          ]
+        ],
+        "pixel_length": 100,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.786,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.783,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.78,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.77,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1012,
+          462,
+          477,
+          147
+        ],
+        "shape": "rectangle",
+        "confidence": 0.764,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          70,
+          320,
+          1911,
+          291
+        ],
+        "shape": "rectangle",
+        "confidence": 0.779,
+        "is_container": true
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 1,
+      "detail": "Reconnected 1 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    },
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "node_4",
+      "type": "low_confidence_node",
+      "detail": "Node 'Component_node_4' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label": "Clinician App",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Clinician App",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_8",
+        "word_9"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label": "Imaging Gateway",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Imaging Gateway",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_10",
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Imaging Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Imaging Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Image Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Image Database",
+        "confidence": 0.95
+      },
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ]
+    },
+    {
+      "id": "node_4",
+      "bbox": [
+        1012,
+        462,
+        477,
+        147
+      ],
+      "label": "Component_node_4",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1012,
+        462,
+        477,
+        147
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "",
+        "confidence": 0.0
+      },
+      "matched_text_ids": []
+    }
+  ],
+  "group_evidence": [
+    {
+      "id": "group_0",
+      "bbox": [
+        70,
+        320,
+        1911,
+        291
+      ],
+      "label": "Private Clinical Zone",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_0",
+        "node_1",
+        "node_2",
+        "node_3",
+        "node_4"
+      ]
+    }
+  ],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

@@ -1,0 +1,14 @@
+flowchart TD
+    n0["Upload Client"]
+    n1["Conversion API"]
+    n2["Job Queue"]
+    n3["Worker"]
+    n4["Worker"]
+    n5["Worker"]
+    n6["Worker"]
+    n2 --- n4
+    n2 --> n3
+    n0 --> n1
+    n1 --> n2
+    n2 --> n5
+    n2 --> n6

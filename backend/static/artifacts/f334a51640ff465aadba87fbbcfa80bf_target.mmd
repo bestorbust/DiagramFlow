@@ -1,0 +1,10 @@
+flowchart TD
+    subgraph g0["Group_group_0"]
+        n0["Weather Portal"]
+        n1["Forecast API"]
+        n2["Forecast Database"]
+    end
+    n3["Forecast Cache"]
+    n0 --> n1
+    n1 --> n2
+    n1 --> n3

@@ -1,0 +1,385 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "b78c24eed5334b0484ef4d61b010ea15.png",
+    "dimensions": {
+      "width": 1520,
+      "height": 250
+    },
+    "timestamp": "2026-11-01T17:50:36.178131+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          1221,
+          61,
+          237,
+          128
+        ],
+        "center": [
+          1339,
+          125
+        ],
+        "area": 30336,
+        "classified_shape": "cylinder",
+        "confidence": 0.773,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          641,
+          74,
+          238,
+          102
+        ],
+        "center": [
+          760,
+          125
+        ],
+        "area": 24276,
+        "classified_shape": "rectangle",
+        "confidence": 0.751,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          62,
+          74,
+          237,
+          102
+        ],
+        "center": [
+          180,
+          125
+        ],
+        "area": 24174,
+        "classified_shape": "rectangle",
+        "confidence": 0.748,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "HTTP",
+        "bbox": [
+          378,
+          53,
+          64,
+          18
+        ],
+        "center": [
+          410,
+          62
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "response",
+        "bbox": [
+          415,
+          89,
+          112,
+          19
+        ],
+        "center": [
+          471,
+          98
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "queries",
+        "bbox": [
+          1033,
+          84,
+          91,
+          24
+        ],
+        "center": [
+          1078,
+          96
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Database",
+        "bbox": [
+          1270,
+          121,
+          139,
+          23
+        ],
+        "center": [
+          1339,
+          132
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Client",
+        "bbox": [
+          139,
+          112,
+          84,
+          23
+        ],
+        "center": [
+          181,
+          123
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "SQL",
+        "bbox": [
+          974,
+          85,
+          49,
+          21
+        ],
+        "center": [
+          998,
+          95
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "request",
+        "bbox": [
+          450,
+          53,
+          95,
+          23
+        ],
+        "center": [
+          497,
+          64
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_1",
+        "target": "node_0",
+        "endpoints": [
+          [
+            622,
+            124
+          ],
+          [
+            318,
+            124
+          ]
+        ],
+        "waypoints": [
+          [
+            622,
+            124
+          ],
+          [
+            318,
+            124
+          ]
+        ],
+        "pixel_length": 305,
+        "detected_direction": "bidirectional",
+        "arrowhead_evidence": {
+          "source": true,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "HTTP request response",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            887,
+            124
+          ],
+          [
+            1201,
+            124
+          ]
+        ],
+        "waypoints": [
+          [
+            887,
+            124
+          ],
+          [
+            1201,
+            124
+          ]
+        ],
+        "pixel_length": 315,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "SQL queries",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          62,
+          74,
+          237,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.748,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          641,
+          74,
+          238,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.751,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1221,
+          61,
+          237,
+          128
+        ],
+        "shape": "cylinder",
+        "confidence": 0.773,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        62,
+        74,
+        237,
+        102
+      ],
+      "label": "Client",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        62,
+        74,
+        237,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Client",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        641,
+        74,
+        238,
+        102
+      ],
+      "label": "Server",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        641,
+        74,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Server",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1221,
+        61,
+        237,
+        128
+      ],
+      "label": "Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1221,
+        61,
+        237,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Database",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

@@ -1,0 +1,10 @@
+flowchart TD
+    n0["Event Publisher"]
+    n1["Delivery Queue"]
+    n2["Delivery Worker"]
+    n3["Webhook Endpoint"]
+    n4["retry"]
+    n0 --> n1
+    n1 --> n2
+    n2 --> n3
+    n2 --> n1

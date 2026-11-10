@@ -1,0 +1,379 @@
+{
+  "diagram_metadata": {
+    "source_file": "b0616b320fd446a7b6a3ec077f768ef3.webp",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:34:09.733303+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 5,
+    "total_relationships": 3,
+    "total_groups": 1,
+    "entrypoint_components": [
+      "Imaging Gateway"
+    ],
+    "storage_components": [
+      "Image Database"
+    ],
+    "service_components": [
+      "Clinician App",
+      "Imaging Service"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Clinician App",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": "Private Clinical Zone",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_8",
+        "word_9"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "id": "node_1",
+      "label": "Imaging Gateway",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": "Private Clinical Zone",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_10",
+        "word_3"
+      ],
+      "confidence": 0.786
+    },
+    {
+      "id": "node_2",
+      "label": "Imaging Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": "Private Clinical Zone",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "id": "node_3",
+      "label": "Image Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1603,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1760,
+        460
+      ],
+      "parent_group": "Private Clinical Zone",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.95,
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ],
+      "confidence": 0.783
+    },
+    {
+      "id": "node_4",
+      "label": "Component_node_4",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1012,
+        462,
+        477,
+        147
+      ],
+      "logical_bbox": [
+        1012,
+        462,
+        477,
+        147
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1012,
+        "y": 462,
+        "width": 477,
+        "height": 147
+      },
+      "center": [
+        1250,
+        535
+      ],
+      "parent_group": "Private Clinical Zone",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.0,
+      "matched_text_ids": [],
+      "confidence": 0.49
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Private Clinical Zone",
+      "bounding_box": {
+        "x": 70,
+        "y": 320,
+        "width": 1911,
+        "height": 291
+      },
+      "enclosed_components": [
+        "node_0",
+        "node_1",
+        "node_2",
+        "node_3",
+        "node_4"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_0",
+      "source_label": "Clinician App",
+      "target": "node_1",
+      "target_label": "Imaging Gateway",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_4",
+      "source_label": "Component_node_4",
+      "target": "node_3",
+      "target_label": "Image Database",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1497,
+          460
+        ],
+        [
+          1581,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1497,
+          460
+        ],
+        [
+          1581,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_4",
+      "source_label": "Component_node_4",
+      "target": "node_1",
+      "target_label": "Imaging Gateway",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          1004,
+          460
+        ],
+        [
+          905,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1004,
+          460
+        ],
+        [
+          905,
+          460
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 1,
+      "detail": "Reconnected 1 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    },
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "node_4",
+      "type": "low_confidence_node",
+      "detail": "Node 'Component_node_4' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

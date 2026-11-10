@@ -1,0 +1,430 @@
+{
+  "diagram_metadata": {
+    "source_file": "80fb9d90939c43a29f07896d0666f59f.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:35:28.558767+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 5,
+    "total_relationships": 3,
+    "total_groups": 2,
+    "entrypoint_components": [
+      "Employee Client",
+      "Search Gateway"
+    ],
+    "storage_components": [
+      "Index Database"
+    ],
+    "service_components": [
+      "Search API"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Employee Client",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_9",
+        "word_3"
+      ],
+      "confidence": 0.781
+    },
+    {
+      "id": "node_1",
+      "label": "Search Gateway",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ],
+      "confidence": 0.781
+    },
+    {
+      "id": "node_2",
+      "label": "Search API",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": "Private Subnet",
+      "parent_group_id": "group_1",
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ],
+      "confidence": 0.765
+    },
+    {
+      "id": "node_3",
+      "label": "Index Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1603,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1760,
+        460
+      ],
+      "parent_group": "Private Subnet",
+      "parent_group_id": "group_1",
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_8",
+        "word_11"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "id": "node_4",
+      "label": "Component_node_4",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        552,
+        462,
+        387,
+        187
+      ],
+      "logical_bbox": [
+        552,
+        462,
+        387,
+        187
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 552,
+        "y": 462,
+        "width": 387,
+        "height": 187
+      },
+      "center": [
+        745,
+        555
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.0,
+      "matched_text_ids": [],
+      "confidence": 0.49
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Group_group_0",
+      "bounding_box": {
+        "x": 70,
+        "y": 70,
+        "width": 1901,
+        "height": 851
+      },
+      "enclosed_components": [
+        "node_0",
+        "node_1",
+        "node_2",
+        "node_3",
+        "node_4"
+      ],
+      "parent_group_id": null,
+      "child_groups": [
+        "group_1"
+      ]
+    },
+    {
+      "id": "group_1",
+      "label": "Private Subnet",
+      "bounding_box": {
+        "x": 1012,
+        "y": 292,
+        "width": 927,
+        "height": 357
+      },
+      "enclosed_components": [
+        "node_2",
+        "node_3"
+      ],
+      "parent_group_id": "group_0",
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_2",
+      "source_label": "Search API",
+      "target": "node_3",
+      "target_label": "Index Database",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1415,
+          460
+        ],
+        [
+          1581,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1415,
+          460
+        ],
+        [
+          1581,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_4",
+      "source_label": "Component_node_4",
+      "target": "node_2",
+      "target_label": "Search API",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          947,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          947,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_0",
+      "source_label": "Employee Client",
+      "target": "node_4",
+      "target_label": "Component_node_4",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          395,
+          460
+        ],
+        [
+          544,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          395,
+          460
+        ],
+        [
+          544,
+          460
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 1,
+      "detail": "Reconnected 1 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    },
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "node_4",
+      "type": "low_confidence_node",
+      "detail": "Node 'Component_node_4' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [
+    {
+      "text": "Subnet",
+      "bbox": [
+        660,
+        309,
+        92,
+        20
+      ],
+      "center": [
+        706,
+        319
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_0"
+    },
+    {
+      "text": "Public",
+      "bbox": [
+        570,
+        309,
+        80,
+        20
+      ],
+      "center": [
+        610,
+        319
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.95,
+      "id": "word_10"
+    }
+  ],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

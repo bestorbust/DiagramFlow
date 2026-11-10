@@ -1,0 +1,778 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "b9447c91eced441692c9cc10c3c09eb6.png",
+    "dimensions": {
+      "width": 1910,
+      "height": 460
+    },
+    "timestamp": "2026-11-05T18:25:47.216326+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          470,
+          59,
+          340,
+          340
+        ],
+        "center": [
+          640,
+          229
+        ],
+        "area": 115600,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1030,
+          60,
+          340,
+          340
+        ],
+        "center": [
+          1200,
+          230
+        ],
+        "area": 115600,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1510,
+          60,
+          340,
+          340
+        ],
+        "center": [
+          1680,
+          230
+        ],
+        "area": 115600,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1555,
+          166,
+          250,
+          128
+        ],
+        "center": [
+          1680,
+          230
+        ],
+        "area": 32000,
+        "classified_shape": "cylinder",
+        "confidence": 0.772,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1081,
+          167,
+          238,
+          126
+        ],
+        "center": [
+          1200,
+          230
+        ],
+        "area": 29988,
+        "classified_shape": "rectangle",
+        "confidence": 0.768,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          61,
+          179,
+          238,
+          102
+        ],
+        "center": [
+          180,
+          230
+        ],
+        "area": 24276,
+        "classified_shape": "rectangle",
+        "confidence": 0.761,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          521,
+          179,
+          238,
+          102
+        ],
+        "center": [
+          640,
+          230
+        ],
+        "area": 24276,
+        "classified_shape": "rectangle",
+        "confidence": 0.754,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Presentation",
+        "bbox": [
+          492,
+          76,
+          186,
+          20
+        ],
+        "center": [
+          585,
+          86
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "tier",
+        "bbox": [
+          689,
+          76,
+          52,
+          20
+        ],
+        "center": [
+          715,
+          86
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "tier",
+        "bbox": [
+          1609,
+          76,
+          52,
+          20
+        ],
+        "center": [
+          1635,
+          86
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Application",
+        "bbox": [
+          1050,
+          76,
+          165,
+          26
+        ],
+        "center": [
+          1132,
+          89
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "tier",
+        "bbox": [
+          1226,
+          76,
+          52,
+          20
+        ],
+        "center": [
+          1252,
+          86
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "writes",
+        "bbox": [
+          1400,
+          190,
+          73,
+          18
+        ],
+        "center": [
+          1436,
+          199
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Browser",
+        "bbox": [
+          120,
+          218,
+          120,
+          22
+        ],
+        "center": [
+          180,
+          229
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Business",
+        "bbox": [
+          1135,
+          199,
+          130,
+          22
+        ],
+        "center": [
+          1200,
+          210
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "Logic",
+        "bbox": [
+          1163,
+          237,
+          75,
+          28
+        ],
+        "center": [
+          1200,
+          251
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "Data",
+        "bbox": [
+          1602,
+          227,
+          67,
+          22
+        ],
+        "center": [
+          1635,
+          238
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_10",
+        "text": "Store",
+        "bbox": [
+          1682,
+          227,
+          77,
+          22
+        ],
+        "center": [
+          1720,
+          238
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_11",
+        "text": "HTTPS",
+        "bbox": [
+          370,
+          190,
+          79,
+          18
+        ],
+        "center": [
+          409,
+          199
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_12",
+        "text": "calls",
+        "bbox": [
+          892,
+          189,
+          55,
+          19
+        ],
+        "center": [
+          919,
+          198
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_13",
+        "text": "Web",
+        "bbox": [
+          588,
+          217,
+          65,
+          23
+        ],
+        "center": [
+          620,
+          228
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_14",
+        "text": "Data",
+        "bbox": [
+          1532,
+          76,
+          66,
+          20
+        ],
+        "center": [
+          1565,
+          86
+        ],
+        "confidence": 0.94,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_15",
+        "text": "reads",
+        "bbox": [
+          1394,
+          157,
+          68,
+          19
+        ],
+        "center": [
+          1428,
+          166
+        ],
+        "confidence": 0.88,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_16",
+        "text": "UI",
+        "bbox": [
+          666,
+          218,
+          26,
+          22
+        ],
+        "center": [
+          679,
+          229
+        ],
+        "confidence": 0.88,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            767,
+            229
+          ],
+          [
+            1062,
+            229
+          ]
+        ],
+        "waypoints": [
+          [
+            767,
+            229
+          ],
+          [
+            1062,
+            229
+          ]
+        ],
+        "pixel_length": 296,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "calls",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            307,
+            229
+          ],
+          [
+            502,
+            229
+          ]
+        ],
+        "waypoints": [
+          [
+            307,
+            229
+          ],
+          [
+            502,
+            229
+          ]
+        ],
+        "pixel_length": 196,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "HTTPS",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_2",
+        "target": "node_3",
+        "endpoints": [
+          [
+            1327,
+            229
+          ],
+          [
+            1536,
+            229
+          ]
+        ],
+        "waypoints": [
+          [
+            1327,
+            229
+          ],
+          [
+            1536,
+            229
+          ]
+        ],
+        "pixel_length": 210,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "reads writes",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          61,
+          179,
+          238,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.761,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          521,
+          179,
+          238,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.754,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1555,
+          166,
+          250,
+          128
+        ],
+        "shape": "cylinder",
+        "confidence": 0.772,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1081,
+          167,
+          238,
+          126
+        ],
+        "shape": "rectangle",
+        "confidence": 0.768,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          470,
+          59,
+          340,
+          340
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1030,
+          60,
+          340,
+          340
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1510,
+          60,
+          340,
+          340
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 5,
+      "detail": "Reconnected 5 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        61,
+        179,
+        238,
+        102
+      ],
+      "label": "Browser",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        61,
+        179,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Browser",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_6"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        521,
+        179,
+        238,
+        102
+      ],
+      "label": "Web UI",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        521,
+        179,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Web UI",
+        "confidence": 0.895
+      },
+      "matched_text_ids": [
+        "word_13",
+        "word_16"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1081,
+        167,
+        238,
+        126
+      ],
+      "label": "Business Logic",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1081,
+        167,
+        238,
+        126
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Business Logic",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1555,
+        166,
+        250,
+        128
+      ],
+      "label": "Data Store",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1555,
+        166,
+        250,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Data Store",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_9",
+        "word_10"
+      ]
+    }
+  ],
+  "group_evidence": [
+    {
+      "id": "group_0",
+      "bbox": [
+        470,
+        59,
+        340,
+        340
+      ],
+      "label": "Presentation tier",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_1"
+      ]
+    },
+    {
+      "id": "group_1",
+      "bbox": [
+        1030,
+        60,
+        340,
+        340
+      ],
+      "label": "Application tier",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_2"
+      ]
+    },
+    {
+      "id": "group_2",
+      "bbox": [
+        1510,
+        60,
+        340,
+        340
+      ],
+      "label": "Data tier",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_3"
+      ]
+    }
+  ],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

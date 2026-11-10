@@ -1,0 +1,10 @@
+flowchart TD
+    subgraph g0["Group_group_0"]
+        n0["Ticket Client"]
+        n1["Checkout Service"]
+        n2["Ticket Database"]
+    end
+    n3["Payment Verifier"]
+    n0 --> n1
+    n1 --> n2
+    n1 --> n3

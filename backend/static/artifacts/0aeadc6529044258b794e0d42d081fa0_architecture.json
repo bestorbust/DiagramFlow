@@ -1,0 +1,1287 @@
+{
+  "diagram_metadata": {
+    "source_file": "783267848ade48ef8d91b08dc2631226.png",
+    "dimensions": {
+      "width": 1600,
+      "height": 1200
+    },
+    "extracted_at": "2026-11-05T18:16:17.542521+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 17,
+    "total_relationships": 2,
+    "total_groups": 10,
+    "entrypoint_components": [
+      "load balancer"
+    ],
+    "storage_components": [],
+    "service_components": [
+      "worker node",
+      "worker node",
+      "worker node",
+      "worker node",
+      "worker node"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "worker node",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        105,
+        129,
+        251,
+        91
+      ],
+      "logical_bbox": [
+        105,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 105,
+        "y": 129,
+        "width": 251,
+        "height": 91
+      },
+      "center": [
+        230,
+        174
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_1",
+        "word_2"
+      ],
+      "confidence": 0.814
+    },
+    {
+      "id": "node_1",
+      "label": "worker node",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        387,
+        129,
+        251,
+        91
+      ],
+      "logical_bbox": [
+        387,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 387,
+        "y": 129,
+        "width": 251,
+        "height": 91
+      },
+      "center": [
+        512,
+        174
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ],
+      "confidence": 0.814
+    },
+    {
+      "id": "node_2",
+      "label": "worker node",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        671,
+        129,
+        251,
+        91
+      ],
+      "logical_bbox": [
+        671,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 671,
+        "y": 129,
+        "width": 251,
+        "height": 91
+      },
+      "center": [
+        796,
+        174
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_5",
+        "word_6",
+        "word_40"
+      ],
+      "confidence": 0.814
+    },
+    {
+      "id": "node_3",
+      "label": "worker node",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        953,
+        129,
+        251,
+        91
+      ],
+      "logical_bbox": [
+        953,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 953,
+        "y": 129,
+        "width": 251,
+        "height": 91
+      },
+      "center": [
+        1078,
+        174
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ],
+      "confidence": 0.814
+    },
+    {
+      "id": "node_4",
+      "label": "worker node",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1235,
+        129,
+        251,
+        91
+      ],
+      "logical_bbox": [
+        1235,
+        129,
+        251,
+        91
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1235,
+        "y": 129,
+        "width": 251,
+        "height": 91
+      },
+      "center": [
+        1360,
+        174
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_9",
+        "word_10"
+      ],
+      "confidence": 0.814
+    },
+    {
+      "id": "node_5",
+      "label": "load balancer",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        640,
+        414,
+        310,
+        82
+      ],
+      "logical_bbox": [
+        640,
+        414,
+        310,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 640,
+        "y": 414,
+        "width": 310,
+        "height": 82
+      },
+      "center": [
+        795,
+        455
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_23",
+        "word_24"
+      ],
+      "confidence": 0.803
+    },
+    {
+      "id": "node_6",
+      "label": "apiserver",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        99,
+        606,
+        359,
+        83
+      ],
+      "logical_bbox": [
+        99,
+        606,
+        359,
+        83
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 99,
+        "y": 606,
+        "width": 359,
+        "height": 83
+      },
+      "center": [
+        278,
+        647
+      ],
+      "parent_group": "Group_group_6",
+      "parent_group_id": "group_6",
+      "ocr_confidence": 0.93,
+      "matched_text_ids": [
+        "word_29"
+      ],
+      "confidence": 0.775
+    },
+    {
+      "id": "node_7",
+      "label": "rver manager duler",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        278,
+        456,
+        244,
+        400
+      ],
+      "logical_bbox": [
+        278,
+        456,
+        244,
+        400
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 278,
+        "y": 456,
+        "width": 244,
+        "height": 400
+      },
+      "center": [
+        400,
+        656
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.787,
+      "matched_text_ids": [
+        "word_32",
+        "word_19"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "node_8",
+      "label": "apiserver",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        616,
+        606,
+        359,
+        83
+      ],
+      "logical_bbox": [
+        616,
+        606,
+        359,
+        83
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 616,
+        "y": 606,
+        "width": 359,
+        "height": 83
+      },
+      "center": [
+        795,
+        647
+      ],
+      "parent_group": "Group_group_5",
+      "parent_group_id": "group_5",
+      "ocr_confidence": 0.93,
+      "matched_text_ids": [
+        "word_30"
+      ],
+      "confidence": 0.775
+    },
+    {
+      "id": "node_9",
+      "label": "apis controller sche",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1077,
+        455,
+        244,
+        401
+      ],
+      "logical_bbox": [
+        1077,
+        455,
+        244,
+        401
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1077,
+        "y": 455,
+        "width": 244,
+        "height": 401
+      },
+      "center": [
+        1199,
+        655
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.957,
+      "matched_text_ids": [
+        "word_11",
+        "word_12",
+        "word_13",
+        "word_31",
+        "word_37",
+        "word_21"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "node_10",
+      "label": "apiserver",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1142,
+        606,
+        359,
+        83
+      ],
+      "logical_bbox": [
+        1142,
+        606,
+        359,
+        83
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1142,
+        "y": 606,
+        "width": 359,
+        "height": 83
+      },
+      "center": [
+        1321,
+        647
+      ],
+      "parent_group": "Group_group_4",
+      "parent_group_id": "group_4",
+      "ocr_confidence": 0.91,
+      "matched_text_ids": [],
+      "confidence": 0.775
+    },
+    {
+      "id": "node_11",
+      "label": "controller-manager",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        99,
+        690,
+        359,
+        82
+      ],
+      "logical_bbox": [
+        99,
+        690,
+        359,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 99,
+        "y": 690,
+        "width": 359,
+        "height": 82
+      },
+      "center": [
+        278,
+        731
+      ],
+      "parent_group": "Group_group_6",
+      "parent_group_id": "group_6",
+      "ocr_confidence": 0.9,
+      "matched_text_ids": [],
+      "confidence": 0.811
+    },
+    {
+      "id": "node_12",
+      "label": "controller-manager",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        616,
+        690,
+        359,
+        82
+      ],
+      "logical_bbox": [
+        616,
+        690,
+        359,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 616,
+        "y": 690,
+        "width": 359,
+        "height": 82
+      },
+      "center": [
+        795,
+        731
+      ],
+      "parent_group": "Group_group_5",
+      "parent_group_id": "group_5",
+      "ocr_confidence": 0.91,
+      "matched_text_ids": [
+        "word_36"
+      ],
+      "confidence": 0.811
+    },
+    {
+      "id": "node_13",
+      "label": "controller-manager",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1142,
+        690,
+        359,
+        82
+      ],
+      "logical_bbox": [
+        1142,
+        690,
+        359,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1142,
+        "y": 690,
+        "width": 359,
+        "height": 82
+      },
+      "center": [
+        1321,
+        731
+      ],
+      "parent_group": "Group_group_4",
+      "parent_group_id": "group_4",
+      "ocr_confidence": 0.91,
+      "matched_text_ids": [],
+      "confidence": 0.81
+    },
+    {
+      "id": "node_15",
+      "label": "scheduler",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        98,
+        773,
+        360,
+        84
+      ],
+      "logical_bbox": [
+        98,
+        773,
+        360,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 98,
+        "y": 773,
+        "width": 360,
+        "height": 84
+      },
+      "center": [
+        278,
+        815
+      ],
+      "parent_group": "Group_group_6",
+      "parent_group_id": "group_6",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.802
+    },
+    {
+      "id": "node_16",
+      "label": "scheduler",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        615,
+        773,
+        360,
+        84
+      ],
+      "logical_bbox": [
+        615,
+        773,
+        360,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 615,
+        "y": 773,
+        "width": 360,
+        "height": 84
+      },
+      "center": [
+        795,
+        815
+      ],
+      "parent_group": "Group_group_5",
+      "parent_group_id": "group_5",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_20"
+      ],
+      "confidence": 0.802
+    },
+    {
+      "id": "node_17",
+      "label": "scheduler",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1142,
+        773,
+        360,
+        84
+      ],
+      "logical_bbox": [
+        1142,
+        773,
+        360,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1142,
+        "y": 773,
+        "width": 360,
+        "height": 84
+      },
+      "center": [
+        1322,
+        815
+      ],
+      "parent_group": "Group_group_4",
+      "parent_group_id": "group_4",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.801
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "ontrol plane node",
+      "bounding_box": {
+        "x": 33,
+        "y": 523,
+        "width": 1534,
+        "height": 496
+      },
+      "enclosed_components": [
+        "node_6",
+        "node_8",
+        "node_10",
+        "node_11",
+        "node_12",
+        "node_13",
+        "node_15",
+        "node_16",
+        "node_17"
+      ],
+      "parent_group_id": null,
+      "child_groups": [
+        "group_1",
+        "group_2",
+        "group_3",
+        "group_5"
+      ]
+    },
+    {
+      "id": "group_1",
+      "label": "etcd",
+      "bounding_box": {
+        "x": 61,
+        "y": 856,
+        "width": 1477,
+        "height": 161
+      },
+      "enclosed_components": [],
+      "parent_group_id": "group_0",
+      "child_groups": []
+    },
+    {
+      "id": "group_2",
+      "label": "Group_group_2",
+      "bounding_box": {
+        "x": 1077,
+        "y": 540,
+        "width": 461,
+        "height": 477
+      },
+      "enclosed_components": [
+        "node_10",
+        "node_13",
+        "node_17"
+      ],
+      "parent_group_id": "group_0",
+      "child_groups": [
+        "group_4"
+      ]
+    },
+    {
+      "id": "group_3",
+      "label": "control plane node",
+      "bounding_box": {
+        "x": 61,
+        "y": 541,
+        "width": 461,
+        "height": 476
+      },
+      "enclosed_components": [
+        "node_6",
+        "node_11",
+        "node_15"
+      ],
+      "parent_group_id": "group_0",
+      "child_groups": [
+        "group_6"
+      ]
+    },
+    {
+      "id": "group_4",
+      "label": "Group_group_4",
+      "bounding_box": {
+        "x": 1142,
+        "y": 607,
+        "width": 359,
+        "height": 332
+      },
+      "enclosed_components": [
+        "node_10",
+        "node_13",
+        "node_17"
+      ],
+      "parent_group_id": "group_2",
+      "child_groups": [
+        "group_7"
+      ]
+    },
+    {
+      "id": "group_5",
+      "label": "Group_group_5",
+      "bounding_box": {
+        "x": 616,
+        "y": 607,
+        "width": 359,
+        "height": 332
+      },
+      "enclosed_components": [
+        "node_8",
+        "node_12",
+        "node_16"
+      ],
+      "parent_group_id": "group_0",
+      "child_groups": [
+        "group_8"
+      ]
+    },
+    {
+      "id": "group_6",
+      "label": "Group_group_6",
+      "bounding_box": {
+        "x": 99,
+        "y": 607,
+        "width": 359,
+        "height": 332
+      },
+      "enclosed_components": [
+        "node_6",
+        "node_11",
+        "node_15"
+      ],
+      "parent_group_id": "group_3",
+      "child_groups": [
+        "group_9"
+      ]
+    },
+    {
+      "id": "group_7",
+      "label": "Group_group_7",
+      "bounding_box": {
+        "x": 1142,
+        "y": 857,
+        "width": 360,
+        "height": 83
+      },
+      "enclosed_components": [],
+      "parent_group_id": "group_4",
+      "child_groups": []
+    },
+    {
+      "id": "group_8",
+      "label": "Group_group_8",
+      "bounding_box": {
+        "x": 615,
+        "y": 857,
+        "width": 360,
+        "height": 83
+      },
+      "enclosed_components": [],
+      "parent_group_id": "group_5",
+      "child_groups": []
+    },
+    {
+      "id": "group_9",
+      "label": "Group_group_9",
+      "bounding_box": {
+        "x": 98,
+        "y": 857,
+        "width": 360,
+        "height": 83
+      },
+      "enclosed_components": [],
+      "parent_group_id": "group_6",
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_7",
+      "source_label": "rver manager duler",
+      "target": "node_5",
+      "target_label": "load balancer",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          533,
+          454
+        ],
+        [
+          625,
+          454
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          533,
+          454
+        ],
+        [
+          625,
+          454
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_5",
+      "source_label": "load balancer",
+      "target": "node_9",
+      "target_label": "apis controller sche",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          957,
+          454
+        ],
+        [
+          1070,
+          454
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          957,
+          454
+        ],
+        [
+          1070,
+          454
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 201,
+      "detail": "Reconnected 201 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    },
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_1",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "group_1",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_0",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_1",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_15",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_16",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_17",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_2",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_3",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_4",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    }
+  ],
+  "annotations": [
+    {
+      "text": "HA",
+      "bbox": [
+        203,
+        27,
+        49,
+        27
+      ],
+      "center": [
+        227,
+        40
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_0"
+    },
+    {
+      "text": "cluster",
+      "bbox": [
+        835,
+        968,
+        78,
+        19
+      ],
+      "center": [
+        874,
+        977
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_22"
+    },
+    {
+      "text": "topology",
+      "bbox": [
+        263,
+        27,
+        140,
+        35
+      ],
+      "center": [
+        333,
+        44
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.93,
+      "id": "word_25"
+    },
+    {
+      "text": "stacked",
+      "bbox": [
+        438,
+        27,
+        125,
+        27
+      ],
+      "center": [
+        500,
+        40
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.93,
+      "id": "word_26"
+    },
+    {
+      "text": "etcd",
+      "bbox": [
+        577,
+        27,
+        67,
+        27
+      ],
+      "center": [
+        610,
+        40
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.93,
+      "id": "word_27"
+    },
+    {
+      "text": "stacked",
+      "bbox": [
+        678,
+        968,
+        90,
+        19
+      ],
+      "center": [
+        723,
+        977
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.93,
+      "id": "word_28"
+    },
+    {
+      "text": "etcd",
+      "bbox": [
+        761,
+        885,
+        67,
+        28
+      ],
+      "center": [
+        794,
+        899
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.92,
+      "id": "word_34"
+    },
+    {
+      "text": "etcd",
+      "bbox": [
+        778,
+        968,
+        47,
+        19
+      ],
+      "center": [
+        801,
+        977
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.92,
+      "id": "word_35"
+    },
+    {
+      "text": "etcd",
+      "bbox": [
+        1288,
+        885,
+        67,
+        28
+      ],
+      "center": [
+        1321,
+        899
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.91,
+      "id": "word_38"
+    },
+    {
+      "text": "kubeadm",
+      "bbox": [
+        39,
+        27,
+        149,
+        27
+      ],
+      "center": [
+        113,
+        40
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.9,
+      "id": "word_39"
+    },
+    {
+      "text": "1",
+      "bbox": [
+        794,
+        360,
+        3,
+        10
+      ],
+      "center": [
+        795,
+        365
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.71,
+      "id": "word_42"
+    },
+    {
+      "text": "1",
+      "bbox": [
+        794,
+        374,
+        2,
+        10
+      ],
+      "center": [
+        795,
+        379
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.67,
+      "id": "word_43"
+    },
+    {
+      "text": "1",
+      "bbox": [
+        794,
+        388,
+        2,
+        10
+      ],
+      "center": [
+        795,
+        393
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.6,
+      "id": "word_44"
+    },
+    {
+      "text": "I",
+      "bbox": [
+        795,
+        332,
+        2,
+        10
+      ],
+      "center": [
+        796,
+        337
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.59,
+      "id": "word_46"
+    },
+    {
+      "text": "N",
+      "bbox": [
+        619,
+        298,
+        13,
+        28
+      ],
+      "center": [
+        625,
+        312
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.57,
+      "id": "word_47"
+    },
+    {
+      "text": "I",
+      "bbox": [
+        795,
+        318,
+        2,
+        10
+      ],
+      "center": [
+        796,
+        323
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.55,
+      "id": "word_48"
+    },
+    {
+      "text": "I",
+      "bbox": [
+        795,
+        346,
+        2,
+        10
+      ],
+      "center": [
+        796,
+        351
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.55,
+      "id": "word_49"
+    }
+  ],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

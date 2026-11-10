@@ -1,0 +1,379 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "73bab5a3638b4bc8b303c0d0a5e54273.jpg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T12:35:07.162462+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          1093,
+          401,
+          315,
+          119
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37485,
+        "classified_shape": "rectangle",
+        "confidence": 0.772,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.774,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          91,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          150
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.77,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Store",
+        "bbox": [
+          1271,
+          138,
+          74,
+          23
+        ],
+        "center": [
+          1308,
+          149
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Branch",
+        "bbox": [
+          1665,
+          445,
+          98,
+          23
+        ],
+        "center": [
+          1714,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Agent",
+        "bbox": [
+          1773,
+          445,
+          84,
+          29
+        ],
+        "center": [
+          1815,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Archive",
+        "bbox": [
+          1153,
+          138,
+          105,
+          23
+        ],
+        "center": [
+          1205,
+          149
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Sync",
+        "bbox": [
+          1187,
+          445,
+          68,
+          29
+        ],
+        "center": [
+          1221,
+          459
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "API",
+        "bbox": [
+          1264,
+          445,
+          48,
+          23
+        ],
+        "center": [
+          1288,
+          456
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            1250,
+            218
+          ],
+          [
+            1249,
+            393
+          ]
+        ],
+        "waypoints": [
+          [
+            1250,
+            218
+          ],
+          [
+            1249,
+            393
+          ]
+        ],
+        "pixel_length": 176,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_1",
+        "source": "node_2",
+        "target": "node_1",
+        "endpoints": [
+          [
+            1595,
+            459
+          ],
+          [
+            1429,
+            459
+          ]
+        ],
+        "waypoints": [
+          [
+            1595,
+            459
+          ],
+          [
+            1429,
+            459
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.774,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          91,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.77,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          315,
+          119
+        ],
+        "shape": "rectangle",
+        "confidence": 0.772,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        1093,
+        91,
+        314,
+        118
+      ],
+      "label": "Archive Store",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        91,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Archive Store",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_3",
+        "word_0"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        1093,
+        401,
+        315,
+        119
+      ],
+      "label": "Sync API",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Sync API",
+        "confidence": 0.945
+      },
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Branch Agent",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Branch Agent",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_1",
+        "word_2"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

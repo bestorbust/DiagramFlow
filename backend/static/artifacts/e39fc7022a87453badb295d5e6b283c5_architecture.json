@@ -1,0 +1,355 @@
+{
+  "diagram_metadata": {
+    "source_file": "149bbb1d9996477298fd0fc61ff9ddd8.jpeg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:35:36.111006+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 4,
+    "total_relationships": 3,
+    "total_groups": 3,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Bill Database"
+    ],
+    "service_components": [
+      "Billing API"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Resident Portal",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        115,
+        441,
+        230,
+        36
+      ],
+      "logical_bbox": [
+        115,
+        441,
+        230,
+        36
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 115,
+        "y": 441,
+        "width": 230,
+        "height": 36
+      },
+      "center": [
+        230,
+        459
+      ],
+      "parent_group": "Group_group_1",
+      "parent_group_id": "group_1",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.848
+    },
+    {
+      "id": "node_1",
+      "label": "Billing API",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        663,
+        438,
+        153,
+        42
+      ],
+      "logical_bbox": [
+        663,
+        438,
+        153,
+        42
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 663,
+        "y": 438,
+        "width": 153,
+        "height": 42
+      },
+      "center": [
+        739,
+        459
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_2",
+        "word_7"
+      ],
+      "confidence": 0.846
+    },
+    {
+      "id": "node_2",
+      "label": "Bill Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1151,
+        441,
+        198,
+        37
+      ],
+      "logical_bbox": [
+        1151,
+        441,
+        198,
+        37
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1151,
+        "y": 441,
+        "width": 198,
+        "height": 37
+      },
+      "center": [
+        1250,
+        459
+      ],
+      "parent_group": "Group_group_2",
+      "parent_group_id": "group_2",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ],
+      "confidence": 0.852
+    },
+    {
+      "id": "node_3",
+      "label": "Audit Sink",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        586,
+        722,
+        309,
+        115
+      ],
+      "logical_bbox": [
+        586,
+        722,
+        309,
+        115
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 586,
+        "y": 722,
+        "width": 309,
+        "height": 115
+      },
+      "center": [
+        740,
+        779
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_6",
+        "word_5"
+      ],
+      "confidence": 0.736
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Group_group_0",
+      "bounding_box": {
+        "x": 584,
+        "y": 404,
+        "width": 312,
+        "height": 114
+      },
+      "enclosed_components": [
+        "node_1"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    },
+    {
+      "id": "group_1",
+      "label": "Group_group_1",
+      "bounding_box": {
+        "x": 76,
+        "y": 404,
+        "width": 311,
+        "height": 113
+      },
+      "enclosed_components": [
+        "node_0"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    },
+    {
+      "id": "group_2",
+      "label": "Group_group_2",
+      "bounding_box": {
+        "x": 1094,
+        "y": 404,
+        "width": 311,
+        "height": 113
+      },
+      "enclosed_components": [
+        "node_2"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "group_1",
+      "source_label": "Group_group_1",
+      "target": "group_0",
+      "target_label": "Group_group_0",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          393,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "group",
+      "target_kind": "group",
+      "endpoints": [
+        [
+          393,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "group_0",
+      "source_label": "Group_group_0",
+      "target": "group_2",
+      "target_label": "Group_group_2",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          903,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "group",
+      "target_kind": "group",
+      "endpoints": [
+        [
+          903,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "group_0",
+      "source_label": "Group_group_0",
+      "target": "node_3",
+      "target_label": "Audit Sink",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          740,
+          525
+        ],
+        [
+          740,
+          714
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "group",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          740,
+          525
+        ],
+        [
+          740,
+          714
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

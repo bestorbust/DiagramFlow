@@ -1,0 +1,8 @@
+flowchart TD
+    n0["Patient App"]
+    n1["Booking Service"]
+    n2["Schedule Database"]
+    n3["SMS Service"]
+    n0 -->|"HTTPS"| n1
+    n1 --> n2
+    n1 --> n3

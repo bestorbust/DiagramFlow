@@ -1,0 +1,311 @@
+{
+  "diagram_metadata": {
+    "source_file": "5b5c4044d3034747b5ec37436d9baf21.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T08:20:17.020872+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 4,
+    "total_relationships": 3,
+    "total_groups": 0,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Schedule Database"
+    ],
+    "service_components": [
+      "Patient App",
+      "Booking Service",
+      "SMS Service"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Patient App",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.767
+    },
+    {
+      "id": "node_1",
+      "label": "Booking Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ],
+      "confidence": 0.781
+    },
+    {
+      "id": "node_2",
+      "label": "Schedule Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ],
+      "confidence": 0.791
+    },
+    {
+      "id": "node_3",
+      "label": "SMS Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        721,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        721,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 721,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        740,
+        780
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_8",
+        "word_6"
+      ],
+      "confidence": 0.771
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_3",
+      "source_label": "SMS Service",
+      "target": "node_1",
+      "target_label": "Booking Service",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          740,
+          712
+        ],
+        [
+          740,
+          527
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          740,
+          712
+        ],
+        [
+          740,
+          527
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_1",
+      "source_label": "Booking Service",
+      "target": "node_2",
+      "target_label": "Schedule Database",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          905,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          905,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_0",
+      "source_label": "Patient App",
+      "target": "node_1",
+      "target_label": "Booking Service",
+      "direction": "forward",
+      "label": "HTTPS",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

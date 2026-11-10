@@ -1,0 +1,16 @@
+flowchart TD
+    subgraph g0["Private Clinical Zone"]
+        n2["Imaging Service"]
+        n3["Image Database"]
+    end
+    subgraph g2["Private Clinical Zone"]
+        n0["Clinician App"]
+        n1["Imaging Gateway"]
+        n4["Component_node_4"]
+    end
+    n5["Partner Clinic"]
+    n4 --> n3
+    n4 --- n1
+    n0 --> n1
+    n1 --> n2
+    n2 --> n3

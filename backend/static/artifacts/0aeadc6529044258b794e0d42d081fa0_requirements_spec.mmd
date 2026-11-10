@@ -1,0 +1,36 @@
+flowchart TD
+    subgraph z0["control plane node 1"]
+        req_6["apiserver 1"]
+        req_7["controller-manager 1"]
+        req_8["scheduler 1"]
+        req_9["etcd 1"]
+    end
+    subgraph z1["control plane node 2"]
+        req_10["apiserver 2"]
+        req_11["controller-manager 2"]
+        req_12["scheduler 2"]
+        req_13["etcd 2"]
+    end
+    subgraph z2["control plane node 3"]
+        req_14["apiserver 3"]
+        req_15["controller-manager 3"]
+        req_16["scheduler 3"]
+        req_17["etcd 3"]
+    end
+    req_0["load balancer"]
+    req_1["worker node 1"]
+    req_2["worker node 2"]
+    req_3["worker node 3"]
+    req_4["worker node 4"]
+    req_5["worker node 5"]
+    req_1 --> req_0
+    req_2 --> req_0
+    req_3 --> req_0
+    req_4 --> req_0
+    req_5 --> req_0
+    req_0 --- req_6
+    req_6 <--> req_9
+    req_0 --- req_10
+    req_10 <--> req_13
+    req_0 --- req_14
+    req_14 <--> req_17

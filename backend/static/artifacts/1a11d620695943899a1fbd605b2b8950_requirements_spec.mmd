@@ -1,0 +1,29 @@
+flowchart TD
+    req_0["loadgenerator"]
+    req_1["frontend"]
+    req_2["ad"]
+    req_3["recommendation"]
+    req_4["productcatalog"]
+    req_5["cart"]
+    req_6["shipping"]
+    req_7["currency"]
+    req_8["checkout"]
+    req_9["payment"]
+    req_10["email"]
+    req_11["Redis cache"]
+    req_0 --> req_1
+    req_1 -->|"gRPC"| req_2
+    req_1 -->|"gRPC"| req_3
+    req_1 -->|"gRPC"| req_4
+    req_1 -->|"gRPC"| req_5
+    req_1 -->|"gRPC"| req_6
+    req_1 -->|"gRPC"| req_7
+    req_1 -->|"gRPC"| req_8
+    req_3 -->|"gRPC"| req_4
+    req_8 -->|"gRPC"| req_4
+    req_8 -->|"gRPC"| req_5
+    req_8 -->|"gRPC"| req_6
+    req_8 -->|"gRPC"| req_7
+    req_8 -->|"gRPC"| req_9
+    req_8 -->|"gRPC"| req_10
+    req_5 --> req_11

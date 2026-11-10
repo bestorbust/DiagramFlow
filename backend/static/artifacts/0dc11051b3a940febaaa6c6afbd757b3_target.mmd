@@ -1,0 +1,8 @@
+flowchart TD
+    n0["Resident App"]
+    n1["Permit Gateway"]
+    n2["Permit API"]
+    n3["Permit Store"]
+    n0 -->|"HTTPS"| n1
+    n1 --> n2
+    n2 --> n3

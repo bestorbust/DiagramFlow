@@ -1,0 +1,245 @@
+{
+  "diagram_metadata": {
+    "source_file": "a0afddb5a7174be5bd1d719cb2c234c2.jpg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:33:35.163186+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 5,
+    "total_relationships": 0,
+    "total_groups": 0,
+    "entrypoint_components": [
+      "Patient Client",
+      "Report Gateway"
+    ],
+    "storage_components": [
+      "Results Database"
+    ],
+    "service_components": [
+      "Report Service"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Patient Client",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.772
+    },
+    {
+      "id": "node_1",
+      "label": "Report Gateway",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 315,
+        "height": 118
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ],
+      "confidence": 0.784
+    },
+    {
+      "id": "node_2",
+      "label": "Report Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        315,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        315,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 315,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ],
+      "confidence": 0.779
+    },
+    {
+      "id": "node_3",
+      "label": "Results Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1603,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1760,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_6",
+        "word_7"
+      ],
+      "confidence": 0.787
+    },
+    {
+      "id": "node_4",
+      "label": "Component_node_4",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        232,
+        462,
+        1527,
+        203
+      ],
+      "logical_bbox": [
+        232,
+        462,
+        1527,
+        203
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 232,
+        "y": 462,
+        "width": 1527,
+        "height": 203
+      },
+      "center": [
+        995,
+        563
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.0,
+      "matched_text_ids": [],
+      "confidence": 0.49
+    }
+  ],
+  "groups": [],
+  "relationships": [],
+  "uncertainties": [
+    {
+      "item_id": "node_4",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_4",
+      "type": "low_confidence_node",
+      "detail": "Node 'Component_node_4' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

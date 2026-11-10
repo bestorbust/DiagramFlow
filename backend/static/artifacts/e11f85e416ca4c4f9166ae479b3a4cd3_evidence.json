@@ -1,0 +1,625 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "02b4d574388047899d6d726e44da7609.webp",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T08:19:59.365965+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.787,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.787,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.784,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          91,
+          314,
+          118
+        ],
+        "center": [
+          740,
+          150
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Service",
+        "bbox": [
+          745,
+          135,
+          104,
+          23
+        ],
+        "center": [
+          797,
+          146
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Student",
+        "bbox": [
+          130,
+          448,
+          109,
+          23
+        ],
+        "center": [
+          184,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Portal",
+        "bbox": [
+          250,
+          448,
+          80,
+          23
+        ],
+        "center": [
+          290,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Campus",
+        "bbox": [
+          614,
+          445,
+          117,
+          29
+        ],
+        "center": [
+          672,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Gateway",
+        "bbox": [
+          743,
+          445,
+          125,
+          29
+        ],
+        "center": [
+          805,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Enrollment",
+        "bbox": [
+          1117,
+          448,
+          152,
+          23
+        ],
+        "center": [
+          1193,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Service",
+        "bbox": [
+          1280,
+          448,
+          104,
+          23
+        ],
+        "center": [
+          1332,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Student",
+        "bbox": [
+          1633,
+          448,
+          109,
+          23
+        ],
+        "center": [
+          1687,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "Database",
+        "bbox": [
+          1753,
+          448,
+          135,
+          23
+        ],
+        "center": [
+          1820,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "Identity",
+        "bbox": [
+          633,
+          135,
+          101,
+          29
+        ],
+        "center": [
+          683,
+          149
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_3",
+        "target": "node_4",
+        "endpoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_2",
+        "target": "node_3",
+        "endpoints": [
+          [
+            905,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            905,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_3",
+        "source": "node_2",
+        "target": "node_0",
+        "endpoints": [
+          [
+            739,
+            393
+          ],
+          [
+            740,
+            218
+          ]
+        ],
+        "waypoints": [
+          [
+            739,
+            393
+          ],
+          [
+            740,
+            218
+          ]
+        ],
+        "pixel_length": 176,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.787,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.787,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.784,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          91,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.775,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_3",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        583,
+        91,
+        314,
+        118
+      ],
+      "label": "Identity Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        91,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Identity Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_9",
+        "word_0"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label": "Student Portal",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Student Portal",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_1",
+        "word_2"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label": "Campus Gateway",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Campus Gateway",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Enrollment Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Enrollment Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ]
+    },
+    {
+      "id": "node_4",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Student Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Student Database",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

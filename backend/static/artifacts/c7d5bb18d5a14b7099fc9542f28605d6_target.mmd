@@ -1,0 +1,16 @@
+flowchart TD
+    n0["User Service"]
+    n1["User DB"]
+    n2["Client"]
+    n3["API Gateway"]
+    n4["Order Service"]
+    n5["Order DB"]
+    n6["Product Service"]
+    n7["Product DB"]
+    n2 -->|"HTTPS"| n3
+    n3 -->|"REST"| n0
+    n3 -->|"REST"| n4
+    n3 -->|"REST"| n6
+    n0 -->|"SQL"| n1
+    n4 -->|"SQL"| n5
+    n6 -->|"SQL"| n7

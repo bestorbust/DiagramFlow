@@ -1,0 +1,246 @@
+{
+  "diagram_metadata": {
+    "source_file": "84ffe691fe5740f7874de44ca4d7914b.jpg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:28:57.591007+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 3,
+    "total_relationships": 2,
+    "total_groups": 1,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Receipt Store"
+    ],
+    "service_components": [
+      "Receipt App",
+      "Archive Service"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Receipt App",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.95,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "id": "node_1",
+      "label": "Archive Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 315,
+        "height": 118
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "id": "node_2",
+      "label": "Receipt Store",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": "Group_group_0",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_5",
+        "word_4"
+      ],
+      "confidence": 0.773
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Group_group_0",
+      "bounding_box": {
+        "x": 70,
+        "y": 398,
+        "width": 1341,
+        "height": 125
+      },
+      "enclosed_components": [
+        "node_0",
+        "node_1",
+        "node_2"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_0",
+      "source_label": "Receipt App",
+      "target": "node_1",
+      "target_label": "Archive Service",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_1",
+      "source_label": "Archive Service",
+      "target": "node_2",
+      "target_label": "Receipt Store",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          906,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          906,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

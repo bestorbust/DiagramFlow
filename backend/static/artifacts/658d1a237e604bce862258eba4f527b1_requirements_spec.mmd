@@ -1,0 +1,11 @@
+flowchart TD
+    req_0["Visitor App"]
+    req_1["Load Balancer"]
+    req_2["Booking API A"]
+    req_3["Booking API B"]
+    req_4["Booking Database"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_1 --> req_3
+    req_2 --> req_4
+    req_3 --> req_4

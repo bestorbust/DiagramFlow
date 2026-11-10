@@ -1,0 +1,389 @@
+{
+  "diagram_metadata": {
+    "source_file": "9d40efa3ede3411d8c277d95d5b49536.jpeg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T08:20:23.194810+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 5,
+    "total_relationships": 4,
+    "total_groups": 0,
+    "entrypoint_components": [
+      "Bank Gateway"
+    ],
+    "storage_components": [
+      "Ledger Database",
+      "Audit Store"
+    ],
+    "service_components": [
+      "Banking App",
+      "Transfer Service"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Banking App",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ],
+      "confidence": 0.773
+    },
+    {
+      "id": "node_1",
+      "label": "Bank Gateway",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 315,
+        "height": 118
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ],
+      "confidence": 0.781
+    },
+    {
+      "id": "node_2",
+      "label": "Transfer Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        315,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        315,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 315,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.782
+    },
+    {
+      "id": "node_3",
+      "label": "Ledger Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1603,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1760,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ],
+      "confidence": 0.785
+    },
+    {
+      "id": "node_4",
+      "label": "Audit Store",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        721,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        721,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 721,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        780
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_10",
+        "word_4"
+      ],
+      "confidence": 0.764
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_2",
+      "source_label": "Transfer Service",
+      "target": "node_4",
+      "target_label": "Audit Store",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          1250,
+          527
+        ],
+        [
+          1250,
+          712
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1250,
+          527
+        ],
+        [
+          1250,
+          712
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_0",
+      "source_label": "Banking App",
+      "target": "node_1",
+      "target_label": "Bank Gateway",
+      "direction": "forward",
+      "label": "HTTPS",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          395,
+          460
+        ],
+        [
+          561,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_1",
+      "source_label": "Bank Gateway",
+      "target": "node_2",
+      "target_label": "Transfer Service",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          906,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          906,
+          460
+        ],
+        [
+          1071,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_3",
+      "source": "node_2",
+      "source_label": "Transfer Service",
+      "target": "node_3",
+      "target_label": "Ledger Database",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1416,
+          460
+        ],
+        [
+          1581,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1416,
+          460
+        ],
+        [
+          1581,
+          460
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

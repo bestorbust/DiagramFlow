@@ -1,0 +1,9 @@
+flowchart TD
+    n0["Ticket App"]
+    n1["Reservation Service"]
+    n2["Seat Database"]
+    n3["API Gateway"]
+    n0 --- n1
+    n0 --> n3
+    n3 --> n1
+    n1 --> n2

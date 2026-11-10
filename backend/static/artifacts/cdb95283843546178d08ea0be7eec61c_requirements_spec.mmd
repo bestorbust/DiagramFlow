@@ -1,0 +1,17 @@
+flowchart TD
+    subgraph z0["Istio mesh"]
+        req_0["Service A"]
+        req_1["Service B"]
+        req_2["Proxy (Service A)"]
+        req_3["Proxy (Service B)"]
+        req_4["istiod"]
+    end
+    req_5["Ingress traffic"]
+    req_6["Egress traffic"]
+    req_5 --> req_2
+    req_2 --> req_3
+    req_3 --> req_6
+    req_0 <--> req_2
+    req_1 <--> req_3
+    req_4 --> req_2
+    req_4 --> req_3

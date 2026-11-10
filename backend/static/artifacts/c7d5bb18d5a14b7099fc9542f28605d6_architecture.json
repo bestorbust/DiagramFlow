@@ -1,0 +1,613 @@
+{
+  "diagram_metadata": {
+    "source_file": "35c7ffd4c91c4757bc7fe89ef69b8e6e.png",
+    "dimensions": {
+      "width": 1906,
+      "height": 810
+    },
+    "extracted_at": "2026-11-05T18:36:54.114245+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 8,
+    "total_relationships": 7,
+    "total_groups": 0,
+    "entrypoint_components": [
+      "Client",
+      "API Gateway"
+    ],
+    "storage_components": [
+      "User DB",
+      "Order DB",
+      "Product DB"
+    ],
+    "service_components": [
+      "User Service",
+      "Order Service",
+      "Product Service"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "User Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1057,
+        74,
+        285,
+        102
+      ],
+      "logical_bbox": [
+        1057,
+        74,
+        285,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1057,
+        "y": 74,
+        "width": 285,
+        "height": 102
+      },
+      "center": [
+        1199,
+        125
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ],
+      "confidence": 0.762
+    },
+    {
+      "id": "node_1",
+      "label": "User DB",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "cylinder",
+      "physical_bbox": [
+        1601,
+        61,
+        237,
+        128
+      ],
+      "logical_bbox": [
+        1601,
+        61,
+        237,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1601,
+        "y": 61,
+        "width": 237,
+        "height": 128
+      },
+      "center": [
+        1719,
+        125
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.95,
+      "matched_text_ids": [],
+      "confidence": 0.763
+    },
+    {
+      "id": "node_2",
+      "label": "Client",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        62,
+        354,
+        237,
+        102
+      ],
+      "logical_bbox": [
+        62,
+        354,
+        237,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 62,
+        "y": 354,
+        "width": 237,
+        "height": 102
+      },
+      "center": [
+        180,
+        405
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.745
+    },
+    {
+      "id": "node_3",
+      "label": "API Gateway",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        487,
+        354,
+        267,
+        102
+      ],
+      "logical_bbox": [
+        487,
+        354,
+        267,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 487,
+        "y": 354,
+        "width": 267,
+        "height": 102
+      },
+      "center": [
+        620,
+        405
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.935,
+      "matched_text_ids": [],
+      "confidence": 0.77
+    },
+    {
+      "id": "node_4",
+      "label": "Order Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1048,
+        354,
+        303,
+        102
+      ],
+      "logical_bbox": [
+        1048,
+        354,
+        303,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1048,
+        "y": 354,
+        "width": 303,
+        "height": 102
+      },
+      "center": [
+        1199,
+        405
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.764
+    },
+    {
+      "id": "node_5",
+      "label": "Order DB",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "cylinder",
+      "physical_bbox": [
+        1601,
+        341,
+        237,
+        128
+      ],
+      "logical_bbox": [
+        1601,
+        341,
+        237,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1601,
+        "y": 341,
+        "width": 237,
+        "height": 128
+      },
+      "center": [
+        1719,
+        405
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.769
+    },
+    {
+      "id": "node_6",
+      "label": "Product Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1030,
+        634,
+        339,
+        101
+      ],
+      "logical_bbox": [
+        1030,
+        634,
+        339,
+        101
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1030,
+        "y": 634,
+        "width": 339,
+        "height": 101
+      },
+      "center": [
+        1199,
+        684
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ],
+      "confidence": 0.761
+    },
+    {
+      "id": "node_7",
+      "label": "Product DB",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "cylinder",
+      "physical_bbox": [
+        1595,
+        621,
+        249,
+        128
+      ],
+      "logical_bbox": [
+        1595,
+        621,
+        249,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1595,
+        "y": 621,
+        "width": 249,
+        "height": 128
+      },
+      "center": [
+        1719,
+        685
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ],
+      "confidence": 0.774
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_3",
+      "source_label": "API Gateway",
+      "target": "node_4",
+      "target_label": "Order Service",
+      "direction": "forward",
+      "label": "REST",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          762,
+          404
+        ],
+        [
+          1029,
+          404
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          762,
+          404
+        ],
+        [
+          1029,
+          404
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_2",
+      "source_label": "Client",
+      "target": "node_3",
+      "target_label": "API Gateway",
+      "direction": "forward",
+      "label": "HTTPS",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          307,
+          404
+        ],
+        [
+          467,
+          404
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          307,
+          404
+        ],
+        [
+          467,
+          404
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_0",
+      "source_label": "User Service",
+      "target": "node_1",
+      "target_label": "User DB",
+      "direction": "forward",
+      "label": "SQL",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1350,
+          124
+        ],
+        [
+          1582,
+          124
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1350,
+          124
+        ],
+        [
+          1582,
+          124
+        ]
+      ]
+    },
+    {
+      "id": "conn_3",
+      "source": "node_3",
+      "source_label": "API Gateway",
+      "target": "node_6",
+      "target_label": "Product Service",
+      "direction": "forward",
+      "label": "REST",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          735,
+          462
+        ],
+        [
+          742,
+          463
+        ],
+        [
+          1086,
+          628
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          735,
+          462
+        ],
+        [
+          1086,
+          628
+        ]
+      ]
+    },
+    {
+      "id": "conn_4",
+      "source": "node_6",
+      "source_label": "Product Service",
+      "target": "node_7",
+      "target_label": "Product DB",
+      "direction": "forward",
+      "label": "SQL",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1377,
+          684
+        ],
+        [
+          1576,
+          684
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1377,
+          684
+        ],
+        [
+          1576,
+          684
+        ]
+      ]
+    },
+    {
+      "id": "conn_5",
+      "source": "node_3",
+      "source_label": "API Gateway",
+      "target": "node_0",
+      "target_label": "User Service",
+      "direction": "forward",
+      "label": "REST",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          733,
+          348
+        ],
+        [
+          742,
+          346
+        ],
+        [
+          1077,
+          185
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          733,
+          348
+        ],
+        [
+          1077,
+          185
+        ]
+      ]
+    },
+    {
+      "id": "conn_6",
+      "source": "node_4",
+      "source_label": "Order Service",
+      "target": "node_5",
+      "target_label": "Order DB",
+      "direction": "forward",
+      "label": "SQL",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1359,
+          404
+        ],
+        [
+          1582,
+          404
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1359,
+          404
+        ],
+        [
+          1582,
+          404
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 2,
+      "detail": "Reconnected 2 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

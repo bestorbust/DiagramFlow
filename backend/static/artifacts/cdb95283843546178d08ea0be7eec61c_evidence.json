@@ -1,0 +1,1474 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "c3e84a3a853d4d079bd545aa860a7f4b.png",
+    "dimensions": {
+      "width": 1600,
+      "height": 900
+    },
+    "timestamp": "2026-11-05T18:19:17.685597+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          235,
+          260,
+          1128,
+          558
+        ],
+        "center": [
+          799,
+          539
+        ],
+        "area": 629424,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          801,
+          260,
+          562,
+          413
+        ],
+        "center": [
+          1082,
+          466
+        ],
+        "area": 232106,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          235,
+          673,
+          1129,
+          145
+        ],
+        "center": [
+          799,
+          745
+        ],
+        "area": 163705,
+        "classified_shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          970,
+          113,
+          279,
+          147
+        ],
+        "center": [
+          1109,
+          186
+        ],
+        "area": 41013,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.728,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          369,
+          113,
+          279,
+          147
+        ],
+        "center": [
+          508,
+          186
+        ],
+        "area": 41013,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.728,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          970,
+          261,
+          279,
+          134
+        ],
+        "center": [
+          1109,
+          328
+        ],
+        "area": 37386,
+        "classified_shape": "rectangle",
+        "confidence": 0.753,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          369,
+          261,
+          279,
+          134
+        ],
+        "center": [
+          508,
+          328
+        ],
+        "area": 37386,
+        "classified_shape": "rectangle",
+        "confidence": 0.753,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          696,
+          702,
+          208,
+          82
+        ],
+        "center": [
+          800,
+          743
+        ],
+        "area": 17056,
+        "classified_shape": "rectangle",
+        "confidence": 0.754,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1015,
+          299,
+          189,
+          49
+        ],
+        "center": [
+          1109,
+          323
+        ],
+        "area": 9261,
+        "classified_shape": "rectangle",
+        "confidence": 0.727,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          410,
+          299,
+          189,
+          49
+        ],
+        "center": [
+          504,
+          323
+        ],
+        "area": 9261,
+        "classified_shape": "rectangle",
+        "confidence": 0.725,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Data",
+        "bbox": [
+          250,
+          237,
+          34,
+          13
+        ],
+        "center": [
+          267,
+          243
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "plane",
+        "bbox": [
+          290,
+          237,
+          40,
+          16
+        ],
+        "center": [
+          310,
+          245
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Ingress",
+        "bbox": [
+          29,
+          339,
+          61,
+          17
+        ],
+        "center": [
+          59,
+          347
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "traffic",
+        "bbox": [
+          96,
+          339,
+          53,
+          14
+        ],
+        "center": [
+          122,
+          346
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Mesh",
+        "bbox": [
+          759,
+          339,
+          42,
+          14
+        ],
+        "center": [
+          780,
+          346
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "traffic",
+        "bbox": [
+          808,
+          339,
+          53,
+          14
+        ],
+        "center": [
+          834,
+          346
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Egress",
+        "bbox": [
+          1456,
+          335,
+          48,
+          25
+        ],
+        "center": [
+          1480,
+          347
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "traffic",
+        "bbox": [
+          1514,
+          335,
+          59,
+          25
+        ],
+        "center": [
+          1543,
+          347
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "Discovery",
+        "bbox": [
+          758,
+          481,
+          85,
+          19
+        ],
+        "center": [
+          800,
+          490
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "Configuration",
+        "bbox": [
+          741,
+          505,
+          118,
+          19
+        ],
+        "center": [
+          800,
+          514
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_10",
+        "text": "Control",
+        "bbox": [
+          250,
+          650,
+          55,
+          13
+        ],
+        "center": [
+          277,
+          656
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_11",
+        "text": "mesh",
+        "bbox": [
+          248,
+          15,
+          50,
+          15
+        ],
+        "center": [
+          273,
+          22
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_12",
+        "text": "plane",
+        "bbox": [
+          311,
+          650,
+          41,
+          16
+        ],
+        "center": [
+          331,
+          658
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_13",
+        "text": "Certificates",
+        "bbox": [
+          749,
+          529,
+          103,
+          15
+        ],
+        "center": [
+          800,
+          536
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_14",
+        "text": "2",
+        "bbox": [
+          136,
+          339,
+          13,
+          14
+        ],
+        "center": [
+          142,
+          346
+        ],
+        "confidence": 0.94,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_15",
+        "text": "Service",
+        "bbox": [
+          1046,
+          158,
+          101,
+          23
+        ],
+        "center": [
+          1096,
+          169
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_16",
+        "text": "B",
+        "bbox": [
+          1157,
+          159,
+          16,
+          21
+        ],
+        "center": [
+          1165,
+          169
+        ],
+        "confidence": 0.92,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_17",
+        "text": "3",
+        "bbox": [
+          773,
+          343,
+          8,
+          10
+        ],
+        "center": [
+          777,
+          348
+        ],
+        "confidence": 0.85,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_18",
+        "text": "Istio",
+        "bbox": [
+          200,
+          14,
+          40,
+          16
+        ],
+        "center": [
+          220,
+          22
+        ],
+        "confidence": 0.84,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_19",
+        "text": "Service",
+        "bbox": [
+          444,
+          158,
+          102,
+          23
+        ],
+        "center": [
+          495,
+          169
+        ],
+        "confidence": 0.72,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_20",
+        "text": "A",
+        "bbox": [
+          554,
+          159,
+          18,
+          21
+        ],
+        "center": [
+          563,
+          169
+        ],
+        "confidence": 0.72,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_21",
+        "text": "a",
+        "bbox": [
+          44,
+          343,
+          8,
+          13
+        ],
+        "center": [
+          48,
+          349
+        ],
+        "confidence": 0.59,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_22",
+        "text": "2",
+        "bbox": [
+          55,
+          343,
+          16,
+          10
+        ],
+        "center": [
+          63,
+          348
+        ],
+        "confidence": 0.53,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_23",
+        "text": "g",
+        "bbox": [
+          104,
+          343,
+          15,
+          10
+        ],
+        "center": [
+          111,
+          348
+        ],
+        "confidence": 0.51,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_24",
+        "text": "2",
+        "bbox": [
+          83,
+          343,
+          7,
+          10
+        ],
+        "center": [
+          86,
+          348
+        ],
+        "confidence": 0.48,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_25",
+        "text": "g",
+        "bbox": [
+          848,
+          339,
+          13,
+          14
+        ],
+        "center": [
+          854,
+          346
+        ],
+        "confidence": 0.47,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_3",
+        "target": "node_1",
+        "endpoints": [
+          [
+            1133,
+            293
+          ],
+          [
+            1133,
+            268
+          ]
+        ],
+        "waypoints": [
+          [
+            1133,
+            293
+          ],
+          [
+            1133,
+            268
+          ]
+        ],
+        "pixel_length": 26,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_2",
+        "target": "node_0",
+        "endpoints": [
+          [
+            484,
+            292
+          ],
+          [
+            484,
+            268
+          ]
+        ],
+        "waypoints": [
+          [
+            484,
+            292
+          ],
+          [
+            484,
+            268
+          ]
+        ],
+        "pixel_length": 25,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_2",
+        "source": "node_4",
+        "target": "group_1",
+        "endpoints": [
+          [
+            799,
+            694
+          ],
+          [
+            799,
+            677
+          ]
+        ],
+        "waypoints": [
+          [
+            799,
+            694
+          ],
+          [
+            799,
+            677
+          ]
+        ],
+        "pixel_length": 18,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "group",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_3",
+        "source": "node_3",
+        "target": "node_1",
+        "endpoints": [
+          [
+            1086,
+            291
+          ],
+          [
+            1085,
+            268
+          ]
+        ],
+        "waypoints": [
+          [
+            1086,
+            291
+          ],
+          [
+            1085,
+            268
+          ]
+        ],
+        "pixel_length": 24,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1015,
+          299,
+          189,
+          49
+        ],
+        "shape": "rectangle",
+        "confidence": 0.727,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          410,
+          299,
+          189,
+          49
+        ],
+        "shape": "rectangle",
+        "confidence": 0.725,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          696,
+          702,
+          208,
+          82
+        ],
+        "shape": "rectangle",
+        "confidence": 0.754,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          970,
+          261,
+          279,
+          134
+        ],
+        "shape": "rectangle",
+        "confidence": 0.753,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          369,
+          261,
+          279,
+          134
+        ],
+        "shape": "rectangle",
+        "confidence": 0.753,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          970,
+          113,
+          279,
+          147
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.728,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          369,
+          113,
+          279,
+          147
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.728,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          235,
+          673,
+          1129,
+          145
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          801,
+          260,
+          562,
+          413
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          235,
+          260,
+          1128,
+          558
+        ],
+        "shape": "rectangle",
+        "confidence": 0.85,
+        "is_container": true
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 1,
+      "detail": "Reconnected 1 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    },
+    {
+      "item_id": "conn_1",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_3",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "node_0",
+      "type": "low_confidence_node",
+      "detail": "Node 'Service A' has detection confidence 0.49"
+    },
+    {
+      "item_id": "node_4",
+      "type": "low_confidence_node",
+      "detail": "Node 'Component_node_4' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [
+    {
+      "text": "Data",
+      "bbox": [
+        250,
+        237,
+        34,
+        13
+      ],
+      "center": [
+        267,
+        243
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_0"
+    },
+    {
+      "text": "plane",
+      "bbox": [
+        290,
+        237,
+        40,
+        16
+      ],
+      "center": [
+        310,
+        245
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_1"
+    },
+    {
+      "text": "Ingress",
+      "bbox": [
+        29,
+        339,
+        61,
+        17
+      ],
+      "center": [
+        59,
+        347
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_2"
+    },
+    {
+      "text": "traffic",
+      "bbox": [
+        96,
+        339,
+        53,
+        14
+      ],
+      "center": [
+        122,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_3"
+    },
+    {
+      "text": "Mesh",
+      "bbox": [
+        759,
+        339,
+        42,
+        14
+      ],
+      "center": [
+        780,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_4"
+    },
+    {
+      "text": "traffic",
+      "bbox": [
+        808,
+        339,
+        53,
+        14
+      ],
+      "center": [
+        834,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_5"
+    },
+    {
+      "text": "Egress",
+      "bbox": [
+        1456,
+        335,
+        48,
+        25
+      ],
+      "center": [
+        1480,
+        347
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_6"
+    },
+    {
+      "text": "traffic",
+      "bbox": [
+        1514,
+        335,
+        59,
+        25
+      ],
+      "center": [
+        1543,
+        347
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_7"
+    },
+    {
+      "text": "Discovery",
+      "bbox": [
+        758,
+        481,
+        85,
+        19
+      ],
+      "center": [
+        800,
+        490
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_8"
+    },
+    {
+      "text": "Configuration",
+      "bbox": [
+        741,
+        505,
+        118,
+        19
+      ],
+      "center": [
+        800,
+        514
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_9"
+    },
+    {
+      "text": "Control",
+      "bbox": [
+        250,
+        650,
+        55,
+        13
+      ],
+      "center": [
+        277,
+        656
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_10"
+    },
+    {
+      "text": "mesh",
+      "bbox": [
+        248,
+        15,
+        50,
+        15
+      ],
+      "center": [
+        273,
+        22
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.95,
+      "id": "word_11"
+    },
+    {
+      "text": "plane",
+      "bbox": [
+        311,
+        650,
+        41,
+        16
+      ],
+      "center": [
+        331,
+        658
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.95,
+      "id": "word_12"
+    },
+    {
+      "text": "Certificates",
+      "bbox": [
+        749,
+        529,
+        103,
+        15
+      ],
+      "center": [
+        800,
+        536
+      ],
+      "ocr_scale": 2.5,
+      "confidence": 0.95,
+      "id": "word_13"
+    },
+    {
+      "text": "2",
+      "bbox": [
+        136,
+        339,
+        13,
+        14
+      ],
+      "center": [
+        142,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.94,
+      "id": "word_14"
+    },
+    {
+      "text": "3",
+      "bbox": [
+        773,
+        343,
+        8,
+        10
+      ],
+      "center": [
+        777,
+        348
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.85,
+      "id": "word_17"
+    },
+    {
+      "text": "Istio",
+      "bbox": [
+        200,
+        14,
+        40,
+        16
+      ],
+      "center": [
+        220,
+        22
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.84,
+      "id": "word_18"
+    },
+    {
+      "text": "a",
+      "bbox": [
+        44,
+        343,
+        8,
+        13
+      ],
+      "center": [
+        48,
+        349
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.59,
+      "id": "word_21"
+    },
+    {
+      "text": "2",
+      "bbox": [
+        55,
+        343,
+        16,
+        10
+      ],
+      "center": [
+        63,
+        348
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.53,
+      "id": "word_22"
+    },
+    {
+      "text": "g",
+      "bbox": [
+        104,
+        343,
+        15,
+        10
+      ],
+      "center": [
+        111,
+        348
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.51,
+      "id": "word_23"
+    },
+    {
+      "text": "2",
+      "bbox": [
+        83,
+        343,
+        7,
+        10
+      ],
+      "center": [
+        86,
+        348
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.48,
+      "id": "word_24"
+    },
+    {
+      "text": "g",
+      "bbox": [
+        848,
+        339,
+        13,
+        14
+      ],
+      "center": [
+        854,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.47,
+      "id": "word_25"
+    }
+  ],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        369,
+        113,
+        279,
+        147
+      ],
+      "label": "Service A",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        369,
+        113,
+        279,
+        147
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Service A",
+        "confidence": 0.31
+      },
+      "matched_text_ids": [
+        "word_19",
+        "word_20"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        970,
+        113,
+        279,
+        147
+      ],
+      "label": "Service B",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        970,
+        113,
+        279,
+        147
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Service B",
+        "confidence": 0.88
+      },
+      "matched_text_ids": [
+        "word_15",
+        "word_16"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        410,
+        299,
+        189,
+        49
+      ],
+      "label": "Proxy",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        410,
+        299,
+        189,
+        49
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Proxy",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1015,
+        299,
+        189,
+        49
+      ],
+      "label": "Proxy",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1015,
+        299,
+        189,
+        49
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Proxy",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_4",
+      "bbox": [
+        696,
+        702,
+        208,
+        82
+      ],
+      "label": "Component_node_4",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        696,
+        702,
+        208,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "",
+        "confidence": 0.0
+      },
+      "matched_text_ids": []
+    }
+  ],
+  "group_evidence": [
+    {
+      "id": "group_0",
+      "bbox": [
+        235,
+        260,
+        1128,
+        558
+      ],
+      "label": "Group_group_0",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_2",
+        "node_3",
+        "node_4"
+      ]
+    },
+    {
+      "id": "group_1",
+      "bbox": [
+        801,
+        260,
+        562,
+        413
+      ],
+      "label": "Group_group_1",
+      "parent_group_id": "group_0",
+      "enclosed_components": [
+        "node_3"
+      ]
+    },
+    {
+      "id": "group_2",
+      "bbox": [
+        235,
+        673,
+        1129,
+        145
+      ],
+      "label": "Group_group_2",
+      "parent_group_id": "group_0",
+      "enclosed_components": [
+        "node_4"
+      ]
+    },
+    {
+      "id": "group_3",
+      "bbox": [
+        970,
+        261,
+        279,
+        134
+      ],
+      "label": "Group_group_3",
+      "parent_group_id": "group_1",
+      "enclosed_components": [
+        "node_3"
+      ]
+    },
+    {
+      "id": "group_4",
+      "bbox": [
+        369,
+        261,
+        279,
+        134
+      ],
+      "label": "Group_group_4",
+      "parent_group_id": "group_0",
+      "enclosed_components": [
+        "node_2"
+      ]
+    }
+  ],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

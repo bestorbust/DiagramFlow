@@ -1,0 +1,11 @@
+flowchart TD
+    n0["Applicant Portal"]
+    n1["Recruitment API"]
+    n2["Database"]
+    n3["Search Index"]
+    n4["Candidate Database"]
+    n1 --> n2
+    n3 --> n2
+    n0 --> n1
+    n1 --> n4
+    n4 --> n3

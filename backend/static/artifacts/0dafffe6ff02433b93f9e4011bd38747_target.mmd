@@ -1,0 +1,17 @@
+flowchart TD
+    subgraph g1["Public Subnet"]
+        n1["Search Gateway"]
+    end
+    subgraph g2["Private Subnet"]
+        n2["Search API"]
+        n3["Index Database"]
+    end
+    subgraph g3["Group_group_0"]
+        n0["Employee Client"]
+        n4["Component_node_4"]
+    end
+    n4 --> n2
+    n0 --- n4
+    n0 --> n1
+    n1 --> n2
+    n2 --> n3

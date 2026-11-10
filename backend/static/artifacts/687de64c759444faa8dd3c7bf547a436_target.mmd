@@ -1,0 +1,10 @@
+flowchart TD
+    n0["Shop Client"]
+    n1["API Gateway"]
+    n2["Order Service"]
+    n3["Orders Database"]
+    n4["Payment Provider"]
+    n0 -->|"HTTPS"| n1
+    n1 --> n2
+    n2 --> n3
+    n2 --> n4

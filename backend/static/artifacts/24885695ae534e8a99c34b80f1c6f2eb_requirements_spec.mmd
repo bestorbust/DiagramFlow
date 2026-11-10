@@ -1,0 +1,11 @@
+flowchart TD
+    subgraph z0["Private Clinical Zone"]
+        req_2["Imaging Service"]
+        req_3["Image Database"]
+    end
+    req_0["Clinician App"]
+    req_1["Imaging Gateway"]
+    req_4["Partner Clinic"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_2 --> req_3

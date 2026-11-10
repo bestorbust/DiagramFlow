@@ -1,0 +1,10 @@
+flowchart TD
+    subgraph g0["Group_group_0"]
+        n0["Agent Portal"]
+        n1["Claims API"]
+        n2["Claims Database"]
+    end
+    n3["Audit Logger"]
+    n0 --> n1
+    n1 --> n2
+    n1 --> n3

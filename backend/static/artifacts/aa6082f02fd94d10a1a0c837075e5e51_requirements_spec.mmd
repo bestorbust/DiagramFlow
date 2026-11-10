@@ -1,0 +1,6 @@
+flowchart TD
+    req_0["Client"]
+    req_1["Server"]
+    req_2["Database"]
+    req_0 <-->|"HTTP"| req_1
+    req_1 -->|"SQL"| req_2

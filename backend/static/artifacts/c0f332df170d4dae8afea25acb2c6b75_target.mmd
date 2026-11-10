@@ -1,0 +1,30 @@
+flowchart TD
+    n0["loadgen"]
+    n1["Frontend"]
+    n2["zg"]
+    n3["C"]
+    n4["userservice"]
+    n5["contacts"]
+    n6["ledger writer"]
+    n7["balance reader"]
+    n8["transaction history"]
+    n9["Bow"]
+    n10["accounts db"]
+    n11["ledger db"]
+    n2 --> n4
+    n2 --> n7
+    n2 --> n5
+    n2 --- n3
+    n3 --> n8
+    n2 --> n6
+    n0 --> n1
+    n1 --> n4
+    n1 --> n5
+    n1 --> n6
+    n1 --> n7
+    n1 --> n8
+    n4 --> n10
+    n5 --> n10
+    n6 --> n11
+    n7 --> n11
+    n8 --> n11

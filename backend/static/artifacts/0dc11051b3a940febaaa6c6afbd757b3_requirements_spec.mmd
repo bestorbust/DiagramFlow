@@ -1,0 +1,8 @@
+flowchart TD
+    req_0["Resident App"]
+    req_1["Permit Gateway"]
+    req_2["Permit API"]
+    req_3["Permit Store"]
+    req_0 -->|"HTTPS"| req_1
+    req_1 --> req_2
+    req_2 --> req_3

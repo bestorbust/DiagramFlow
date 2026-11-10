@@ -1,0 +1,300 @@
+{
+  "diagram_metadata": {
+    "source_file": "005ce2fc7eb148c79b5029b92edc9e55.png",
+    "dimensions": {
+      "width": 720,
+      "height": 858
+    },
+    "extracted_at": "2026-11-05T18:30:16.463569+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 4,
+    "total_relationships": 3,
+    "total_groups": 0,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Database"
+    ],
+    "service_components": []
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Presentation Layer",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        61,
+        62,
+        598,
+        101
+      ],
+      "logical_bbox": [
+        61,
+        62,
+        598,
+        101
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 61,
+        "y": 62,
+        "width": 598,
+        "height": 101
+      },
+      "center": [
+        360,
+        112
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ],
+      "confidence": 0.743
+    },
+    {
+      "id": "node_1",
+      "label": "Business Layer",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        61,
+        262,
+        598,
+        101
+      ],
+      "logical_bbox": [
+        61,
+        262,
+        598,
+        101
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 61,
+        "y": 262,
+        "width": 598,
+        "height": 101
+      },
+      "center": [
+        360,
+        312
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ],
+      "confidence": 0.734
+    },
+    {
+      "id": "node_2",
+      "label": "Persistence Layer",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        61,
+        462,
+        598,
+        101
+      ],
+      "logical_bbox": [
+        61,
+        462,
+        598,
+        101
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 61,
+        "y": 462,
+        "width": 598,
+        "height": 101
+      },
+      "center": [
+        360,
+        512
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_10",
+        "word_11"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "id": "node_3",
+      "label": "Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "cylinder",
+      "physical_bbox": [
+        58,
+        665,
+        604,
+        135
+      ],
+      "logical_bbox": [
+        58,
+        665,
+        604,
+        135
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 58,
+        "y": 665,
+        "width": 604,
+        "height": 135
+      },
+      "center": [
+        360,
+        732
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_4"
+      ],
+      "confidence": 0.748
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_2",
+      "source_label": "Persistence Layer",
+      "target": "node_3",
+      "target_label": "Database",
+      "direction": "forward",
+      "label": "SQL",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          359,
+          571
+        ],
+        [
+          359,
+          649
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          359,
+          571
+        ],
+        [
+          359,
+          649
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_1",
+      "source_label": "Business Layer",
+      "target": "node_2",
+      "target_label": "Persistence Layer",
+      "direction": "forward",
+      "label": "domain objects",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          359,
+          371
+        ],
+        [
+          359,
+          442
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          359,
+          371
+        ],
+        [
+          359,
+          442
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_0",
+      "source_label": "Presentation Layer",
+      "target": "node_1",
+      "target_label": "Business Layer",
+      "direction": "forward",
+      "label": "service calls",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          359,
+          171
+        ],
+        [
+          359,
+          242
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          359,
+          171
+        ],
+        [
+          359,
+          242
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

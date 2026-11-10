@@ -1,0 +1,8 @@
+flowchart TD
+    req_0["Weather Portal"]
+    req_1["Forecast API"]
+    req_2["Forecast Database"]
+    req_3["Forecast Cache"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_1 --> req_3

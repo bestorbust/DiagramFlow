@@ -1,0 +1,626 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "149bbb1d9996477298fd0fc61ff9ddd8.jpeg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T12:35:36.111006+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          584,
+          404,
+          312,
+          114
+        ],
+        "center": [
+          740,
+          461
+        ],
+        "area": 35568,
+        "classified_shape": "rectangle",
+        "confidence": 0.741,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          586,
+          722,
+          309,
+          115
+        ],
+        "center": [
+          740,
+          779
+        ],
+        "area": 35535,
+        "classified_shape": "rectangle",
+        "confidence": 0.736,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          76,
+          404,
+          311,
+          113
+        ],
+        "center": [
+          231,
+          460
+        ],
+        "area": 35143,
+        "classified_shape": "rectangle",
+        "confidence": 0.756,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1094,
+          404,
+          311,
+          113
+        ],
+        "center": [
+          1249,
+          460
+        ],
+        "area": 35143,
+        "classified_shape": "rectangle",
+        "confidence": 0.752,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          115,
+          441,
+          230,
+          36
+        ],
+        "center": [
+          230,
+          459
+        ],
+        "area": 8280,
+        "classified_shape": "rectangle",
+        "confidence": 0.848,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1151,
+          441,
+          198,
+          37
+        ],
+        "center": [
+          1250,
+          459
+        ],
+        "area": 7326,
+        "classified_shape": "rectangle",
+        "confidence": 0.852,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          663,
+          438,
+          153,
+          42
+        ],
+        "center": [
+          739,
+          459
+        ],
+        "area": 6426,
+        "classified_shape": "rectangle",
+        "confidence": 0.846,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Resident",
+        "bbox": [
+          122,
+          448,
+          125,
+          23
+        ],
+        "center": [
+          184,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Portal",
+        "bbox": [
+          258,
+          448,
+          80,
+          23
+        ],
+        "center": [
+          298,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Billing",
+        "bbox": [
+          670,
+          445,
+          81,
+          29
+        ],
+        "center": [
+          710,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Bill",
+        "bbox": [
+          1158,
+          448,
+          38,
+          23
+        ],
+        "center": [
+          1177,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Database",
+        "bbox": [
+          1209,
+          448,
+          134,
+          23
+        ],
+        "center": [
+          1276,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Sink",
+        "bbox": [
+          752,
+          768,
+          60,
+          23
+        ],
+        "center": [
+          782,
+          779
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "Audit",
+        "bbox": [
+          668,
+          768,
+          73,
+          23
+        ],
+        "center": [
+          704,
+          779
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "API",
+        "bbox": [
+          761,
+          445,
+          48,
+          23
+        ],
+        "center": [
+          785,
+          456
+        ],
+        "confidence": 0.94,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "group_1",
+        "target": "group_0",
+        "endpoints": [
+          [
+            393,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            393,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 169,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "group",
+        "target_kind": "group",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "group_0",
+        "target": "group_2",
+        "endpoints": [
+          [
+            903,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            903,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "pixel_length": 169,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "group",
+        "target_kind": "group",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "group_0",
+        "target": "node_3",
+        "endpoints": [
+          [
+            740,
+            525
+          ],
+          [
+            740,
+            714
+          ]
+        ],
+        "waypoints": [
+          [
+            740,
+            525
+          ],
+          [
+            740,
+            714
+          ]
+        ],
+        "pixel_length": 190,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "group",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          663,
+          438,
+          153,
+          42
+        ],
+        "shape": "rectangle",
+        "confidence": 0.846,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1151,
+          441,
+          198,
+          37
+        ],
+        "shape": "rectangle",
+        "confidence": 0.852,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          115,
+          441,
+          230,
+          36
+        ],
+        "shape": "rectangle",
+        "confidence": 0.848,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          76,
+          404,
+          311,
+          113
+        ],
+        "shape": "rectangle",
+        "confidence": 0.756,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          1094,
+          404,
+          311,
+          113
+        ],
+        "shape": "rectangle",
+        "confidence": 0.752,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          586,
+          722,
+          309,
+          115
+        ],
+        "shape": "rectangle",
+        "confidence": 0.736,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          584,
+          404,
+          312,
+          114
+        ],
+        "shape": "rectangle",
+        "confidence": 0.741,
+        "is_container": true
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        115,
+        441,
+        230,
+        36
+      ],
+      "label": "Resident Portal",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        115,
+        441,
+        230,
+        36
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Resident Portal",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        663,
+        438,
+        153,
+        42
+      ],
+      "label": "Billing API",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        663,
+        438,
+        153,
+        42
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Billing API",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_7"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1151,
+        441,
+        198,
+        37
+      ],
+      "label": "Bill Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1151,
+        441,
+        198,
+        37
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Bill Database",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        586,
+        722,
+        309,
+        115
+      ],
+      "label": "Audit Sink",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        586,
+        722,
+        309,
+        115
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Audit Sink",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_6",
+        "word_5"
+      ]
+    }
+  ],
+  "group_evidence": [
+    {
+      "id": "group_0",
+      "bbox": [
+        584,
+        404,
+        312,
+        114
+      ],
+      "label": "Group_group_0",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_1"
+      ]
+    },
+    {
+      "id": "group_1",
+      "bbox": [
+        76,
+        404,
+        311,
+        113
+      ],
+      "label": "Group_group_1",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_0"
+      ]
+    },
+    {
+      "id": "group_2",
+      "bbox": [
+        1094,
+        404,
+        311,
+        113
+      ],
+      "label": "Group_group_2",
+      "parent_group_id": null,
+      "enclosed_components": [
+        "node_2"
+      ]
+    }
+  ],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

@@ -1,0 +1,642 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "9d40efa3ede3411d8c277d95d5b49536.jpeg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T08:20:23.194261+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          1093,
+          401,
+          315,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37170,
+        "classified_shape": "rectangle",
+        "confidence": 0.782,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          315,
+          118
+        ],
+        "center": [
+          740,
+          460
+        ],
+        "area": 37170,
+        "classified_shape": "rectangle",
+        "confidence": 0.781,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.785,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.773,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          721,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          780
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.764,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Transfer",
+        "bbox": [
+          1133,
+          448,
+          119,
+          23
+        ],
+        "center": [
+          1192,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "Service",
+        "bbox": [
+          1263,
+          448,
+          104,
+          23
+        ],
+        "center": [
+          1315,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Ledger",
+        "bbox": [
+          1638,
+          445,
+          99,
+          29
+        ],
+        "center": [
+          1687,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Database",
+        "bbox": [
+          1748,
+          445,
+          135,
+          23
+        ],
+        "center": [
+          1815,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Store",
+        "bbox": [
+          1254,
+          768,
+          74,
+          23
+        ],
+        "center": [
+          1291,
+          779
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Banking",
+        "bbox": [
+          141,
+          445,
+          112,
+          29
+        ],
+        "center": [
+          197,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "App",
+        "bbox": [
+          264,
+          445,
+          56,
+          29
+        ],
+        "center": [
+          292,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Bank",
+        "bbox": [
+          638,
+          445,
+          71,
+          23
+        ],
+        "center": [
+          673,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "Gateway",
+        "bbox": [
+          720,
+          445,
+          125,
+          29
+        ],
+        "center": [
+          782,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "HTTPS",
+        "bbox": [
+          446,
+          426,
+          78,
+          18
+        ],
+        "center": [
+          485,
+          435
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_10",
+        "text": "Audit",
+        "bbox": [
+          1170,
+          768,
+          73,
+          23
+        ],
+        "center": [
+          1206,
+          779
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_2",
+        "target": "node_4",
+        "endpoints": [
+          [
+            1250,
+            527
+          ],
+          [
+            1250,
+            712
+          ]
+        ],
+        "waypoints": [
+          [
+            1250,
+            527
+          ],
+          [
+            1250,
+            712
+          ]
+        ],
+        "pixel_length": 186,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_1",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            395,
+            460
+          ],
+          [
+            561,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "HTTPS",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            906,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            906,
+            460
+          ],
+          [
+            1071,
+            460
+          ]
+        ],
+        "pixel_length": 166,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_3",
+        "source": "node_2",
+        "target": "node_3",
+        "endpoints": [
+          [
+            1416,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1416,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "pixel_length": 166,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.785,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.773,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          721,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.764,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          315,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.782,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          583,
+          401,
+          315,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.781,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label": "Banking App",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Banking App",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "label": "Bank Gateway",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        583,
+        401,
+        315,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Bank Gateway",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1093,
+        401,
+        315,
+        118
+      ],
+      "label": "Transfer Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        315,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Transfer Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Ledger Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Ledger Database",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_4",
+      "bbox": [
+        1093,
+        721,
+        314,
+        118
+      ],
+      "label": "Audit Store",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        721,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Audit Store",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_10",
+        "word_4"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

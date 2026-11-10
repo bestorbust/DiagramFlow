@@ -1,0 +1,7 @@
+flowchart TD
+    req_0["Meter App"]
+    req_1["Ingestion API"]
+    req_2["Reading Store"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_2 --> req_1

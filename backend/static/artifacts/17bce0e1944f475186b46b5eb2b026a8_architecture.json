@@ -1,0 +1,233 @@
+{
+  "diagram_metadata": {
+    "source_file": "73bab5a3638b4bc8b303c0d0a5e54273.jpg",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:35:07.162462+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 3,
+    "total_relationships": 2,
+    "total_groups": 0,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Archive Store"
+    ],
+    "service_components": [
+      "Sync API"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Archive Store",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        91,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        91,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 91,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        150
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.955,
+      "matched_text_ids": [
+        "word_3",
+        "word_0"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "id": "node_1",
+      "label": "Sync API",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        315,
+        119
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 315,
+        "height": 119
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.945,
+      "matched_text_ids": [
+        "word_4",
+        "word_5"
+      ],
+      "confidence": 0.772
+    },
+    {
+      "id": "node_2",
+      "label": "Branch Agent",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1603,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1760,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_1",
+        "word_2"
+      ],
+      "confidence": 0.774
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_0",
+      "source_label": "Archive Store",
+      "target": "node_1",
+      "target_label": "Sync API",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          1250,
+          218
+        ],
+        [
+          1249,
+          393
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1250,
+          218
+        ],
+        [
+          1249,
+          393
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_2",
+      "source_label": "Branch Agent",
+      "target": "node_1",
+      "target_label": "Sync API",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1595,
+          459
+        ],
+        [
+          1429,
+          459
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1595,
+          459
+        ],
+        [
+          1429,
+          459
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

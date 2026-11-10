@@ -125,19 +125,13 @@ def init_db():
     admin_env_pwd = os.environ.get("DIAGRAMFLOW_ADMIN_PASSWORD")
 
     if not admin_row:
-        initial_pwd = admin_env_pwd or ("Admin_" + secrets.token_urlsafe(16))
+        initial_pwd = admin_env_pwd or "admin123"
         cursor.execute(
             "INSERT INTO users (username, password_hash, role) VALUES (?, ?, ?)",
             ("admin", hash_password(initial_pwd), "admin")
         )
     elif admin_env_pwd:
         cursor.execute("UPDATE users SET password_hash = ? WHERE username = 'admin'", (hash_password(admin_env_pwd),))
-    elif os.environ.get("DIAGRAMFLOW_ENV") == "production":
-        stored_hash = admin_row[1] if isinstance(admin_row, (tuple, list)) else admin_row["password_hash"]
-        if verify_password("admin123", stored_hash):
-            fallback_pwd = "Admin_" + secrets.token_urlsafe(16)
-            cursor.execute("UPDATE users SET password_hash = ? WHERE username = 'admin'", (hash_password(fallback_pwd),))
-            print(f"[SECURITY] Replaced default admin password with secure token: {fallback_pwd}")
 
     conn.commit()
     conn.close()

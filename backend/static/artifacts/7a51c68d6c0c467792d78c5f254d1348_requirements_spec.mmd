@@ -1,0 +1,8 @@
+flowchart TD
+    req_0["Billing Client"]
+    req_1["Billing Gateway"]
+    req_2["Invoice Service"]
+    req_3["Invoice Database"]
+    req_0 --> req_1
+    req_1 -->|"gRPC over mTLS"| req_2
+    req_2 --> req_3

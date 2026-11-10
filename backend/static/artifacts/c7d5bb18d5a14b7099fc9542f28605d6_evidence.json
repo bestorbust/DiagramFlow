@@ -1,0 +1,936 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "35c7ffd4c91c4757bc7fe89ef69b8e6e.png",
+    "dimensions": {
+      "width": 1906,
+      "height": 810
+    },
+    "timestamp": "2026-11-05T18:36:54.114245+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          1030,
+          634,
+          339,
+          101
+        ],
+        "center": [
+          1199,
+          684
+        ],
+        "area": 34239,
+        "classified_shape": "rectangle",
+        "confidence": 0.761,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1595,
+          621,
+          249,
+          128
+        ],
+        "center": [
+          1719,
+          685
+        ],
+        "area": 31872,
+        "classified_shape": "cylinder",
+        "confidence": 0.774,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1048,
+          354,
+          303,
+          102
+        ],
+        "center": [
+          1199,
+          405
+        ],
+        "area": 30906,
+        "classified_shape": "rectangle",
+        "confidence": 0.764,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1601,
+          341,
+          237,
+          128
+        ],
+        "center": [
+          1719,
+          405
+        ],
+        "area": 30336,
+        "classified_shape": "cylinder",
+        "confidence": 0.769,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1601,
+          61,
+          237,
+          128
+        ],
+        "center": [
+          1719,
+          125
+        ],
+        "area": 30336,
+        "classified_shape": "cylinder",
+        "confidence": 0.763,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1057,
+          74,
+          285,
+          102
+        ],
+        "center": [
+          1199,
+          125
+        ],
+        "area": 29070,
+        "classified_shape": "rectangle",
+        "confidence": 0.762,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          487,
+          354,
+          267,
+          102
+        ],
+        "center": [
+          620,
+          405
+        ],
+        "area": 27234,
+        "classified_shape": "rectangle",
+        "confidence": 0.77,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          62,
+          354,
+          237,
+          102
+        ],
+        "center": [
+          180,
+          405
+        ],
+        "area": 24174,
+        "classified_shape": "rectangle",
+        "confidence": 0.745,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "SQL",
+        "bbox": [
+          1447,
+          85,
+          49,
+          21
+        ],
+        "center": [
+          1471,
+          95
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "SQL",
+        "bbox": [
+          1452,
+          365,
+          48,
+          21
+        ],
+        "center": [
+          1476,
+          375
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "SQL",
+        "bbox": [
+          1458,
+          645,
+          48,
+          21
+        ],
+        "center": [
+          1482,
+          655
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "User",
+        "bbox": [
+          1108,
+          113,
+          67,
+          22
+        ],
+        "center": [
+          1141,
+          124
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Service",
+        "bbox": [
+          1186,
+          112,
+          106,
+          23
+        ],
+        "center": [
+          1239,
+          123
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Product",
+        "bbox": [
+          1638,
+          681,
+          111,
+          23
+        ],
+        "center": [
+          1693,
+          692
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "DB",
+        "bbox": [
+          1762,
+          682,
+          39,
+          22
+        ],
+        "center": [
+          1781,
+          693
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "Product",
+        "bbox": [
+          1085,
+          672,
+          112,
+          23
+        ],
+        "center": [
+          1141,
+          683
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "Service",
+        "bbox": [
+          1209,
+          672,
+          106,
+          23
+        ],
+        "center": [
+          1262,
+          683
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "HTTPS",
+        "bbox": [
+          353,
+          365,
+          79,
+          18
+        ],
+        "center": [
+          392,
+          374
+        ],
+        "confidence": 0.95,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_10",
+        "text": "REST",
+        "bbox": [
+          877,
+          533,
+          66,
+          18
+        ],
+        "center": [
+          910,
+          542
+        ],
+        "confidence": 0.86,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_11",
+        "text": "REST",
+        "bbox": [
+          877,
+          253,
+          66,
+          18
+        ],
+        "center": [
+          910,
+          262
+        ],
+        "confidence": 0.85,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_12",
+        "text": "REST",
+        "bbox": [
+          868,
+          365,
+          66,
+          18
+        ],
+        "center": [
+          901,
+          374
+        ],
+        "confidence": 0.85,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_3",
+        "target": "node_4",
+        "endpoints": [
+          [
+            762,
+            404
+          ],
+          [
+            1029,
+            404
+          ]
+        ],
+        "waypoints": [
+          [
+            762,
+            404
+          ],
+          [
+            1029,
+            404
+          ]
+        ],
+        "pixel_length": 268,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "REST",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_2",
+        "target": "node_3",
+        "endpoints": [
+          [
+            307,
+            404
+          ],
+          [
+            467,
+            404
+          ]
+        ],
+        "waypoints": [
+          [
+            307,
+            404
+          ],
+          [
+            467,
+            404
+          ]
+        ],
+        "pixel_length": 161,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "HTTPS",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            1350,
+            124
+          ],
+          [
+            1582,
+            124
+          ]
+        ],
+        "waypoints": [
+          [
+            1350,
+            124
+          ],
+          [
+            1582,
+            124
+          ]
+        ],
+        "pixel_length": 233,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "SQL",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_3",
+        "source": "node_3",
+        "target": "node_6",
+        "endpoints": [
+          [
+            735,
+            462
+          ],
+          [
+            1086,
+            628
+          ]
+        ],
+        "waypoints": [
+          [
+            735,
+            462
+          ],
+          [
+            742,
+            463
+          ],
+          [
+            1086,
+            628
+          ]
+        ],
+        "pixel_length": 359,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "REST",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_4",
+        "source": "node_6",
+        "target": "node_7",
+        "endpoints": [
+          [
+            1377,
+            684
+          ],
+          [
+            1576,
+            684
+          ]
+        ],
+        "waypoints": [
+          [
+            1377,
+            684
+          ],
+          [
+            1576,
+            684
+          ]
+        ],
+        "pixel_length": 200,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "SQL",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_5",
+        "source": "node_3",
+        "target": "node_0",
+        "endpoints": [
+          [
+            733,
+            348
+          ],
+          [
+            1077,
+            185
+          ]
+        ],
+        "waypoints": [
+          [
+            733,
+            348
+          ],
+          [
+            742,
+            346
+          ],
+          [
+            1077,
+            185
+          ]
+        ],
+        "pixel_length": 354,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "REST",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_6",
+        "source": "node_4",
+        "target": "node_5",
+        "endpoints": [
+          [
+            1359,
+            404
+          ],
+          [
+            1582,
+            404
+          ]
+        ],
+        "waypoints": [
+          [
+            1359,
+            404
+          ],
+          [
+            1582,
+            404
+          ]
+        ],
+        "pixel_length": 224,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "SQL",
+        "confidence": 0.8
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          62,
+          354,
+          237,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.745,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1601,
+          341,
+          237,
+          128
+        ],
+        "shape": "cylinder",
+        "confidence": 0.769,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1601,
+          61,
+          237,
+          128
+        ],
+        "shape": "cylinder",
+        "confidence": 0.763,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1595,
+          621,
+          249,
+          128
+        ],
+        "shape": "cylinder",
+        "confidence": 0.774,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          487,
+          354,
+          267,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.77,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1057,
+          74,
+          285,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.762,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1048,
+          354,
+          303,
+          102
+        ],
+        "shape": "rectangle",
+        "confidence": 0.764,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1030,
+          634,
+          339,
+          101
+        ],
+        "shape": "rectangle",
+        "confidence": 0.761,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 2,
+      "detail": "Reconnected 2 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        1057,
+        74,
+        285,
+        102
+      ],
+      "label": "User Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1057,
+        74,
+        285,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "User Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        1601,
+        61,
+        237,
+        128
+      ],
+      "label": "User DB",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1601,
+        61,
+        237,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "User DB",
+        "confidence": 0.95
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        62,
+        354,
+        237,
+        102
+      ],
+      "label": "Client",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        62,
+        354,
+        237,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Client",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        487,
+        354,
+        267,
+        102
+      ],
+      "label": "API Gateway",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        487,
+        354,
+        267,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "API Gateway",
+        "confidence": 0.935
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_4",
+      "bbox": [
+        1048,
+        354,
+        303,
+        102
+      ],
+      "label": "Order Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1048,
+        354,
+        303,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Order Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_5",
+      "bbox": [
+        1601,
+        341,
+        237,
+        128
+      ],
+      "label": "Order DB",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1601,
+        341,
+        237,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Order DB",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_6",
+      "bbox": [
+        1030,
+        634,
+        339,
+        101
+      ],
+      "label": "Product Service",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1030,
+        634,
+        339,
+        101
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Product Service",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ]
+    },
+    {
+      "id": "node_7",
+      "bbox": [
+        1595,
+        621,
+        249,
+        128
+      ],
+      "label": "Product DB",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1595,
+        621,
+        249,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Product DB",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_5",
+        "word_6"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

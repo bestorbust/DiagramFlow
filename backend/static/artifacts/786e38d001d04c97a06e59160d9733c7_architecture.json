@@ -1,0 +1,245 @@
+{
+  "diagram_metadata": {
+    "source_file": "5b413a662389472480d7d5c7aee45401.webp",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T12:27:31.846287+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 5,
+    "total_relationships": 0,
+    "total_groups": 0,
+    "entrypoint_components": [
+      "Wallet Client",
+      "API Gateway"
+    ],
+    "storage_components": [
+      "Wallet Database"
+    ],
+    "service_components": [
+      "Wallet Service"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Wallet Client",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_5",
+        "word_0"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "id": "node_1",
+      "label": "API Gateway",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        583,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 583,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        740,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.91,
+      "matched_text_ids": [
+        "word_7",
+        "word_6"
+      ],
+      "confidence": 0.771
+    },
+    {
+      "id": "node_2",
+      "label": "Wallet Service",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.95,
+      "matched_text_ids": [
+        "word_1",
+        "word_2"
+      ],
+      "confidence": 0.775
+    },
+    {
+      "id": "node_3",
+      "label": "Wallet Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1603,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1760,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.95,
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ],
+      "confidence": 0.784
+    },
+    {
+      "id": "node_4",
+      "label": "Component_node_4",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        232,
+        462,
+        1527,
+        203
+      ],
+      "logical_bbox": [
+        232,
+        462,
+        1527,
+        203
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 232,
+        "y": 462,
+        "width": 1527,
+        "height": 203
+      },
+      "center": [
+        995,
+        563
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.0,
+      "matched_text_ids": [],
+      "confidence": 0.49
+    }
+  ],
+  "groups": [],
+  "relationships": [],
+  "uncertainties": [
+    {
+      "item_id": "node_4",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_4",
+      "type": "low_confidence_node",
+      "detail": "Node 'Component_node_4' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

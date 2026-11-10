@@ -1,0 +1,15 @@
+flowchart TD
+    subgraph g1["Private Data Zone"]
+        n2["Payment API"]
+        n3["Payment Database"]
+    end
+    subgraph g2["Private Data Zone"]
+        n0["Merchant Client"]
+        n1["Payment Gateway"]
+        n4["Component_node_4"]
+    end
+    n1 --- n4
+    n4 --> n3
+    n0 --> n1
+    n1 --> n2
+    n2 --> n3

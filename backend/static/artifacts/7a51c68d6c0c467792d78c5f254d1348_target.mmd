@@ -1,0 +1,8 @@
+flowchart TD
+    n0["Billing Client"]
+    n1["Billing Gateway"]
+    n2["Invoice Service"]
+    n3["Invoice Database"]
+    n0 --> n1
+    n1 -->|"gRPC over mTLS"| n2
+    n2 --> n3

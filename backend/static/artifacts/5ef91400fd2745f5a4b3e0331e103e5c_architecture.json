@@ -1,0 +1,405 @@
+{
+  "diagram_metadata": {
+    "source_file": "b4105b6cb3334378bed0fa4b50fa3c61.png",
+    "dimensions": {
+      "width": 1780,
+      "height": 504
+    },
+    "extracted_at": "2026-11-05T18:32:47.420166+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 4,
+    "total_relationships": 5,
+    "total_groups": 0,
+    "entrypoint_components": [
+      "User"
+    ],
+    "storage_components": [],
+    "service_components": []
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "User",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        61,
+        61,
+        238,
+        102
+      ],
+      "logical_bbox": [
+        61,
+        61,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 61,
+        "y": 61,
+        "width": 238,
+        "height": 102
+      },
+      "center": [
+        180,
+        112
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_2"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "id": "node_1",
+      "label": "Controller",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        775,
+        61,
+        250,
+        102
+      ],
+      "logical_bbox": [
+        775,
+        61,
+        250,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 775,
+        "y": 61,
+        "width": 250,
+        "height": 102
+      },
+      "center": [
+        900,
+        112
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_3"
+      ],
+      "confidence": 0.762
+    },
+    {
+      "id": "node_2",
+      "label": "View",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        441,
+        341,
+        238,
+        102
+      ],
+      "logical_bbox": [
+        441,
+        341,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 441,
+        "y": 341,
+        "width": 238,
+        "height": 102
+      },
+      "center": [
+        560,
+        392
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_10"
+      ],
+      "confidence": 0.741
+    },
+    {
+      "id": "node_3",
+      "label": "Model",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1481,
+        341,
+        238,
+        102
+      ],
+      "logical_bbox": [
+        1481,
+        341,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1481,
+        "y": 341,
+        "width": 238,
+        "height": 102
+      },
+      "center": [
+        1600,
+        392
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.748
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_2",
+      "source_label": "View",
+      "target": "node_0",
+      "target_label": "User",
+      "direction": "forward",
+      "label": "renders output",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          484,
+          335
+        ],
+        [
+          345,
+          231
+        ],
+        [
+          263,
+          174
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          484,
+          335
+        ],
+        [
+          263,
+          174
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_1",
+      "source_label": "Controller",
+      "target": "node_2",
+      "target_label": "View",
+      "direction": "forward",
+      "label": "selects view",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          830,
+          169
+        ],
+        [
+          754,
+          229
+        ],
+        [
+          705,
+          274
+        ],
+        [
+          636,
+          327
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          830,
+          169
+        ],
+        [
+          636,
+          327
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_3",
+      "source_label": "Model",
+      "target": "node_2",
+      "target_label": "View",
+      "direction": "forward",
+      "label": "notifies",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1473,
+          391
+        ],
+        [
+          697,
+          391
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1473,
+          391
+        ],
+        [
+          697,
+          391
+        ]
+      ]
+    },
+    {
+      "id": "conn_3",
+      "source": "node_1",
+      "source_label": "Controller",
+      "target": "node_3",
+      "target_label": "Model",
+      "direction": "forward",
+      "label": "updates",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1032,
+          165
+        ],
+        [
+          1192,
+          229
+        ],
+        [
+          1201,
+          230
+        ],
+        [
+          1303,
+          275
+        ],
+        [
+          1317,
+          278
+        ],
+        [
+          1459,
+          334
+        ],
+        [
+          1462,
+          338
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1032,
+          165
+        ],
+        [
+          1462,
+          338
+        ]
+      ]
+    },
+    {
+      "id": "conn_4",
+      "source": "node_0",
+      "source_label": "User",
+      "target": "node_1",
+      "target_label": "Controller",
+      "direction": "forward",
+      "label": "user input",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          307,
+          111
+        ],
+        [
+          756,
+          111
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          307,
+          111
+        ],
+        [
+          756,
+          111
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 3,
+      "detail": "Reconnected 3 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

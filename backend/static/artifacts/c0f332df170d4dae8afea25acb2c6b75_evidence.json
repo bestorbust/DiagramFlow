@@ -1,0 +1,2329 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "4973a53782f84497b9e4e0da4d9bac7d.png",
+    "dimensions": {
+      "width": 1376,
+      "height": 768
+    },
+    "timestamp": "2026-11-05T18:24:36.462242+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          266,
+          636,
+          152,
+          84
+        ],
+        "center": [
+          342,
+          678
+        ],
+        "area": 12768,
+        "classified_shape": "rectangle",
+        "confidence": 0.763,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1063,
+          440,
+          151,
+          84
+        ],
+        "center": [
+          1138,
+          482
+        ],
+        "area": 12684,
+        "classified_shape": "rectangle",
+        "confidence": 0.783,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          840,
+          636,
+          151,
+          84
+        ],
+        "center": [
+          915,
+          678
+        ],
+        "area": 12684,
+        "classified_shape": "rectangle",
+        "confidence": 0.759,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          839,
+          440,
+          150,
+          84
+        ],
+        "center": [
+          914,
+          482
+        ],
+        "area": 12600,
+        "classified_shape": "rectangle",
+        "confidence": 0.771,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          613,
+          440,
+          150,
+          84
+        ],
+        "center": [
+          688,
+          482
+        ],
+        "area": 12600,
+        "classified_shape": "rectangle",
+        "confidence": 0.768,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          162,
+          440,
+          150,
+          84
+        ],
+        "center": [
+          237,
+          482
+        ],
+        "area": 12600,
+        "classified_shape": "rectangle",
+        "confidence": 0.757,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          613,
+          246,
+          150,
+          84
+        ],
+        "center": [
+          688,
+          288
+        ],
+        "area": 12600,
+        "classified_shape": "rectangle",
+        "confidence": 0.75,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          387,
+          440,
+          150,
+          84
+        ],
+        "center": [
+          462,
+          482
+        ],
+        "area": 12600,
+        "classified_shape": "rectangle",
+        "confidence": 0.745,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          561,
+          158,
+          126,
+          99
+        ],
+        "center": [
+          624,
+          207
+        ],
+        "area": 12474,
+        "classified_shape": "rectangle",
+        "confidence": 0.709,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          613,
+          63,
+          150,
+          83
+        ],
+        "center": [
+          688,
+          104
+        ],
+        "area": 12450,
+        "classified_shape": "rectangle",
+        "confidence": 0.749,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          917,
+          581,
+          197,
+          60
+        ],
+        "center": [
+          1015,
+          611
+        ],
+        "area": 11820,
+        "classified_shape": "rectangle",
+        "confidence": 0.725,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          815,
+          321,
+          148,
+          64
+        ],
+        "center": [
+          889,
+          353
+        ],
+        "area": 9472,
+        "classified_shape": "rectangle",
+        "confidence": 0.724,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          964,
+          447,
+          67,
+          128
+        ],
+        "center": [
+          997,
+          511
+        ],
+        "area": 8576,
+        "classified_shape": "cylinder",
+        "confidence": 0.726,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1182,
+          447,
+          64,
+          128
+        ],
+        "center": [
+          1214,
+          511
+        ],
+        "area": 8192,
+        "classified_shape": "rectangle",
+        "confidence": 0.753,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          752,
+          62,
+          62,
+          130
+        ],
+        "center": [
+          783,
+          127
+        ],
+        "area": 8060,
+        "classified_shape": "rectangle",
+        "confidence": 0.723,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1032,
+          511,
+          106,
+          66
+        ],
+        "center": [
+          1085,
+          544
+        ],
+        "area": 6996,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.735,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          624,
+          342,
+          63,
+          96
+        ],
+        "center": [
+          655,
+          390
+        ],
+        "area": 6048,
+        "classified_shape": "cylinder",
+        "confidence": 0.75,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          413,
+          321,
+          83,
+          64
+        ],
+        "center": [
+          454,
+          353
+        ],
+        "area": 5312,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.724,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          264,
+          575,
+          77,
+          63
+        ],
+        "center": [
+          302,
+          606
+        ],
+        "area": 4851,
+        "classified_shape": "rectangle",
+        "confidence": 0.754,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          964,
+          321,
+          67,
+          71
+        ],
+        "center": [
+          997,
+          356
+        ],
+        "area": 4757,
+        "classified_shape": "rectangle",
+        "confidence": 0.717,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          413,
+          383,
+          83,
+          55
+        ],
+        "center": [
+          454,
+          410
+        ],
+        "area": 4565,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.753,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          880,
+          383,
+          83,
+          55
+        ],
+        "center": [
+          921,
+          410
+        ],
+        "area": 4565,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.751,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          264,
+          396,
+          80,
+          52
+        ],
+        "center": [
+          304,
+          422
+        ],
+        "area": 4160,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.749,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          496,
+          512,
+          65,
+          63
+        ],
+        "center": [
+          528,
+          543
+        ],
+        "area": 4095,
+        "classified_shape": "cylinder",
+        "confidence": 0.728,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          814,
+          387,
+          67,
+          61
+        ],
+        "center": [
+          847,
+          417
+        ],
+        "area": 4087,
+        "classified_shape": "rectangle",
+        "confidence": 0.743,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          495,
+          387,
+          67,
+          61
+        ],
+        "center": [
+          528,
+          417
+        ],
+        "area": 4087,
+        "classified_shape": "rectangle",
+        "confidence": 0.743,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          345,
+          388,
+          67,
+          60
+        ],
+        "center": [
+          378,
+          418
+        ],
+        "area": 4020,
+        "classified_shape": "cylinder",
+        "confidence": 0.733,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          814,
+          581,
+          67,
+          59
+        ],
+        "center": [
+          847,
+          610
+        ],
+        "area": 3953,
+        "classified_shape": "rectangle",
+        "confidence": 0.736,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          964,
+          389,
+          67,
+          59
+        ],
+        "center": [
+          997,
+          418
+        ],
+        "area": 3953,
+        "classified_shape": "oval",
+        "confidence": 0.728,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          346,
+          576,
+          66,
+          58
+        ],
+        "center": [
+          379,
+          605
+        ],
+        "area": 3828,
+        "classified_shape": "cylinder",
+        "confidence": 0.745,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          420,
+          526,
+          77,
+          49
+        ],
+        "center": [
+          458,
+          550
+        ],
+        "area": 3773,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.743,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          195,
+          385,
+          68,
+          53
+        ],
+        "center": [
+          229,
+          411
+        ],
+        "area": 3604,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.743,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          752,
+          581,
+          62,
+          58
+        ],
+        "center": [
+          783,
+          610
+        ],
+        "area": 3596,
+        "classified_shape": "rectangle",
+        "confidence": 0.661,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          562,
+          62,
+          52,
+          67
+        ],
+        "center": [
+          588,
+          95
+        ],
+        "area": 3484,
+        "classified_shape": "rectangle",
+        "confidence": 0.724,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          385,
+          62,
+          53
+        ],
+        "center": [
+          720,
+          411
+        ],
+        "area": 3286,
+        "classified_shape": "rectangle",
+        "confidence": 0.708,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          193,
+          62,
+          51
+        ],
+        "center": [
+          720,
+          218
+        ],
+        "area": 3162,
+        "classified_shape": "rectangle",
+        "confidence": 0.714,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          625,
+          193,
+          62,
+          51
+        ],
+        "center": [
+          656,
+          218
+        ],
+        "area": 3162,
+        "classified_shape": "cylinder",
+        "confidence": 0.712,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          625,
+          526,
+          64,
+          49
+        ],
+        "center": [
+          657,
+          550
+        ],
+        "area": 3136,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.731,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          562,
+          321,
+          62,
+          50
+        ],
+        "center": [
+          593,
+          346
+        ],
+        "area": 3100,
+        "classified_shape": "cylinder",
+        "confidence": 0.745,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          752,
+          321,
+          62,
+          50
+        ],
+        "center": [
+          783,
+          346
+        ],
+        "area": 3100,
+        "classified_shape": "cylinder",
+        "confidence": 0.744,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          195,
+          532,
+          68,
+          43
+        ],
+        "center": [
+          229,
+          553
+        ],
+        "area": 2924,
+        "classified_shape": "rectangle",
+        "confidence": 0.729,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          625,
+          148,
+          62,
+          44
+        ],
+        "center": [
+          656,
+          170
+        ],
+        "area": 2728,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.706,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          535,
+          63,
+          42
+        ],
+        "center": [
+          720,
+          556
+        ],
+        "area": 2646,
+        "classified_shape": "rectangle",
+        "confidence": 0.707,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          153,
+          62,
+          39
+        ],
+        "center": [
+          720,
+          172
+        ],
+        "area": 2418,
+        "classified_shape": "rounded_rectangle",
+        "confidence": 0.691,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          915,
+          526,
+          48,
+          49
+        ],
+        "center": [
+          939,
+          550
+        ],
+        "area": 2352,
+        "classified_shape": "cylinder",
+        "confidence": 0.715,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          918,
+          588,
+          45,
+          46
+        ],
+        "center": [
+          940,
+          611
+        ],
+        "area": 2070,
+        "classified_shape": "rectangle",
+        "confidence": 0.759,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1138,
+          532,
+          43,
+          43
+        ],
+        "center": [
+          1159,
+          553
+        ],
+        "area": 1849,
+        "classified_shape": "cylinder",
+        "confidence": 0.738,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1032,
+          396,
+          81,
+          52
+        ],
+        "center": [
+          1072,
+          422
+        ],
+        "area": 4212,
+        "classified_shape": "icon",
+        "confidence": 0.747,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "W",
+        "bbox": [
+          650,
+          493,
+          14,
+          9
+        ],
+        "center": [
+          657,
+          497
+        ],
+        "confidence": 0.84,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "I",
+        "bbox": [
+          715,
+          466,
+          6,
+          9
+        ],
+        "center": [
+          718,
+          470
+        ],
+        "confidence": 0.72,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "C",
+        "bbox": [
+          1095,
+          469,
+          8,
+          8
+        ],
+        "center": [
+          1099,
+          473
+        ],
+        "confidence": 0.7,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "0",
+        "bbox": [
+          404,
+          676,
+          9,
+          10
+        ],
+        "center": [
+          408,
+          681
+        ],
+        "confidence": 0.63,
+        "ocr_scale": 2.5,
+        "kind": "callout"
+      },
+      {
+        "id": "word_4",
+        "text": "db",
+        "bbox": [
+          942,
+          668,
+          35,
+          21
+        ],
+        "center": [
+          959,
+          678
+        ],
+        "confidence": 0.59,
+        "ocr_scale": 2.5,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_26",
+        "target": "group_1",
+        "endpoints": [
+          [
+            687,
+            532
+          ],
+          [
+            912,
+            611
+          ]
+        ],
+        "waypoints": [
+          [
+            687,
+            532
+          ],
+          [
+            688,
+            566
+          ],
+          [
+            691,
+            573
+          ],
+          [
+            698,
+            577
+          ],
+          [
+            852,
+            582
+          ],
+          [
+            884,
+            590
+          ],
+          [
+            900,
+            599
+          ],
+          [
+            912,
+            611
+          ]
+        ],
+        "pixel_length": 275,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "group",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_1",
+        "source": "node_11",
+        "target": "node_24",
+        "endpoints": [
+          [
+            807,
+            371
+          ],
+          [
+            245,
+            425
+          ]
+        ],
+        "waypoints": [
+          [
+            807,
+            371
+          ],
+          [
+            729,
+            357
+          ],
+          [
+            714,
+            351
+          ],
+          [
+            706,
+            351
+          ],
+          [
+            687,
+            340
+          ],
+          [
+            667,
+            352
+          ],
+          [
+            593,
+            368
+          ],
+          [
+            403,
+            386
+          ],
+          [
+            312,
+            398
+          ],
+          [
+            256,
+            413
+          ],
+          [
+            246,
+            420
+          ],
+          [
+            245,
+            425
+          ]
+        ],
+        "pixel_length": 581,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_11",
+        "target": "node_27",
+        "endpoints": [
+          [
+            837,
+            391
+          ],
+          [
+            907,
+            425
+          ]
+        ],
+        "waypoints": [
+          [
+            837,
+            391
+          ],
+          [
+            850,
+            392
+          ],
+          [
+            882,
+            402
+          ],
+          [
+            900,
+            412
+          ],
+          [
+            906,
+            418
+          ],
+          [
+            907,
+            425
+          ]
+        ],
+        "pixel_length": 83,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_3",
+        "source": "node_11",
+        "target": "node_25",
+        "endpoints": [
+          [
+            807,
+            371
+          ],
+          [
+            467,
+            425
+          ]
+        ],
+        "waypoints": [
+          [
+            807,
+            371
+          ],
+          [
+            729,
+            357
+          ],
+          [
+            714,
+            351
+          ],
+          [
+            706,
+            351
+          ],
+          [
+            687,
+            340
+          ],
+          [
+            665,
+            352
+          ],
+          [
+            664,
+            357
+          ],
+          [
+            631,
+            370
+          ],
+          [
+            501,
+            399
+          ],
+          [
+            475,
+            412
+          ],
+          [
+            467,
+            425
+          ]
+        ],
+        "pixel_length": 372,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_4",
+        "source": "node_11",
+        "target": "node_23",
+        "endpoints": [
+          [
+            970,
+            386
+          ],
+          [
+            1025,
+            392
+          ]
+        ],
+        "waypoints": [
+          [
+            970,
+            386
+          ],
+          [
+            1025,
+            392
+          ]
+        ],
+        "pixel_length": 56,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_5",
+        "source": "node_23",
+        "target": "node_29",
+        "endpoints": [
+          [
+            1119,
+            414
+          ],
+          [
+            1135,
+            426
+          ]
+        ],
+        "waypoints": [
+          [
+            1119,
+            414
+          ],
+          [
+            1126,
+            417
+          ],
+          [
+            1130,
+            425
+          ],
+          [
+            1135,
+            426
+          ]
+        ],
+        "pixel_length": 26,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_6",
+        "source": "group_1",
+        "target": "node_27",
+        "endpoints": [
+          [
+            914,
+            580
+          ],
+          [
+            913,
+            532
+          ]
+        ],
+        "waypoints": [
+          [
+            914,
+            580
+          ],
+          [
+            913,
+            532
+          ]
+        ],
+        "pixel_length": 49,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "group",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_7",
+        "source": "node_11",
+        "target": "node_26",
+        "endpoints": [
+          [
+            807,
+            371
+          ],
+          [
+            687,
+            424
+          ]
+        ],
+        "waypoints": [
+          [
+            807,
+            371
+          ],
+          [
+            729,
+            357
+          ],
+          [
+            714,
+            351
+          ],
+          [
+            706,
+            351
+          ],
+          [
+            687,
+            340
+          ],
+          [
+            687,
+            424
+          ]
+        ],
+        "pixel_length": 210,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_8",
+        "source": "node_24",
+        "target": "node_44",
+        "endpoints": [
+          [
+            238,
+            531
+          ],
+          [
+            342,
+            627
+          ]
+        ],
+        "waypoints": [
+          [
+            238,
+            531
+          ],
+          [
+            241,
+            543
+          ],
+          [
+            254,
+            557
+          ],
+          [
+            326,
+            594
+          ],
+          [
+            343,
+            617
+          ],
+          [
+            342,
+            627
+          ]
+        ],
+        "pixel_length": 156,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_9",
+        "source": "node_25",
+        "target": "node_44",
+        "endpoints": [
+          [
+            461,
+            530
+          ],
+          [
+            342,
+            627
+          ]
+        ],
+        "waypoints": [
+          [
+            461,
+            530
+          ],
+          [
+            455,
+            546
+          ],
+          [
+            439,
+            560
+          ],
+          [
+            375,
+            586
+          ],
+          [
+            360,
+            595
+          ],
+          [
+            348,
+            608
+          ],
+          [
+            342,
+            620
+          ],
+          [
+            342,
+            627
+          ]
+        ],
+        "pixel_length": 165,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1138,
+          532,
+          43,
+          43
+        ],
+        "shape": "cylinder",
+        "confidence": 0.738,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          918,
+          588,
+          45,
+          46
+        ],
+        "shape": "rectangle",
+        "confidence": 0.759,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          915,
+          526,
+          48,
+          49
+        ],
+        "shape": "cylinder",
+        "confidence": 0.715,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          153,
+          62,
+          39
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.691,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          535,
+          63,
+          42
+        ],
+        "shape": "rectangle",
+        "confidence": 0.707,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          625,
+          148,
+          62,
+          44
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.706,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          195,
+          532,
+          68,
+          43
+        ],
+        "shape": "rectangle",
+        "confidence": 0.729,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          562,
+          321,
+          62,
+          50
+        ],
+        "shape": "cylinder",
+        "confidence": 0.745,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          752,
+          321,
+          62,
+          50
+        ],
+        "shape": "cylinder",
+        "confidence": 0.744,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          625,
+          526,
+          64,
+          49
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.731,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          193,
+          62,
+          51
+        ],
+        "shape": "rectangle",
+        "confidence": 0.714,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          625,
+          193,
+          62,
+          51
+        ],
+        "shape": "cylinder",
+        "confidence": 0.712,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          689,
+          385,
+          62,
+          53
+        ],
+        "shape": "rectangle",
+        "confidence": 0.708,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          562,
+          62,
+          52,
+          67
+        ],
+        "shape": "rectangle",
+        "confidence": 0.724,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          752,
+          581,
+          62,
+          58
+        ],
+        "shape": "rectangle",
+        "confidence": 0.661,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          195,
+          385,
+          68,
+          53
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.743,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          420,
+          526,
+          77,
+          49
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.743,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          346,
+          576,
+          66,
+          58
+        ],
+        "shape": "cylinder",
+        "confidence": 0.745,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          814,
+          581,
+          67,
+          59
+        ],
+        "shape": "rectangle",
+        "confidence": 0.736,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          964,
+          389,
+          67,
+          59
+        ],
+        "shape": "oval",
+        "confidence": 0.728,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          345,
+          388,
+          67,
+          60
+        ],
+        "shape": "cylinder",
+        "confidence": 0.733,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          814,
+          387,
+          67,
+          61
+        ],
+        "shape": "rectangle",
+        "confidence": 0.743,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          495,
+          387,
+          67,
+          61
+        ],
+        "shape": "rectangle",
+        "confidence": 0.743,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          496,
+          512,
+          65,
+          63
+        ],
+        "shape": "cylinder",
+        "confidence": 0.728,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          264,
+          396,
+          80,
+          52
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.749,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1032,
+          396,
+          81,
+          52
+        ],
+        "shape": "rectangle",
+        "confidence": 0.747,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          413,
+          383,
+          83,
+          55
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.753,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          880,
+          383,
+          83,
+          55
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.751,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          964,
+          321,
+          67,
+          71
+        ],
+        "shape": "rectangle",
+        "confidence": 0.717,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          264,
+          575,
+          77,
+          63
+        ],
+        "shape": "rectangle",
+        "confidence": 0.754,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          413,
+          321,
+          83,
+          64
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.724,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          624,
+          342,
+          63,
+          96
+        ],
+        "shape": "cylinder",
+        "confidence": 0.75,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1032,
+          511,
+          106,
+          66
+        ],
+        "shape": "rounded_rectangle",
+        "confidence": 0.735,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          752,
+          62,
+          62,
+          130
+        ],
+        "shape": "rectangle",
+        "confidence": 0.723,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1182,
+          447,
+          64,
+          128
+        ],
+        "shape": "rectangle",
+        "confidence": 0.753,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          964,
+          447,
+          67,
+          128
+        ],
+        "shape": "cylinder",
+        "confidence": 0.726,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          815,
+          321,
+          148,
+          64
+        ],
+        "shape": "rectangle",
+        "confidence": 0.724,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          917,
+          581,
+          197,
+          60
+        ],
+        "shape": "rectangle",
+        "confidence": 0.725,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          613,
+          63,
+          150,
+          83
+        ],
+        "shape": "rectangle",
+        "confidence": 0.749,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          561,
+          158,
+          126,
+          99
+        ],
+        "shape": "rectangle",
+        "confidence": 0.709,
+        "is_container": true
+      },
+      {
+        "bbox": [
+          839,
+          440,
+          150,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.771,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          613,
+          440,
+          150,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.768,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          162,
+          440,
+          150,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.757,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          613,
+          246,
+          150,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.75,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          387,
+          440,
+          150,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.745,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1063,
+          440,
+          151,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.783,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          840,
+          636,
+          151,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.759,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          266,
+          636,
+          152,
+          84
+        ],
+        "shape": "rectangle",
+        "confidence": 0.763,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_4",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_6",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_8",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_9",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "group_0",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_45",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_7",
+      "type": "unresolved_connector",
+      "detail": "Connector pixels touch this component but no unambiguous path to another component was resolved."
+    },
+    {
+      "item_id": "node_11",
+      "type": "low_confidence_node",
+      "detail": "Node 'zg' has detection confidence 0.49"
+    },
+    {
+      "item_id": "node_37",
+      "type": "low_confidence_node",
+      "detail": "Node 'Bow' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_1",
+      "bbox": [
+        613,
+        63,
+        150,
+        83
+      ],
+      "label": "loadgen",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        613,
+        63,
+        150,
+        83
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "loadgen",
+        "confidence": 0.81
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_7",
+      "bbox": [
+        613,
+        246,
+        150,
+        84
+      ],
+      "label": "Frontend",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        613,
+        246,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Frontend",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_11",
+      "bbox": [
+        815,
+        321,
+        148,
+        64
+      ],
+      "label": "zg",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        815,
+        321,
+        148,
+        64
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "zg",
+        "confidence": 0.37
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_23",
+      "bbox": [
+        1032,
+        396,
+        81,
+        52
+      ],
+      "label": "C",
+      "symbol_bbox": [
+        1032,
+        396,
+        81,
+        52
+      ],
+      "logical_bbox": [
+        1032,
+        396,
+        81,
+        81
+      ],
+      "label_bbox": [
+        1095,
+        469,
+        8,
+        8
+      ],
+      "detection_method": "classical_symbol",
+      "ocr": {
+        "text": "C",
+        "confidence": 0.7,
+        "source": "exterior_label_words"
+      },
+      "matched_text_ids": [
+        "word_2"
+      ]
+    },
+    {
+      "id": "node_24",
+      "bbox": [
+        162,
+        440,
+        150,
+        84
+      ],
+      "label": "userservice",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        162,
+        440,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "userservice",
+        "confidence": 0.92
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_25",
+      "bbox": [
+        387,
+        440,
+        150,
+        84
+      ],
+      "label": "contacts",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        387,
+        440,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "contacts",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_26",
+      "bbox": [
+        613,
+        440,
+        150,
+        84
+      ],
+      "label": "ledger writer",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        613,
+        440,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "ledger writer",
+        "confidence": 0.955
+      },
+      "matched_text_ids": [
+        "word_1",
+        "word_0"
+      ]
+    },
+    {
+      "id": "node_27",
+      "bbox": [
+        839,
+        440,
+        150,
+        84
+      ],
+      "label": "balance reader",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        839,
+        440,
+        150,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "balance reader",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_29",
+      "bbox": [
+        1063,
+        440,
+        151,
+        84
+      ],
+      "label": "transaction history",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1063,
+        440,
+        151,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "transaction history",
+        "confidence": 0.96
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_37",
+      "bbox": [
+        1032,
+        511,
+        106,
+        66
+      ],
+      "label": "Bow",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1032,
+        511,
+        106,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Bow",
+        "confidence": 0.48
+      },
+      "matched_text_ids": []
+    },
+    {
+      "id": "node_44",
+      "bbox": [
+        266,
+        636,
+        152,
+        84
+      ],
+      "label": "accounts db",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        266,
+        636,
+        152,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "accounts db",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3"
+      ]
+    },
+    {
+      "id": "node_45",
+      "bbox": [
+        840,
+        636,
+        151,
+        84
+      ],
+      "label": "ledger db",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        840,
+        636,
+        151,
+        84
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "ledger db",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_4"
+      ]
+    }
+  ],
+  "group_evidence": [
+    {
+      "id": "group_0",
+      "bbox": [
+        561,
+        158,
+        126,
+        99
+      ],
+      "label": "Group_group_0",
+      "parent_group_id": null,
+      "enclosed_components": []
+    },
+    {
+      "id": "group_1",
+      "bbox": [
+        917,
+        581,
+        197,
+        60
+      ],
+      "label": "Group_group_1",
+      "parent_group_id": null,
+      "enclosed_components": []
+    }
+  ],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

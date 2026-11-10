@@ -1,0 +1,10 @@
+flowchart TD
+    req_0["Student Portal"]
+    req_1["Campus Gateway"]
+    req_2["Enrollment Service"]
+    req_3["Student Database"]
+    req_4["Identity Service"]
+    req_0 --> req_1
+    req_1 --> req_4
+    req_1 --> req_2
+    req_2 --> req_3

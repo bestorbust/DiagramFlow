@@ -1,0 +1,1307 @@
+{
+  "diagram_metadata": {
+    "source_file": "0bbb3729b2d84a479081fd41f9f664c3.png",
+    "dimensions": {
+      "width": 1376,
+      "height": 768
+    },
+    "extracted_at": "2026-11-01T16:29:58.023951+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 12,
+    "total_relationships": 17,
+    "total_groups": 1,
+    "entrypoint_components": [
+      "frontend"
+    ],
+    "storage_components": [
+      "Redis cache"
+    ],
+    "service_components": []
+  },
+  "components": [
+    {
+      "id": "node_1",
+      "label": "frontend",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        623,
+        232,
+        130,
+        67
+      ],
+      "logical_bbox": [
+        623,
+        232,
+        130,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 623,
+        "y": 232,
+        "width": 130,
+        "height": 67
+      },
+      "center": [
+        688,
+        265
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_4"
+      ],
+      "confidence": 0.766
+    },
+    {
+      "id": "node_7",
+      "label": "payment",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1195,
+        305,
+        131,
+        66
+      ],
+      "logical_bbox": [
+        1195,
+        305,
+        131,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1195,
+        "y": 305,
+        "width": 131,
+        "height": 66
+      },
+      "center": [
+        1260,
+        338
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_10"
+      ],
+      "confidence": 0.768
+    },
+    {
+      "id": "node_8",
+      "label": "checkout",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1025,
+        359,
+        129,
+        67
+      ],
+      "logical_bbox": [
+        1025,
+        359,
+        129,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1025,
+        "y": 359,
+        "width": 129,
+        "height": 67
+      },
+      "center": [
+        1089,
+        392
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_7",
+        "word_11"
+      ],
+      "confidence": 0.769
+    },
+    {
+      "id": "node_9",
+      "label": "ad",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        50,
+        387,
+        132,
+        67
+      ],
+      "logical_bbox": [
+        50,
+        387,
+        132,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 50,
+        "y": 387,
+        "width": 132,
+        "height": 67
+      },
+      "center": [
+        116,
+        420
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.724
+    },
+    {
+      "id": "node_10",
+      "label": "recommendation",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        213,
+        387,
+        173,
+        67
+      ],
+      "logical_bbox": [
+        213,
+        387,
+        173,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 213,
+        "y": 387,
+        "width": 173,
+        "height": 67
+      },
+      "center": [
+        299,
+        420
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_1"
+      ],
+      "confidence": 0.783
+    },
+    {
+      "id": "node_11",
+      "label": "email",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1195,
+        433,
+        131,
+        66
+      ],
+      "logical_bbox": [
+        1195,
+        433,
+        131,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1195,
+        "y": 433,
+        "width": 131,
+        "height": 66
+      },
+      "center": [
+        1260,
+        466
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_8",
+        "word_0"
+      ],
+      "confidence": 0.744
+    },
+    {
+      "id": "node_16",
+      "label": "if",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "icon",
+      "physical_bbox": [
+        620,
+        509,
+        67,
+        52
+      ],
+      "logical_bbox": [
+        620,
+        509,
+        87,
+        90
+      ],
+      "label_bbox": [
+        701,
+        590,
+        6,
+        9
+      ],
+      "detection_method": "classical_symbol",
+      "bounding_box": {
+        "x": 620,
+        "y": 509,
+        "width": 67,
+        "height": 52
+      },
+      "center": [
+        653,
+        535
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.81,
+      "matched_text_ids": [
+        "word_2"
+      ],
+      "confidence": 0.755
+    },
+    {
+      "id": "node_18",
+      "label": "productcatalog",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        342,
+        552,
+        155,
+        67
+      ],
+      "logical_bbox": [
+        342,
+        552,
+        155,
+        67
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 342,
+        "y": 552,
+        "width": 155,
+        "height": 67
+      },
+      "center": [
+        419,
+        585
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.92,
+      "matched_text_ids": [
+        "word_6",
+        "word_3"
+      ],
+      "confidence": 0.787
+    },
+    {
+      "id": "node_19",
+      "label": "cart",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        622,
+        560,
+        132,
+        66
+      ],
+      "logical_bbox": [
+        622,
+        560,
+        132,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 622,
+        "y": 560,
+        "width": 132,
+        "height": 66
+      },
+      "center": [
+        688,
+        593
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.731
+    },
+    {
+      "id": "node_20",
+      "label": "shipping",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        806,
+        560,
+        132,
+        66
+      ],
+      "logical_bbox": [
+        806,
+        560,
+        132,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 806,
+        "y": 560,
+        "width": 132,
+        "height": 66
+      },
+      "center": [
+        872,
+        593
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.77
+    },
+    {
+      "id": "node_22",
+      "label": "currency",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        984,
+        560,
+        129,
+        66
+      ],
+      "logical_bbox": [
+        984,
+        560,
+        129,
+        66
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 984,
+        "y": 560,
+        "width": 129,
+        "height": 66
+      },
+      "center": [
+        1048,
+        593
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_9"
+      ],
+      "confidence": 0.763
+    },
+    {
+      "id": "node_23",
+      "label": "Redis cache",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "cylinder",
+      "physical_bbox": [
+        622,
+        669,
+        133,
+        78
+      ],
+      "logical_bbox": [
+        622,
+        669,
+        133,
+        78
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 622,
+        "y": 669,
+        "width": 133,
+        "height": 78
+      },
+      "center": [
+        688,
+        708
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.94,
+      "matched_text_ids": [
+        "word_5"
+      ],
+      "confidence": 0.794
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Group_group_0",
+      "bounding_box": {
+        "x": 688,
+        "y": 483,
+        "width": 143,
+        "height": 76
+      },
+      "enclosed_components": [],
+      "parent_group_id": null,
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_16",
+      "source_label": "if",
+      "target": "node_18",
+      "target_label": "productcatalog",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          612,
+          522
+        ],
+        [
+          502,
+          544
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          612,
+          522
+        ],
+        [
+          502,
+          544
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_19",
+      "source_label": "cart",
+      "target": "node_23",
+      "target_label": "Redis cache",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          688,
+          633
+        ],
+        [
+          688,
+          653
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          688,
+          633
+        ],
+        [
+          688,
+          653
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "group_0",
+      "source_label": "Group_group_0",
+      "target": "node_1",
+      "target_label": "frontend",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          688,
+          479
+        ],
+        [
+          688,
+          306
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "group",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          688,
+          479
+        ],
+        [
+          688,
+          306
+        ]
+      ]
+    },
+    {
+      "id": "conn_3",
+      "source": "node_1",
+      "source_label": "frontend",
+      "target": "node_10",
+      "target_label": "recommendation",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          688,
+          306
+        ],
+        [
+          680,
+          306
+        ],
+        [
+          651,
+          321
+        ],
+        [
+          603,
+          331
+        ],
+        [
+          532,
+          338
+        ],
+        [
+          417,
+          344
+        ],
+        [
+          353,
+          352
+        ],
+        [
+          319,
+          361
+        ],
+        [
+          311,
+          365
+        ],
+        [
+          307,
+          373
+        ],
+        [
+          302,
+          374
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          688,
+          306
+        ],
+        [
+          302,
+          374
+        ]
+      ]
+    },
+    {
+      "id": "conn_4",
+      "source": "node_1",
+      "source_label": "frontend",
+      "target": "node_8",
+      "target_label": "checkout",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          699,
+          308
+        ],
+        [
+          896,
+          451
+        ],
+        [
+          905,
+          461
+        ],
+        [
+          914,
+          462
+        ],
+        [
+          1016,
+          440
+        ],
+        [
+          1053,
+          435
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          699,
+          308
+        ],
+        [
+          1053,
+          435
+        ]
+      ]
+    },
+    {
+      "id": "conn_5",
+      "source": "node_1",
+      "source_label": "frontend",
+      "target": "node_22",
+      "target_label": "currency",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          699,
+          308
+        ],
+        [
+          896,
+          451
+        ],
+        [
+          905,
+          461
+        ],
+        [
+          914,
+          462
+        ],
+        [
+          915,
+          466
+        ],
+        [
+          929,
+          478
+        ],
+        [
+          936,
+          478
+        ],
+        [
+          939,
+          484
+        ],
+        [
+          1027,
+          550
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          699,
+          308
+        ],
+        [
+          1027,
+          550
+        ]
+      ]
+    },
+    {
+      "id": "conn_6",
+      "source": "node_1",
+      "source_label": "frontend",
+      "target": "node_8",
+      "target_label": "checkout",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          699,
+          308
+        ],
+        [
+          708,
+          305
+        ],
+        [
+          1010,
+          380
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          699,
+          308
+        ],
+        [
+          1010,
+          380
+        ]
+      ]
+    },
+    {
+      "id": "conn_7",
+      "source": "group_0",
+      "source_label": "Group_group_0",
+      "target": "node_20",
+      "target_label": "shipping",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          835,
+          517
+        ],
+        [
+          856,
+          546
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "group",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          835,
+          517
+        ],
+        [
+          856,
+          546
+        ]
+      ]
+    },
+    {
+      "id": "conn_8",
+      "source": "group_0",
+      "source_label": "Group_group_0",
+      "target": "node_8",
+      "target_label": "checkout",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          835,
+          511
+        ],
+        [
+          1052,
+          439
+        ],
+        [
+          1053,
+          435
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "group",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          835,
+          511
+        ],
+        [
+          1053,
+          435
+        ]
+      ]
+    },
+    {
+      "id": "conn_9",
+      "source": "group_0",
+      "source_label": "Group_group_0",
+      "target": "node_22",
+      "target_label": "currency",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          822,
+          479
+        ],
+        [
+          912,
+          461
+        ],
+        [
+          929,
+          478
+        ],
+        [
+          936,
+          478
+        ],
+        [
+          939,
+          484
+        ],
+        [
+          1027,
+          550
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "group",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          822,
+          479
+        ],
+        [
+          1027,
+          550
+        ]
+      ]
+    },
+    {
+      "id": "conn_10",
+      "source": "node_8",
+      "source_label": "checkout",
+      "target": "node_20",
+      "target_label": "shipping",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1070,
+          435
+        ],
+        [
+          1059,
+          446
+        ],
+        [
+          895,
+          550
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1070,
+          435
+        ],
+        [
+          895,
+          550
+        ]
+      ]
+    },
+    {
+      "id": "conn_11",
+      "source": "node_8",
+      "source_label": "checkout",
+      "target": "node_22",
+      "target_label": "currency",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1070,
+          435
+        ],
+        [
+          1087,
+          433
+        ],
+        [
+          1052,
+          546
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1070,
+          435
+        ],
+        [
+          1052,
+          546
+        ]
+      ]
+    },
+    {
+      "id": "conn_12",
+      "source": "node_1",
+      "source_label": "frontend",
+      "target": "node_18",
+      "target_label": "productcatalog",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          688,
+          306
+        ],
+        [
+          683,
+          305
+        ],
+        [
+          669,
+          312
+        ],
+        [
+          666,
+          322
+        ],
+        [
+          437,
+          540
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          688,
+          306
+        ],
+        [
+          437,
+          540
+        ]
+      ]
+    },
+    {
+      "id": "conn_13",
+      "source": "node_1",
+      "source_label": "frontend",
+      "target": "node_9",
+      "target_label": "ad",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          688,
+          306
+        ],
+        [
+          680,
+          306
+        ],
+        [
+          668,
+          313
+        ],
+        [
+          659,
+          311
+        ],
+        [
+          623,
+          319
+        ],
+        [
+          570,
+          325
+        ],
+        [
+          336,
+          337
+        ],
+        [
+          217,
+          347
+        ],
+        [
+          148,
+          359
+        ],
+        [
+          129,
+          366
+        ],
+        [
+          123,
+          374
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          688,
+          306
+        ],
+        [
+          123,
+          374
+        ]
+      ]
+    },
+    {
+      "id": "conn_14",
+      "source": "node_8",
+      "source_label": "checkout",
+      "target": "node_11",
+      "target_label": "email",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1160,
+          397
+        ],
+        [
+          1185,
+          439
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1160,
+          397
+        ],
+        [
+          1185,
+          439
+        ]
+      ]
+    },
+    {
+      "id": "conn_15",
+      "source": "node_10",
+      "source_label": "recommendation",
+      "target": "node_18",
+      "target_label": "productcatalog",
+      "direction": "bidirectional",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          305,
+          460
+        ],
+        [
+          403,
+          540
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": true,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          305,
+          460
+        ],
+        [
+          403,
+          540
+        ]
+      ]
+    },
+    {
+      "id": "conn_16",
+      "source": "node_8",
+      "source_label": "checkout",
+      "target": "node_7",
+      "target_label": "payment",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1160,
+          384
+        ],
+        [
+          1183,
+          353
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1160,
+          384
+        ],
+        [
+          1183,
+          353
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_4",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_8",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

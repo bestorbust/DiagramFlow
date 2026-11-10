@@ -1,0 +1,25 @@
+flowchart TD
+    subgraph g0["Istio mesh"]
+        n0["Service A"]
+        n1["Service B"]
+        n5["Proxy (Service A)"]
+        n6["Proxy (Service B)"]
+        n7["istiod"]
+    end
+    subgraph g3["Group_group_0"]
+        n2["Proxy"]
+        n3["Proxy"]
+        n4["Component_node_4"]
+    end
+    n8["Ingress traffic"]
+    n9["Egress traffic"]
+    n3 --> n1
+    n2 --- n0
+    n3 --- n1
+    n8 --> n5
+    n5 --> n6
+    n6 --> n9
+    n0 <--> n5
+    n1 <--> n6
+    n7 --> n5
+    n7 --> n6

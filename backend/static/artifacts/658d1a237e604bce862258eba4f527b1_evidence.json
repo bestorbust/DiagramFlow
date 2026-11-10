@@ -1,0 +1,559 @@
+{
+  "schema_type": "VisualEvidenceGraph",
+  "metadata": {
+    "source_file": "ccaebfee3df64c3d9fbce0bbb48e6ad3.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "timestamp": "2026-11-10T08:22:01.301612+00:00",
+    "focv_version": "2.1.0",
+    "confidence_semantics": "Heuristic evidence quality, not calibrated correctness probability."
+  },
+  "detections": {
+    "candidate_shapes": [
+      {
+        "bbox": [
+          73,
+          401,
+          315,
+          119
+        ],
+        "center": [
+          230,
+          460
+        ],
+        "area": 37485,
+        "classified_shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1760,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.79,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          721,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          780
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.778,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "center": [
+          1250,
+          460
+        ],
+        "area": 37052,
+        "classified_shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      }
+    ],
+    "ocr_tokens": [
+      {
+        "id": "word_0",
+        "text": "Visitor",
+        "bbox": [
+          153,
+          445,
+          88,
+          23
+        ],
+        "center": [
+          197,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_1",
+        "text": "App",
+        "bbox": [
+          250,
+          445,
+          56,
+          29
+        ],
+        "center": [
+          278,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_2",
+        "text": "Booking",
+        "bbox": [
+          1149,
+          445,
+          112,
+          29
+        ],
+        "center": [
+          1205,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_3",
+        "text": "Booking",
+        "bbox": [
+          1631,
+          445,
+          112,
+          29
+        ],
+        "center": [
+          1687,
+          459
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_4",
+        "text": "Database",
+        "bbox": [
+          1756,
+          445,
+          135,
+          23
+        ],
+        "center": [
+          1823,
+          456
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_5",
+        "text": "Booking",
+        "bbox": [
+          1149,
+          765,
+          112,
+          29
+        ],
+        "center": [
+          1205,
+          779
+        ],
+        "confidence": 0.96,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_6",
+        "text": "API",
+        "bbox": [
+          1271,
+          445,
+          48,
+          23
+        ],
+        "center": [
+          1295,
+          456
+        ],
+        "confidence": 0.93,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_7",
+        "text": "A",
+        "bbox": [
+          1331,
+          445,
+          21,
+          23
+        ],
+        "center": [
+          1341,
+          456
+        ],
+        "confidence": 0.93,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_8",
+        "text": "API",
+        "bbox": [
+          1272,
+          765,
+          48,
+          23
+        ],
+        "center": [
+          1296,
+          776
+        ],
+        "confidence": 0.83,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      },
+      {
+        "id": "word_9",
+        "text": "B",
+        "bbox": [
+          1334,
+          765,
+          18,
+          23
+        ],
+        "center": [
+          1343,
+          776
+        ],
+        "confidence": 0.83,
+        "ocr_scale": 1.0,
+        "kind": "text"
+      }
+    ],
+    "connector_traces": [
+      {
+        "id": "conn_0",
+        "source": "node_0",
+        "target": "node_1",
+        "endpoints": [
+          [
+            229,
+            393
+          ],
+          [
+            1250,
+            392
+          ]
+        ],
+        "waypoints": [
+          [
+            229,
+            393
+          ],
+          [
+            229,
+            257
+          ],
+          [
+            232,
+            255
+          ],
+          [
+            1248,
+            255
+          ],
+          [
+            1250,
+            392
+          ]
+        ],
+        "pixel_length": 1294,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      },
+      {
+        "id": "conn_1",
+        "source": "node_1",
+        "target": "node_2",
+        "endpoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "waypoints": [
+          [
+            1415,
+            460
+          ],
+          [
+            1581,
+            460
+          ]
+        ],
+        "pixel_length": 167,
+        "detected_direction": "forward",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": true
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.8
+      },
+      {
+        "id": "conn_2",
+        "source": "node_3",
+        "target": "node_2",
+        "endpoints": [
+          [
+            1415,
+            780
+          ],
+          [
+            1760,
+            528
+          ]
+        ],
+        "waypoints": [
+          [
+            1415,
+            780
+          ],
+          [
+            1758,
+            780
+          ],
+          [
+            1760,
+            528
+          ]
+        ],
+        "pixel_length": 596,
+        "detected_direction": "undirected",
+        "arrowhead_evidence": {
+          "source": false,
+          "target": false
+        },
+        "source_kind": "component",
+        "target_kind": "component",
+        "label": "",
+        "confidence": 0.6
+      }
+    ],
+    "classical_shape_candidates": [
+      {
+        "bbox": [
+          1603,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.79,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          721,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.778,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          1093,
+          401,
+          314,
+          118
+        ],
+        "shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      },
+      {
+        "bbox": [
+          73,
+          401,
+          315,
+          119
+        ],
+        "shape": "rectangle",
+        "confidence": 0.777,
+        "is_container": false
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "component_evidence": [
+    {
+      "id": "node_0",
+      "bbox": [
+        73,
+        401,
+        315,
+        119
+      ],
+      "label": "Visitor App",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        73,
+        401,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Visitor App",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ]
+    },
+    {
+      "id": "node_1",
+      "bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label": "Booking API A",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Booking API A",
+        "confidence": 0.947
+      },
+      "matched_text_ids": [
+        "word_2",
+        "word_6",
+        "word_7"
+      ]
+    },
+    {
+      "id": "node_2",
+      "bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label": "Booking Database",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Booking Database",
+        "confidence": 0.96
+      },
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ]
+    },
+    {
+      "id": "node_3",
+      "bbox": [
+        1093,
+        721,
+        314,
+        118
+      ],
+      "label": "Booking API B",
+      "symbol_bbox": null,
+      "logical_bbox": [
+        1093,
+        721,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "ocr": {
+        "text": "Booking API B",
+        "confidence": 0.92
+      },
+      "matched_text_ids": [
+        "word_5",
+        "word_8",
+        "word_9"
+      ]
+    }
+  ],
+  "group_evidence": [],
+  "preprocessing": {
+    "canvas_polarity": "light",
+    "ocr": "Tesseract with local polarity, multiscale global and dual-polarity ROI passes",
+    "coordinates": "All coordinates are in the original input image."
+  },
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

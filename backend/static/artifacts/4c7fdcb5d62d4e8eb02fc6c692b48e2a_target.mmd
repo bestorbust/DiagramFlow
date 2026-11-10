@@ -1,0 +1,31 @@
+flowchart TD
+    n0["frontend"]
+    n1["payment"]
+    n2["checkout"]
+    n3["ad"]
+    n4["recommendation"]
+    n5["email"]
+    n6["if"]
+    n7["productcatalog"]
+    n8["cart"]
+    n9["shipping"]
+    n10["currency"]
+    n11["Redis cache"]
+    n12["loadgenerator"]
+    n6 --> n7
+    n12 --> n0
+    n0 --> n3
+    n0 --> n4
+    n0 --> n7
+    n0 --> n8
+    n0 --> n9
+    n0 --> n10
+    n0 --> n2
+    n4 --> n7
+    n2 --> n7
+    n2 --> n8
+    n2 --> n9
+    n2 --> n10
+    n2 --> n1
+    n2 --> n5
+    n8 --> n11

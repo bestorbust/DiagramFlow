@@ -1,0 +1,334 @@
+{
+  "diagram_metadata": {
+    "source_file": "ccaebfee3df64c3d9fbce0bbb48e6ad3.png",
+    "dimensions": {
+      "width": 2000,
+      "height": 1000
+    },
+    "extracted_at": "2026-11-10T08:22:01.301612+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 4,
+    "total_relationships": 3,
+    "total_groups": 0,
+    "entrypoint_components": [],
+    "storage_components": [
+      "Booking Database"
+    ],
+    "service_components": [
+      "Visitor App",
+      "Booking API A",
+      "Booking API B"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Visitor App",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        73,
+        401,
+        315,
+        119
+      ],
+      "logical_bbox": [
+        73,
+        401,
+        315,
+        119
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 73,
+        "y": 401,
+        "width": 315,
+        "height": 119
+      },
+      "center": [
+        230,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_0",
+        "word_1"
+      ],
+      "confidence": 0.777
+    },
+    {
+      "id": "node_1",
+      "label": "Booking API A",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.947,
+      "matched_text_ids": [
+        "word_2",
+        "word_6",
+        "word_7"
+      ],
+      "confidence": 0.777
+    },
+    {
+      "id": "node_2",
+      "label": "Booking Database",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1603,
+        401,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1603,
+        "y": 401,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1760,
+        460
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_3",
+        "word_4"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "id": "node_3",
+      "label": "Booking API B",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1093,
+        721,
+        314,
+        118
+      ],
+      "logical_bbox": [
+        1093,
+        721,
+        314,
+        118
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1093,
+        "y": 721,
+        "width": 314,
+        "height": 118
+      },
+      "center": [
+        1250,
+        780
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.92,
+      "matched_text_ids": [
+        "word_5",
+        "word_8",
+        "word_9"
+      ],
+      "confidence": 0.778
+    }
+  ],
+  "groups": [],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_0",
+      "source_label": "Visitor App",
+      "target": "node_1",
+      "target_label": "Booking API A",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          229,
+          393
+        ],
+        [
+          229,
+          257
+        ],
+        [
+          232,
+          255
+        ],
+        [
+          1248,
+          255
+        ],
+        [
+          1250,
+          392
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          229,
+          393
+        ],
+        [
+          1250,
+          392
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_1",
+      "source_label": "Booking API A",
+      "target": "node_2",
+      "target_label": "Booking Database",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1415,
+          460
+        ],
+        [
+          1581,
+          460
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1415,
+          460
+        ],
+        [
+          1581,
+          460
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_3",
+      "source_label": "Booking API B",
+      "target": "node_2",
+      "target_label": "Booking Database",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          1415,
+          780
+        ],
+        [
+          1758,
+          780
+        ],
+        [
+          1760,
+          528
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1415,
+          780
+        ],
+        [
+          1760,
+          528
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "item_id": "conn_0",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

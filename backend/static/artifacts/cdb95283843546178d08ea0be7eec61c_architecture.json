@@ -1,0 +1,840 @@
+{
+  "diagram_metadata": {
+    "source_file": "c3e84a3a853d4d079bd545aa860a7f4b.png",
+    "dimensions": {
+      "width": 1600,
+      "height": 900
+    },
+    "extracted_at": "2026-11-05T18:19:17.685597+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 5,
+    "total_relationships": 4,
+    "total_groups": 5,
+    "entrypoint_components": [
+      "Proxy",
+      "Proxy"
+    ],
+    "storage_components": [],
+    "service_components": [
+      "Service A",
+      "Service B"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Service A",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rounded_rectangle",
+      "physical_bbox": [
+        369,
+        113,
+        279,
+        147
+      ],
+      "logical_bbox": [
+        369,
+        113,
+        279,
+        147
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 369,
+        "y": 113,
+        "width": 279,
+        "height": 147
+      },
+      "center": [
+        508,
+        186
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.31,
+      "matched_text_ids": [
+        "word_19",
+        "word_20"
+      ],
+      "confidence": 0.49
+    },
+    {
+      "id": "node_1",
+      "label": "Service B",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rounded_rectangle",
+      "physical_bbox": [
+        970,
+        113,
+        279,
+        147
+      ],
+      "logical_bbox": [
+        970,
+        113,
+        279,
+        147
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 970,
+        "y": 113,
+        "width": 279,
+        "height": 147
+      },
+      "center": [
+        1109,
+        186
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.88,
+      "matched_text_ids": [
+        "word_15",
+        "word_16"
+      ],
+      "confidence": 0.728
+    },
+    {
+      "id": "node_2",
+      "label": "Proxy",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        410,
+        299,
+        189,
+        49
+      ],
+      "logical_bbox": [
+        410,
+        299,
+        189,
+        49
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 410,
+        "y": 299,
+        "width": 189,
+        "height": 49
+      },
+      "center": [
+        504,
+        323
+      ],
+      "parent_group": "Group_group_4",
+      "parent_group_id": "group_4",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.725
+    },
+    {
+      "id": "node_3",
+      "label": "Proxy",
+      "type": "Gateway/Proxy",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1015,
+        299,
+        189,
+        49
+      ],
+      "logical_bbox": [
+        1015,
+        299,
+        189,
+        49
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1015,
+        "y": 299,
+        "width": 189,
+        "height": 49
+      },
+      "center": [
+        1109,
+        323
+      ],
+      "parent_group": "Group_group_3",
+      "parent_group_id": "group_3",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [],
+      "confidence": 0.727
+    },
+    {
+      "id": "node_4",
+      "label": "Component_node_4",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        696,
+        702,
+        208,
+        82
+      ],
+      "logical_bbox": [
+        696,
+        702,
+        208,
+        82
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 696,
+        "y": 702,
+        "width": 208,
+        "height": 82
+      },
+      "center": [
+        800,
+        743
+      ],
+      "parent_group": "Group_group_2",
+      "parent_group_id": "group_2",
+      "ocr_confidence": 0.0,
+      "matched_text_ids": [],
+      "confidence": 0.49
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Group_group_0",
+      "bounding_box": {
+        "x": 235,
+        "y": 260,
+        "width": 1128,
+        "height": 558
+      },
+      "enclosed_components": [
+        "node_2",
+        "node_3",
+        "node_4"
+      ],
+      "parent_group_id": null,
+      "child_groups": [
+        "group_1",
+        "group_2",
+        "group_4"
+      ]
+    },
+    {
+      "id": "group_1",
+      "label": "Group_group_1",
+      "bounding_box": {
+        "x": 801,
+        "y": 260,
+        "width": 562,
+        "height": 413
+      },
+      "enclosed_components": [
+        "node_3"
+      ],
+      "parent_group_id": "group_0",
+      "child_groups": [
+        "group_3"
+      ]
+    },
+    {
+      "id": "group_2",
+      "label": "Group_group_2",
+      "bounding_box": {
+        "x": 235,
+        "y": 673,
+        "width": 1129,
+        "height": 145
+      },
+      "enclosed_components": [
+        "node_4"
+      ],
+      "parent_group_id": "group_0",
+      "child_groups": []
+    },
+    {
+      "id": "group_3",
+      "label": "Group_group_3",
+      "bounding_box": {
+        "x": 970,
+        "y": 261,
+        "width": 279,
+        "height": 134
+      },
+      "enclosed_components": [
+        "node_3"
+      ],
+      "parent_group_id": "group_1",
+      "child_groups": []
+    },
+    {
+      "id": "group_4",
+      "label": "Group_group_4",
+      "bounding_box": {
+        "x": 369,
+        "y": 261,
+        "width": 279,
+        "height": 134
+      },
+      "enclosed_components": [
+        "node_2"
+      ],
+      "parent_group_id": "group_0",
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_3",
+      "source_label": "Proxy",
+      "target": "node_1",
+      "target_label": "Service B",
+      "direction": "forward",
+      "label": "",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1133,
+          293
+        ],
+        [
+          1133,
+          268
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1133,
+          293
+        ],
+        [
+          1133,
+          268
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_2",
+      "source_label": "Proxy",
+      "target": "node_0",
+      "target_label": "Service A",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          484,
+          292
+        ],
+        [
+          484,
+          268
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          484,
+          292
+        ],
+        [
+          484,
+          268
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_4",
+      "source_label": "Component_node_4",
+      "target": "group_1",
+      "target_label": "Group_group_1",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          799,
+          694
+        ],
+        [
+          799,
+          677
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "group",
+      "endpoints": [
+        [
+          799,
+          694
+        ],
+        [
+          799,
+          677
+        ]
+      ]
+    },
+    {
+      "id": "conn_3",
+      "source": "node_3",
+      "source_label": "Proxy",
+      "target": "node_1",
+      "target_label": "Service B",
+      "direction": "undirected",
+      "label": "",
+      "confidence": 0.6,
+      "waypoints": [
+        [
+          1086,
+          291
+        ],
+        [
+          1085,
+          268
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": false
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1086,
+          291
+        ],
+        [
+          1085,
+          268
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 1,
+      "detail": "Reconnected 1 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    },
+    {
+      "item_id": "conn_1",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_2",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "conn_3",
+      "type": "direction_unresolved",
+      "detail": "A continuous connector was traced; no reliable arrowhead established its direction."
+    },
+    {
+      "item_id": "node_0",
+      "type": "low_confidence_node",
+      "detail": "Node 'Service A' has detection confidence 0.49"
+    },
+    {
+      "item_id": "node_4",
+      "type": "low_confidence_node",
+      "detail": "Node 'Component_node_4' has detection confidence 0.49"
+    }
+  ],
+  "annotations": [
+    {
+      "text": "Data",
+      "bbox": [
+        250,
+        237,
+        34,
+        13
+      ],
+      "center": [
+        267,
+        243
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_0"
+    },
+    {
+      "text": "plane",
+      "bbox": [
+        290,
+        237,
+        40,
+        16
+      ],
+      "center": [
+        310,
+        245
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_1"
+    },
+    {
+      "text": "Ingress",
+      "bbox": [
+        29,
+        339,
+        61,
+        17
+      ],
+      "center": [
+        59,
+        347
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_2"
+    },
+    {
+      "text": "traffic",
+      "bbox": [
+        96,
+        339,
+        53,
+        14
+      ],
+      "center": [
+        122,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_3"
+    },
+    {
+      "text": "Mesh",
+      "bbox": [
+        759,
+        339,
+        42,
+        14
+      ],
+      "center": [
+        780,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_4"
+    },
+    {
+      "text": "traffic",
+      "bbox": [
+        808,
+        339,
+        53,
+        14
+      ],
+      "center": [
+        834,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_5"
+    },
+    {
+      "text": "Egress",
+      "bbox": [
+        1456,
+        335,
+        48,
+        25
+      ],
+      "center": [
+        1480,
+        347
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_6"
+    },
+    {
+      "text": "traffic",
+      "bbox": [
+        1514,
+        335,
+        59,
+        25
+      ],
+      "center": [
+        1543,
+        347
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_7"
+    },
+    {
+      "text": "Discovery",
+      "bbox": [
+        758,
+        481,
+        85,
+        19
+      ],
+      "center": [
+        800,
+        490
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_8"
+    },
+    {
+      "text": "Configuration",
+      "bbox": [
+        741,
+        505,
+        118,
+        19
+      ],
+      "center": [
+        800,
+        514
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_9"
+    },
+    {
+      "text": "Control",
+      "bbox": [
+        250,
+        650,
+        55,
+        13
+      ],
+      "center": [
+        277,
+        656
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.96,
+      "id": "word_10"
+    },
+    {
+      "text": "mesh",
+      "bbox": [
+        248,
+        15,
+        50,
+        15
+      ],
+      "center": [
+        273,
+        22
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.95,
+      "id": "word_11"
+    },
+    {
+      "text": "plane",
+      "bbox": [
+        311,
+        650,
+        41,
+        16
+      ],
+      "center": [
+        331,
+        658
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.95,
+      "id": "word_12"
+    },
+    {
+      "text": "Certificates",
+      "bbox": [
+        749,
+        529,
+        103,
+        15
+      ],
+      "center": [
+        800,
+        536
+      ],
+      "ocr_scale": 2.5,
+      "confidence": 0.95,
+      "id": "word_13"
+    },
+    {
+      "text": "2",
+      "bbox": [
+        136,
+        339,
+        13,
+        14
+      ],
+      "center": [
+        142,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.94,
+      "id": "word_14"
+    },
+    {
+      "text": "3",
+      "bbox": [
+        773,
+        343,
+        8,
+        10
+      ],
+      "center": [
+        777,
+        348
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.85,
+      "id": "word_17"
+    },
+    {
+      "text": "Istio",
+      "bbox": [
+        200,
+        14,
+        40,
+        16
+      ],
+      "center": [
+        220,
+        22
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.84,
+      "id": "word_18"
+    },
+    {
+      "text": "a",
+      "bbox": [
+        44,
+        343,
+        8,
+        13
+      ],
+      "center": [
+        48,
+        349
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.59,
+      "id": "word_21"
+    },
+    {
+      "text": "2",
+      "bbox": [
+        55,
+        343,
+        16,
+        10
+      ],
+      "center": [
+        63,
+        348
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.53,
+      "id": "word_22"
+    },
+    {
+      "text": "g",
+      "bbox": [
+        104,
+        343,
+        15,
+        10
+      ],
+      "center": [
+        111,
+        348
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.51,
+      "id": "word_23"
+    },
+    {
+      "text": "2",
+      "bbox": [
+        83,
+        343,
+        7,
+        10
+      ],
+      "center": [
+        86,
+        348
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.48,
+      "id": "word_24"
+    },
+    {
+      "text": "g",
+      "bbox": [
+        848,
+        339,
+        13,
+        14
+      ],
+      "center": [
+        854,
+        346
+      ],
+      "ocr_scale": 1.0,
+      "confidence": 0.47,
+      "id": "word_25"
+    }
+  ],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

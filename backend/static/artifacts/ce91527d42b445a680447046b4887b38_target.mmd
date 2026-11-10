@@ -1,0 +1,10 @@
+flowchart TD
+    subgraph g0["Group_group_0"]
+        n0["Tracking App"]
+        n1["Shipment API"]
+        n2["Shipment Database"]
+    end
+    n3["Notification Service"]
+    n0 --> n1
+    n1 --> n2
+    n1 --> n3

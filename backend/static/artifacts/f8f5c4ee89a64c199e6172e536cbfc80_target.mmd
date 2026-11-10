@@ -1,0 +1,8 @@
+flowchart TD
+    n0["Carrier App"]
+    n1["Quote Gateway"]
+    n2["Rate Service"]
+    n3["Tariff Store"]
+    n0 --> n1
+    n1 -->|"gRPC over mTLS"| n2
+    n2 --> n3

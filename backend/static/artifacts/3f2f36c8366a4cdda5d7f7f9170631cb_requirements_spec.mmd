@@ -1,0 +1,10 @@
+flowchart TD
+    req_0["Volunteer App"]
+    req_1["Shift Gateway"]
+    req_2["Auth Service"]
+    req_3["Scheduling API"]
+    req_4["Shift Database"]
+    req_0 --> req_1
+    req_1 --> req_2
+    req_1 --> req_3
+    req_3 --> req_4

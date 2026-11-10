@@ -1,0 +1,16 @@
+flowchart TD
+    req_0["Client"]
+    req_1["API Gateway"]
+    req_2["User Service"]
+    req_3["Order Service"]
+    req_4["Product Service"]
+    req_5["User DB"]
+    req_6["Order DB"]
+    req_7["Product DB"]
+    req_0 -->|"HTTPS"| req_1
+    req_1 -->|"REST"| req_2
+    req_1 -->|"REST"| req_3
+    req_1 -->|"REST"| req_4
+    req_2 -->|"SQL"| req_5
+    req_3 -->|"SQL"| req_6
+    req_4 -->|"SQL"| req_7

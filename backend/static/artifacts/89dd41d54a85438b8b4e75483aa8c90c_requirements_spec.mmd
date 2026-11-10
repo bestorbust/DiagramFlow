@@ -1,0 +1,10 @@
+flowchart TD
+    req_0["Banking App"]
+    req_1["Bank Gateway"]
+    req_2["Transfer Service"]
+    req_3["Ledger Database"]
+    req_4["Audit Store"]
+    req_0 -->|"HTTPS"| req_1
+    req_1 --> req_2
+    req_2 --> req_3
+    req_2 --> req_4

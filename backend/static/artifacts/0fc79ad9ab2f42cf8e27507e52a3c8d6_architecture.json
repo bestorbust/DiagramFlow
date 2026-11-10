@@ -1,0 +1,356 @@
+{
+  "diagram_metadata": {
+    "source_file": "b9447c91eced441692c9cc10c3c09eb6.png",
+    "dimensions": {
+      "width": 1910,
+      "height": 460
+    },
+    "extracted_at": "2026-11-05T18:25:47.216326+00:00"
+  },
+  "architecture_summary": {
+    "total_components": 4,
+    "total_relationships": 3,
+    "total_groups": 3,
+    "entrypoint_components": [
+      "Browser"
+    ],
+    "storage_components": [
+      "Data Store"
+    ],
+    "service_components": [
+      "Business Logic"
+    ]
+  },
+  "components": [
+    {
+      "id": "node_0",
+      "label": "Browser",
+      "type": "Ingress/Client",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        61,
+        179,
+        238,
+        102
+      ],
+      "logical_bbox": [
+        61,
+        179,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 61,
+        "y": 179,
+        "width": 238,
+        "height": 102
+      },
+      "center": [
+        180,
+        230
+      ],
+      "parent_group": null,
+      "parent_group_id": null,
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_6"
+      ],
+      "confidence": 0.761
+    },
+    {
+      "id": "node_1",
+      "label": "Web UI",
+      "type": "Unknown/Component",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        521,
+        179,
+        238,
+        102
+      ],
+      "logical_bbox": [
+        521,
+        179,
+        238,
+        102
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 521,
+        "y": 179,
+        "width": 238,
+        "height": 102
+      },
+      "center": [
+        640,
+        230
+      ],
+      "parent_group": "Presentation tier",
+      "parent_group_id": "group_0",
+      "ocr_confidence": 0.895,
+      "matched_text_ids": [
+        "word_13",
+        "word_16"
+      ],
+      "confidence": 0.754
+    },
+    {
+      "id": "node_2",
+      "label": "Business Logic",
+      "type": "Microservice/Compute",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "rectangle",
+      "physical_bbox": [
+        1081,
+        167,
+        238,
+        126
+      ],
+      "logical_bbox": [
+        1081,
+        167,
+        238,
+        126
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1081,
+        "y": 167,
+        "width": 238,
+        "height": 126
+      },
+      "center": [
+        1200,
+        230
+      ],
+      "parent_group": "Application tier",
+      "parent_group_id": "group_1",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_7",
+        "word_8"
+      ],
+      "confidence": 0.768
+    },
+    {
+      "id": "node_3",
+      "label": "Data Store",
+      "type": "Storage/Database",
+      "type_is_inferred": true,
+      "type_evidence": "Label terms and visible shape; no service-icon classifier.",
+      "shape": "cylinder",
+      "physical_bbox": [
+        1555,
+        166,
+        250,
+        128
+      ],
+      "logical_bbox": [
+        1555,
+        166,
+        250,
+        128
+      ],
+      "label_bbox": null,
+      "detection_method": "classical_shape",
+      "bounding_box": {
+        "x": 1555,
+        "y": 166,
+        "width": 250,
+        "height": 128
+      },
+      "center": [
+        1680,
+        230
+      ],
+      "parent_group": "Data tier",
+      "parent_group_id": "group_2",
+      "ocr_confidence": 0.96,
+      "matched_text_ids": [
+        "word_9",
+        "word_10"
+      ],
+      "confidence": 0.772
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_0",
+      "label": "Presentation tier",
+      "bounding_box": {
+        "x": 470,
+        "y": 59,
+        "width": 340,
+        "height": 340
+      },
+      "enclosed_components": [
+        "node_1"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    },
+    {
+      "id": "group_1",
+      "label": "Application tier",
+      "bounding_box": {
+        "x": 1030,
+        "y": 60,
+        "width": 340,
+        "height": 340
+      },
+      "enclosed_components": [
+        "node_2"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    },
+    {
+      "id": "group_2",
+      "label": "Data tier",
+      "bounding_box": {
+        "x": 1510,
+        "y": 60,
+        "width": 340,
+        "height": 340
+      },
+      "enclosed_components": [
+        "node_3"
+      ],
+      "parent_group_id": null,
+      "child_groups": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "conn_0",
+      "source": "node_1",
+      "source_label": "Web UI",
+      "target": "node_2",
+      "target_label": "Business Logic",
+      "direction": "forward",
+      "label": "calls",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          767,
+          229
+        ],
+        [
+          1062,
+          229
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          767,
+          229
+        ],
+        [
+          1062,
+          229
+        ]
+      ]
+    },
+    {
+      "id": "conn_1",
+      "source": "node_0",
+      "source_label": "Browser",
+      "target": "node_1",
+      "target_label": "Web UI",
+      "direction": "forward",
+      "label": "HTTPS",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          307,
+          229
+        ],
+        [
+          502,
+          229
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          307,
+          229
+        ],
+        [
+          502,
+          229
+        ]
+      ]
+    },
+    {
+      "id": "conn_2",
+      "source": "node_2",
+      "source_label": "Business Logic",
+      "target": "node_3",
+      "target_label": "Data Store",
+      "direction": "forward",
+      "label": "reads writes",
+      "confidence": 0.8,
+      "waypoints": [
+        [
+          1327,
+          229
+        ],
+        [
+          1536,
+          229
+        ]
+      ],
+      "arrowhead_evidence": {
+        "source": false,
+        "target": true
+      },
+      "source_kind": "component",
+      "target_kind": "component",
+      "endpoints": [
+        [
+          1327,
+          229
+        ],
+        [
+          1536,
+          229
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "type": "bridged_stroke_gaps",
+      "count": 5,
+      "detail": "Reconnected 5 short collinear stroke gaps (possible dashed connectors or edge labels); verify the recovered paths."
+    }
+  ],
+  "annotations": [],
+  "unresolved_visual_regions": [],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "scope": "Structural consistency and trace provenance; not semantic accuracy."
+  }
+}

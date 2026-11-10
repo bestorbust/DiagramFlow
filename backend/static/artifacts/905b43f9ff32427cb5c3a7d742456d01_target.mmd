@@ -1,0 +1,10 @@
+flowchart TD
+    n0["Scanner Client"]
+    n1["Stock Service"]
+    n2["Stock Database"]
+    n3["Event Queue"]
+    n4["Reorder Worker"]
+    n0 --> n1
+    n1 --> n2
+    n1 --> n3
+    n3 --> n4

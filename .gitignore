@@ -50,20 +50,14 @@ cv/evaluate_all.py
 prototype/
 
 # 5. Database & Runtime Storage
-data/*.db
 data/*.db-shm
 data/*.db-wal
 data/*.sqlite*
+data/test_dataset_60/
 *.sqlite3
-*.db
 
 # 6. Runtime Generated Uploads & Overlays
-backend/static/uploads/*
-!backend/static/uploads/.gitkeep
-backend/static/artifacts/*
-!backend/static/artifacts/.gitkeep
-backend/static/overlays/*
-!backend/static/overlays/.gitkeep
+# Preserve precomputed 60 audits in static and database
 llm/audit_reports/
 
 # 7. Frontend Dependencies & Build Output
